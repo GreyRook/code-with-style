@@ -1,7 +1,8 @@
 # Python Coding Guide
 
 
- * Prefer Python 3.6 over Python 2.
+ * Prefer Python Version: 3.6
+ * Prefer `pipenv + Pipefile` over `pip + requirements.txt`
  * We follow [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 
 
