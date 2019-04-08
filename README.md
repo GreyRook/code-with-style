@@ -17,8 +17,13 @@ pytest  | unit text execution
 
 ## creating a new project
 
-  Use cookiecutter: `pip install cookiecutter`
+  Use cookiecutter: ``
 
-  Templates (templates go here: ` ~/.cookiecutters/cookiecutter-py3`):
-
-  General python3 template: https://github.com/FlorianLudwig/cookiecutter-py3.git
+```
+sudo pip3 install cookiecutter
+mkdir ~/.cookiecutters
+git clone https://github.com/FlorianLudwig/cookiecutter-py3.git ~/.cookiecutters/py3
+cp -r ~/.cookiecutters/py3 ~/.cookiecutters/py3-aiohttp
+cd ~/.cookiecutters/py3-aiohttp
+git checkout aiohttp
+```
