@@ -5,6 +5,8 @@
     - seperation of concerns, atomic design
     - scope independence
     - custom hook library possible
+### YARN
+    - Our standard Package Manager
 ### Typescript
     - future proof
     - large and growing community
