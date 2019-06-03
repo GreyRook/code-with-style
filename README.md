@@ -25,6 +25,35 @@
 |             |                 |               |           |
 
 
+## formatting
+
+Black for code-formatting
+https://github.com/python/black
+
+```
+pip install black
+black [folder]
+```
+
+To ignore blocks of code for formatting mark them with
+```python
+# fmt: off
+# your code
+# fmt: on
+```
+
+NOTE: not necessary all linting errors are fixed by black, so check your linter before committing.
+
+
+isort to sort imports
+
+```
+pip install isort
+isort -c -rc [folder]  # to check for wrong import order
+isort -rc [folder]  # to fix wring import order
+```
+
+
 ## testing
 
 ```
