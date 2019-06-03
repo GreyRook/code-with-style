@@ -19,3 +19,7 @@
     - TSLint will be deprecated in 2019
 ### Prettier
     - Our personal standard for coding style
+### Jest
+    - Unit Test
+### NightwachJS
+    - Integration Test
