@@ -1,3 +1,4 @@
+## Coding Stack Description
 ### Create React App
     - easy to keep updated
 ### React with Hooks
@@ -27,3 +28,21 @@
 ### Packages
     - classNames // easy conditional CSS Classes
       https://www.npmjs.com/package/classnames
+
+## Helpful CI tools
+
+### license-checker
+a [npm module](https://github.com/davglass/license-checker) can be used to check for copy left licenses used throughout the npm module graph in the project
+
+By using a command like
+```bash
+npx license-checker --producation --failOn $DISALLOWED_LICENSES
+```
+with $DISALLOWED_LICENSES being a semicolon-separated list of forbidden licenses, the CI fails when any of those is used.
+
+### prettier
+With a command like e.g.
+```bash
+npx prettier --config ./example/.prettierrc.js --list-different './example/src/**/{*.ts,*.tsx}'
+```
+the CI can check, against the fulfillment of code style guidelines.
