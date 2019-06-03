@@ -10,6 +10,8 @@
     - large and growing community
     - high typedef availability for packages
     - typed
+### SCSS
+    - Our standard CSS Extension Language
 ### ESLint
     - comes with CRA
     - TSLint will be deprecated in 2019
