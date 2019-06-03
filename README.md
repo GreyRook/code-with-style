@@ -8,6 +8,7 @@
 
 ## Project Setup
 
+ * Make Type annotations, it's okay to use `Any` or `dict` (without being more specific)
  *  All libraries needed to run tests belong into `[dev-packages]`
  * `Pipefile.lock` is to be commited to git
  * `Pilefile` should specify version range, for example: `pytest = ">=4.6.0,<5"`
@@ -71,6 +72,7 @@ pytest-aiohttp = "*"
 ```
 
 ## type annotations
+
 
 Use
 ```python
