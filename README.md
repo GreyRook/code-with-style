@@ -3,16 +3,16 @@
     - easy to keep updated
 ### React with Hooks
     - better reusability
-    - seperation of concerns, atomic design
+    - separation of concerns, atomic design
     - scope independence
     - custom hook library possible
 ### YARN
     - Our standard Package Manager
 ### Typescript
+    - we want types
     - future proof
     - large and growing community
     - high typedef availability for packages
-    - typed
 ### SCSS
     - Our standard CSS Extension Language
 ### ESLint
@@ -22,7 +22,7 @@
     - Our personal standard for coding style
 ### Jest
     - Unit Test
-### NightwachJS
+### NightwatchJS
     - Integration Test
 
 ### Packages
