@@ -1,28 +1,51 @@
 ## Coding Stack Description
+
 ### Create React App
+##### Reasons
     - easy to keep updated
+
 ### React with Hooks
+##### Reasons
     - better reusability
     - separation of concerns, atomic design
     - scope independence
     - custom hook library possible
+
 ### YARN
+##### Reasons
     - Our standard Package Manager
+
 ### Typescript
+##### Reasons
     - we want types
     - future proof
     - large and growing community
     - high typedef availability for packages
+
 ### SCSS
+##### Reasons
     - Our standard CSS Extension Language
+##### Best Practices
+    - Mirror jsx/html hierarchy in SCSS
+    - Use rem a lot (or at least Saschas rem-mixin)
+
 ### ESLint
+##### Reasons
     - comes with CRA
     - TSLint will be deprecated in 2019
+
 ### Prettier
+##### Reasons
     - Our personal standard for coding style
+##### Best Practices
+    - See config in example/prettierrc.js
+
 ### Jest
+##### Reasons
     - Unit Test
+
 ### NightwatchJS
+##### Reasons
     - Integration Test
 
 ### Packages
