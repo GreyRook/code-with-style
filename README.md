@@ -51,6 +51,10 @@
 ### Packages
     - classNames // easy conditional CSS Classes
       https://www.npmjs.com/package/classnames
+    - HammerJS // Touch and gestures
+      https://www.npmjs.com/package/hammerjs
+    - AnimeJS // Animation Library
+      https://www.npmjs.com/package/animejs
 
 ## Helpful CI tools
 
