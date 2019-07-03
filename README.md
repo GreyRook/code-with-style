@@ -108,6 +108,6 @@ git checkout aiohttp
 
  * logging of sensative user input (e.g. plaintext passwords) is never allowed
  * logging of sensitive data (keys, tokens, etc.) is only allowed if:
-   * the data is not valid idenfenetly
+   * the data is not valid indefinitely
    * the TTL is max. 7 days
    * it is only logged on debug level
