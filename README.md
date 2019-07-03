@@ -103,3 +103,9 @@ cp -r ~/.cookiecutters/py3 ~/.cookiecutters/py3-aiohttp
 cd ~/.cookiecutters/py3-aiohttp
 git checkout aiohttp
 ```
+
+# Security guidelines
+
+ * logging of sensative user input (e.g. plaintext passwords) is never allowed
+ * logging of sensitive data (keys, tokens, etc.) if they have TTL and that TTL
+   is shorter than 7 days and only on debug level logging.
