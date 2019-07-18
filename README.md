@@ -29,6 +29,15 @@
     - classNames // easy conditional CSS Classes
       https://www.npmjs.com/package/classnames
 
+## How to Doc
+
+[TypeDoc](https://typedoc.org) is used for the generation of inline documentation. Possible annotation can be looked up [here](https://typedoc.org/guides/doccomments/) 
+
+```bash
+cd example
+npx typedoc --out doc src
+```
+
 ## Helpful CI tools
 
 ### license-checker
