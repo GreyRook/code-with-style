@@ -14,6 +14,7 @@
  * `Pilefile` should specify version range, for example: `pytest = ">=4.6.0,<5"`
    * Specify minimum version acording to features needed and security fixes
    * Avoid next major version
+ * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
 
 
 ## linting
