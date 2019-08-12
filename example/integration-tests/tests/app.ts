@@ -1,5 +1,5 @@
 module.exports = {
-  tags: ['app', 'player2'],
+  tags: ['app'],
   'Test navigation to app': function (browser: any) {
     browser.url("http://frontend:8080/");
     browser.expect.element(".App").to.be.present;

@@ -46,7 +46,7 @@
 
 ### NightwatchJS
 ##### Reasons
-    - Integration Test
+    - Integration Test (s. `example/integration-tests/README.md`)
 
 ### Packages
     - classNames // easy conditional CSS Classes
@@ -58,7 +58,7 @@
 
 ## How to Doc
 
-[TypeDoc](https://typedoc.org) is used for the generation of inline documentation. Possible annotation can be looked up [here](https://typedoc.org/guides/doccomments/) 
+[TypeDoc](https://typedoc.org) is used for the generation of inline documentation. Possible annotation can be looked up [here](https://typedoc.org/guides/doccomments/)
 
 ```bash
 cd example
