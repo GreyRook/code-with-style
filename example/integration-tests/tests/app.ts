@@ -19,6 +19,8 @@ module.exports = {
       .assert.cssClassNotPresent('@appLogo', 'App-logo-animation')
   },
   'Assert that there is only one button': function (browser: any) {
-      browser.assert.elementCount('button', '==', 1);
+      browser.assert.elementCount('button', '==', 1)
+        .addButton('button')
+        .assert.elementCount('button', '==', 2);
   }
 };
