@@ -18,9 +18,16 @@ module.exports = {
       .click('@spinStarterButton')
       .assert.cssClassNotPresent('@appLogo', 'App-logo-animation')
   },
-  'Assert that there is only one button': function (browser: any) {
+  'Assert that there is only one button in the beginning \
+  and add 10 new buttons with labels from 1 to 10': function (browser: any) {
+      let i = 1;
+      let mainPage = browser.page.main();
+      mainPage.navigate();
+
       browser.assert.elementCount('button', '==', 1)
-        .addButton('button')
-        .assert.elementCount('button', '==', 2);
+      while(i < 10) browser.addButton('button', i++);
+      mainPage.assert.containsText('@seventhButton', '7');
+
+
   }
 };

@@ -6,6 +6,10 @@ module.exports = {
     },
     appLogo: {
       selector: '.App-logo'
+    },
+    seventhButton: {
+      selector: '//button[7]',
+      locateStrategy: 'xpath'
     }
   }
 };
