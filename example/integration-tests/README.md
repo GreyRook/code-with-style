@@ -1,6 +1,6 @@
 ## How to ingeration-tests
 
-For a integration-test nightwatch is used. A special docker-image is run for testing the
+For integration-testing Nightwatch is used. A special docker-image is run for testing the
 test suite agains the code in the branch you commit your code on. The folder integration-tests contains all files relevant for the integration-test.
 (ref. cde-dev-greywatch repository for reference to the docker image)
 
