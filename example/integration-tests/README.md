@@ -1,7 +1,7 @@
 ## How to ingeration-tests
 
 For integration-testing Nightwatch is used. A special docker-image is run for testing the
-test suite agains the code in the branch you commit your code on. The folder integration-tests contains all files relevant for the integration-test.
+test suite against the code in the branch you commit your code to. The folder `integration-tests` contains all files relevant for the integration-test.
 (ref. cde-dev-greywatch repository for reference to the docker image)
 
 A test is build up of fields containing a function having the parameter of the browser API. (ref. e.g. `tests/apps.ts`)
