@@ -12,7 +12,7 @@ For writing basic nightwatchjs.org tests ref. to the https://nightwatchjs.org/gu
 
 We write tests in TypeScript but it is also possible to write them in plain JavaScript. Having the advantage of a type system (as in TypeScript) can be a benefit when checking statically for inconsistent use of wrong types. So use TypeScript when you can.
 
-Try to structure your code in page Objects as explained in https://nightwatchjs.org/guide#working-with-page-objects (s, e.g. `pages/main.ts`)
+Structure your code in (page Objects)[https://nightwatchjs.org/guide#working-with-page-objects] (s, e.g. `pages/main.ts`)
 
 Assertions are used for testing special condition after some interaction with the front end. You can write your custom nightwatch assertions into the folder `assertions`. A example assertion file can be found in `assertions\elementCount.ts`.
 
