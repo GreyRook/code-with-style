@@ -8,7 +8,7 @@ A test consists of fields containing a function with the browser API as a parame
 
 Make yourself comfortable with CSS selectors and XPATH notation for selecting DOM elements. You will need it for query elements you interact with or that you check for a state change.
 
-For writing basic nightwatchjs.org tests ref. to the https://nightwatchjs.org/guide.
+For writing basic Nightwatch tests refer to the [Nightwatch guide](https://nightwatchjs.org/guide).
 
 We write tests in TypeScript but it is also possible to write them in plain JavaScript. Having the advantage of a type system (as in TypeScript) can be a benefit when checking statically for inconsistent use of wrong types. So use TypeScript when you can.
 
