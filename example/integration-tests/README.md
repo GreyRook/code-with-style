@@ -18,4 +18,5 @@ Assertions are used for testing special conditions after some interaction with t
 
 Interactions can be structured in custom commands. (s. e.g. `commands\addButton.ts`).
 
-Bar in mind that your code is running in the testing server and not actually in the browser scope. Use `this.api.execute` to run javascript code expicitly in the browser the frontend tested is running.
+
+Bear in mind that your code is running in the testing server and not in the browser scope. Use `this.api.execute` to run JavaScript code expicitly in the browser the frontend that is being tested is running in.
