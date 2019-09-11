@@ -20,4 +20,5 @@ Page specific assertions can directly be added as commands in the page object.
 Interactions can be structured in custom commands. (s. e.g. `commands\addButton.ts`).
 
 
-Bear in mind that your code is running in the testing server and not in the browser scope. Use `this.api.execute` to run JavaScript code expicitly in the browser the frontend that is being tested is running in.
+
+Bear in mind that your code is running on the testing server and not in the browser scope. Use `this.api.execute` to explicitly run JavaScript code in the browser running the frontend code.
