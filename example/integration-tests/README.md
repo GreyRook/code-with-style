@@ -14,7 +14,8 @@ We write tests in TypeScript but it is also possible to write them in plain Java
 
 Structure your code in (page Objects)[https://nightwatchjs.org/guide#working-with-page-objects] (s, e.g. `pages/main.ts`)
 
-Assertions are used for testing special conditions after some interaction with the front end. You can write your custom Nightwatch assertions into the folder `assertions`. An example assertion file can be found in `assertions\elementCount.ts`.
+Assertions are used for testing special conditions after some interaction with the front end. Assertions not related to a single page's inner workings should be collected in a shared module and imported into every page object. This allows all general assertions to use a page object's elements, compared to global assertions that do not have access to the page object's scope.
+Page specific assertions can directly be added as commands in the page object.
 
 Interactions can be structured in custom commands. (s. e.g. `commands\addButton.ts`).
 
