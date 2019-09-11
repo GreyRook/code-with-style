@@ -26,8 +26,7 @@ module.exports = {
 
       browser.assert.elementCount('button', '==', 1)
       while(i < 10) browser.addButton('button', i++);
-      mainPage.assert.containsText('@seventhButton', '7');
-
-
+      // Beware index starts at 0, as usual but on button already is was in the page.
+      mainPage.assert.containsText({'selector':'button', 'index': 7}, '7');
   }
 };
