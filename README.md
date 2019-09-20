@@ -47,7 +47,7 @@
 ### NightwatchJS
 ##### Reasons
     - Integration Test (s. `example/integration-tests/README.md`)
-    
+
 ### Sentry
 ##### Reasons
     - Automatic error tracking
@@ -75,6 +75,9 @@ npx typedoc --out doc src
 
 The architecture documentation can be found in the [architecture folder](/example/architecture) of the example project.
 A description of the files is written in the [ARCHITECTURE.md](/example/architecture/ARCHITECTURE.md).
+
+Every component, property and function is required to have a doc comment describing its functionality.
+A TypeDoc component example can be found [here](example/src/TypeDocExample.tsx)
 
 ## Helpful CI tools
 
