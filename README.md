@@ -47,6 +47,10 @@
 ### NightwatchJS
 ##### Reasons
     - Integration Test (s. `example/integration-tests/README.md`)
+    
+### Sentry
+##### Reasons
+    - Automatic error tracking
 
 ### Packages
     - classNames // easy conditional CSS Classes
