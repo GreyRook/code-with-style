@@ -6,7 +6,7 @@ test suite against the code in the branch you commit your code to. The folder `i
 
 A test consists of fields containing a function with the browser API as a parameter (ref. e.g. `tests/app.ts`).
 
-Make yourself comfortable with CSS selectors and XPATH notation for selecting DOM elements. You will need it for query elements you interact with or that you check for a state change.
+Make yourself comfortable with CSS selectors and XPATH notation for selecting DOM elements. You will need it for querying elements you want to interact with or check for a state change.
 
 For writing basic Nightwatch tests refer to the [Nightwatch guide](https://nightwatchjs.org/guide).
 
