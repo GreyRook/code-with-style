@@ -2,7 +2,7 @@
 
 ## Component diagram
 
-The component diagram in this folder is an example and based on the [LNVA2 Player project](https://git.r0k.de/rookitect/player2/tree/185e7b89561aba0fc17030be3b64662b2c2db12e)
+The component diagram in this folder is an example and based on the [LNVA2 Player project](https://git.r0k.de/rookitect/player2/tree/185e7b89561aba0fc17030be3b64662b2c2db12e).
 It describes the render hierarchy of the React components.
 In the context of a browser it shows the DOM structure.
 The component diagram does not show the data flow between components or which components manipulate others.
