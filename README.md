@@ -52,7 +52,7 @@
 ##### Reasons
     - Automatic error tracking
 Frontend documentation: [docs.sentry.io/platforms/javascript/react/](https://docs.sentry.io/platforms/javascript/react/)  
-Backend documentation: [docs.sentry.io/server/](https://docs.sentry.io/server/)
+Self-hosting documentation: [docs.sentry.io/server/](https://docs.sentry.io/server/)
 
 ### Packages
     - classNames // easy conditional CSS Classes
