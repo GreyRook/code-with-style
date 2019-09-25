@@ -26,7 +26,7 @@ module.exports = {
 
       browser.assert.elementCount('button', '==', 1)
       while(i < 10) browser.addButton('button', i++);
-      // Beware index starts at 0, as usual but on button already is was in the page.
+      // Beware index starts at 0 as usual, but one button was already on the original page.
       mainPage.assert.containsText({'selector':'button', 'index': 7}, '7');
   }
 };
