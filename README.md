@@ -51,8 +51,8 @@
 ### Sentry
 ##### Reasons
     - Automatic error tracking
-Documentation: [docs.sentry.io](https://docs.sentry.io/platforms/javascript/react/)
-
+Frontend documentation: [docs.sentry.io/platforms/javascript/react/](https://docs.sentry.io/platforms/javascript/react/)  
+Backend documentation: [docs.sentry.io/server/](https://docs.sentry.io/server/)
 
 ### Packages
     - classNames // easy conditional CSS Classes
