@@ -65,6 +65,11 @@ cd example
 npx typedoc --out doc src
 ```
 
+### Architecture
+
+The architecture documentation can be found in the [architecture folder](/example/architecture) of the example project.
+A description of the files is written in the [ARCHITECTURE.md](/example/architecture/ARCHITECTURE.md).
+
 ## Helpful CI tools
 
 ### license-checker
