@@ -17,8 +17,10 @@
     "typescript": "3.4.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "git-info": "git rev-parse HEAD | tr -d '\n' > public/release",
+    "git-dev-info": "echo 'DEV-VERSION' | tr -d '\n' > public/release",
+    "start": "yarn run git-dev-info; react-scripts start",
+    "build": "yarn run git-info; react-scripts build",
     "test": "react-scripts test"
   },
   "eslintConfig": {
