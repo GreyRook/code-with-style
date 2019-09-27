@@ -11,7 +11,7 @@
 * `Pipfile.lock`
   * is to be commited to git
 * `Pipfile`
-  * Versioing: should specify version range, for example: `pytest = ">=4.6.0,<5"`
+  * Versioning: should specify version range, for example: `pytest = ">=4.6.0,<5"`
     * Specify minimum version acording to features needed and security fixes
     * Avoid next major version
   * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
@@ -104,7 +104,7 @@ git checkout aiohttp
 
 # Security guidelines
 
-* logging of sensative user input (e.g. plaintext passwords) is never allowed
+* logging of sensitive user input (e.g. plaintext passwords) is never allowed
 * logging of sensitive data (keys, tokens, etc.) is only allowed if:
   * the data is not valid indefinitely
   * the TTL is max. 7 days
