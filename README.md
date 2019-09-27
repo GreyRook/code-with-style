@@ -8,10 +8,12 @@
 
 ## Project Setup
 
- * Make Type annotations, it's okay to use `Any` or `dict` (without being more specific)
- *  All libraries needed to run tests belong into `[dev-packages]`
- * `Pipfile.lock` is to be commited to git
- * `Pipfile` should specify version range, for example: `pytest = ">=4.6.0,<5"`
+* Make Type annotations, be as specific as possible but it's okay to use `Any` or `dict` (without being more specific)
+* All libraries needed to run tests belong into `[dev-packages]`, debug packages must not be installed in production
+* `Pipfile.lock`
+  * is to be commited to git
+* `Pipfile`
+  * Versioing: should specify version range, for example: `pytest = ">=4.6.0,<5"`
    * Specify minimum version acording to features needed and security fixes
    * Avoid next major version
  * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
