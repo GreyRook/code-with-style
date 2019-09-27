@@ -2,7 +2,7 @@
 
 
  * Prefer Python Version: 3.7
- * Prefer `pipenv + Pipefile` over `pip + requirements.txt`
+ * Prefer `pipenv + Pipfile` over `pip + requirements.txt`
  * [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 
 
@@ -10,8 +10,8 @@
 
  * Make Type annotations, it's okay to use `Any` or `dict` (without being more specific)
  *  All libraries needed to run tests belong into `[dev-packages]`
- * `Pipefile.lock` is to be commited to git
- * `Pilefile` should specify version range, for example: `pytest = ">=4.6.0,<5"`
+ * `Pipfile.lock` is to be commited to git
+ * `Pipfile` should specify version range, for example: `pytest = ">=4.6.0,<5"`
    * Specify minimum version acording to features needed and security fixes
    * Avoid next major version
  * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
