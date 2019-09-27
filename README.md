@@ -1,10 +1,8 @@
 # Python Coding Guide
 
-
- * Prefer Python Version: 3.7
- * Prefer `pipenv + Pipfile` over `pip + requirements.txt`
- * [PEP 8](https://www.python.org/dev/peps/pep-0008/).
-
+* Prefer Python Version: 3.7
+* Prefer `pipenv + Pipfile` over `pip + requirements.txt`
+* [PEP 8](https://www.python.org/dev/peps/pep-0008/).
 
 ## Project Setup
 
@@ -14,21 +12,19 @@
   * is to be commited to git
 * `Pipfile`
   * Versioing: should specify version range, for example: `pytest = ">=4.6.0,<5"`
-   * Specify minimum version acording to features needed and security fixes
-   * Avoid next major version
+    * Specify minimum version acording to features needed and security fixes
+    * Avoid next major version
   * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
- * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
-
+* use [bump2version](https://github.com/c4urself/bump2version) to manage releases
 
 ## linting
 
 | Linter        | Use Case        | Configuration | Reasoning |
-|---------------|-----------------|---------------|-----------|
+| ------------- | --------------- | ------------- | --------- |
 | black --check | pep8 compliance | default       |           |
 | pylint        |                 |               |           |
 | mypy          | Type checking   |               |           |
 |               |                 |               |           |
-
 
 ## formatting
 
@@ -41,6 +37,7 @@ black [folder]
 ```
 
 To ignore blocks of code for formatting mark them with
+
 ```python
 # fmt: off
 # your code
@@ -49,7 +46,6 @@ To ignore blocks of code for formatting mark them with
 
 NOTE: not necessary all linting errors are fixed by black, so check your linter before committing.
 
-
 isort to sort imports
 
 ```
@@ -57,7 +53,6 @@ pip install isort
 isort -c -rc [folder]  # to check for wrong import order
 isort -rc [folder]  # to fix wring import order
 ```
-
 
 ## testing
 
@@ -70,6 +65,7 @@ pytest-watch = "*"
 ```
 
 Addtions for aiohttp based projects:
+
 ```
 pytest-asyncio = "*"
 pytest-aiohttp = "*"
@@ -77,23 +73,21 @@ pytest-aiohttp = "*"
 
 ## type annotations
 
-
 Use
+
 ```python
 from __future__ import annotations
 ```
 
 Docs:
 
- * [Cheat sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
+* [Cheat sheet](https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html)
 
 ## Preferred libraries
 
-
-Library | Use Case
---------|--------------------
-Pillow  | Image manipulation
-
+| Library | Use Case           |
+| ------- | ------------------ |
+| Pillow  | Image manipulation |
 
 ## creating a new project
 
@@ -110,8 +104,8 @@ git checkout aiohttp
 
 # Security guidelines
 
- * logging of sensative user input (e.g. plaintext passwords) is never allowed
- * logging of sensitive data (keys, tokens, etc.) is only allowed if:
-   * the data is not valid indefinitely
-   * the TTL is max. 7 days
-   * it is only logged on debug level
+* logging of sensative user input (e.g. plaintext passwords) is never allowed
+* logging of sensitive data (keys, tokens, etc.) is only allowed if:
+  * the data is not valid indefinitely
+  * the TTL is max. 7 days
+  * it is only logged on debug level
