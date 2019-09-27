@@ -16,6 +16,7 @@
   * Versioing: should specify version range, for example: `pytest = ">=4.6.0,<5"`
    * Specify minimum version acording to features needed and security fixes
    * Avoid next major version
+  * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
  * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
 
 
