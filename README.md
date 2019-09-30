@@ -7,7 +7,7 @@
 ## Project Setup
 
 * Make Type annotations, be as specific as possible but it's okay to use `Any` or `dict` (without being more specific)
-* All libraries needed to run tests belong into `[dev-packages]`, debug packages must not be installed in production
+* All libraries needed for development and running tests belong into `[dev-packages]`, debug packages must not be installed in production
 * `Pipfile.lock`
   * is to be commited to git
 * `Pipfile`
