@@ -54,6 +54,42 @@ isort -c -rc [folder]  # to check for wrong import order
 isort -rc [folder]  # to fix wring import order
 ```
 
+
+<a id="imports"></a>
+
+## imports
+
+Based on [Google's python style guide](http://google.github.io/styleguide/pyguide.html#31912-imports-for-typing):
+
+Use `import` statements for packages and modules only, not for individual
+classes or functions. Note that there is an explicit exemption for imports from
+the [typing module](#typing-imports).
+
+
+<a id="typing-imports"></a>
+
+### Imports For Typing
+
+For classes from the `typing` module, always import the class itself. You are
+explicitly allowed to import multiple specific classes on one line from the
+`typing` module. Ex:
+
+```python
+from typing import Any, Dict, Optional
+```
+
+Given that this way of importing from `typing` adds items to the local
+namespace, any names in `typing` should be treated similarly to keywords, and
+not be defined in your Python code, typed or not. If there is a collision
+between a type and an existing name in a module, import it using
+`import x as y`.
+
+```python
+from typing import Any as AnyType
+```
+
+
+
 ## testing
 
 ```
