@@ -65,6 +65,22 @@ Use `import` statements for packages and modules only, not for individual
 classes or functions. Note that there is an explicit exemption for imports from
 the [typing module](#typing-imports).
 
+### import as
+
+Do not rename modules on import:
+
+Bad:
+
+```python
+import plotly as py
+```
+
+Good:
+
+```python
+import plotly
+```
+
 
 <a id="typing-imports"></a>
 
