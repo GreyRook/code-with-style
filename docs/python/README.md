@@ -122,8 +122,39 @@ letters within a word.
 
 Always use a `.py` filename extension. Never use dashes.
 
-<a id="s3.16.1-names-to-avoid"></a>
-<a id="3161-names-to-avoid"></a>
+### Names have context
+
+Expect your names to be used in context. Do not repeat module names in class names or
+class names in method names.
+
+Bad:
+
+```python
+# building.py
+
+def build_building():
+    pass
+
+
+class HouseBuilding:
+    def building_house_ring_bell(self):
+```
+
+Good:
+
+```python
+# building.py
+
+def build():
+    pass
+
+class House:
+    def ring_bell(self):
+```
+
+When inside the `building` module it would be clear that `build` refers to buildings.
+While from outside of the module expect the function to be called like `building.build()`.
+
 
 <a id="names-to-avoid"></a>
 
