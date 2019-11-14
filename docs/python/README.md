@@ -126,7 +126,8 @@ Always use a `.py` filename extension. Never use dashes.
 <a id="3161-names-to-avoid"></a>
 
 <a id="names-to-avoid"></a>
-#### 3.16.1 Names to Avoid
+
+### Names to Avoid
 
 -   single character names except for counters or iterators. You may use "e" as
     an exception identifier in try/except statements.
@@ -136,7 +137,7 @@ Always use a `.py` filename extension. Never use dashes.
 
 <a id="naming-conventions"></a>
 
-#### 3.16.2 Naming Conventions
+### Naming Conventions
 
 -   "Internal" means internal to a module, or protected or private within a
     class.
