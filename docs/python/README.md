@@ -104,7 +104,82 @@ between a type and an existing name in a module, import it using
 from typing import Any as AnyType
 ```
 
+## Naming
 
+The naming chapters are based on [Google's python style guide](http://google.github.io/styleguide/pyguide.html#s3.16-naming).
+
+General naming is based on [PEP 8](https://www.python.org/dev/peps/pep-0008/):
+
+`module_name`, `package_name`, `ClassName`, `method_name`, `ExceptionName`,
+`function_name`, `GLOBAL_CONSTANT_NAME`, `global_var_name`, `instance_var_name`,
+`function_parameter_name`, `local_var_name`.
+
+
+Function names, variable names, and filenames should be descriptive; eschew
+abbreviation. In particular, do not use abbreviations that are ambiguous or
+unfamiliar to readers outside your project, and do not abbreviate by deleting
+letters within a word.
+
+Always use a `.py` filename extension. Never use dashes.
+
+<a id="s3.16.1-names-to-avoid"></a>
+<a id="3161-names-to-avoid"></a>
+
+<a id="names-to-avoid"></a>
+#### 3.16.1 Names to Avoid
+
+-   single character names except for counters or iterators. You may use "e" as
+    an exception identifier in try/except statements.
+-   dashes (`-`) in any package/module name
+-   `__double_leading_and_trailing_underscore__` names (reserved by Python)
+
+
+<a id="naming-conventions"></a>
+
+#### 3.16.2 Naming Conventions
+
+-   "Internal" means internal to a module, or protected or private within a
+    class.
+
+-   Prepending a single underscore (`_`) has some support for protecting module
+    variables and functions (not included with `from module import *`). While
+    prepending a double underscore (`__` aka "dunder") to an instance variable
+    or method effectively makes the variable or method private to its class
+    (using name mangling) we discourage its use as it impacts readability and
+    testability and isn't *really* private.
+
+-   Place related classes and top-level functions together in a
+    module.
+    Unlike Java, there is no need to limit yourself to one class per module.
+
+-   Use CapWords for class names, but lower\_with\_under.py for module names.
+    Although there are some old modules named CapWords.py, this is now
+    discouraged because it's confusing when the module happens to be named after
+    a class. ("wait -- did I write `import StringIO` or `from StringIO import
+    StringIO`?")
+
+-   Underscores may appear in *unittest* method names starting with `test` to
+    separate logical components of the name, even if those components use
+    CapWords. One possible pattern is `test<MethodUnderTest>_<state>`; for
+    example `testPop_EmptyStack` is okay. There is no One Correct Way to name
+    test methods.
+
+
+<a id="file-naming"></a>
+
+### File Naming
+
+Python filenames must have a `.py` extension and must not contain dashes (`-`).
+This allows them to be imported and unittested. If you want an executable to be
+accessible without the extension use `entry_points.console_scripts` in `setup.py`.
+
+
+### Double underscore
+
+While Python supports making things private by using a leading double underscore
+`__` (aka. "dunder") prefix on a name, this is discouraged. Prefer the use of a
+single underscore. They are easier to type, read, and to access from small
+unittests. Lint warnings take care of invalid access to protected members.
 
 ## testing
 
