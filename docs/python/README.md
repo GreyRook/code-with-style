@@ -15,6 +15,7 @@
     * Specify minimum version acording to features needed and security fixes
     * Avoid next major version
   * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
+  * Must not include `[requires] python_version = "3.6"` since we want to test the code with multiple python versions.  [Pipenv does not support multiple versions of python](https://github.com/pypa/pipenv/issues/1050).
 * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
 
 ## linting
