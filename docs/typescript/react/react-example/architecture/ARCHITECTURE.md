@@ -16,6 +16,6 @@ With the help of TypeDoc, a browser-based documentation can be generated from it
 
 The component diagram was created with [draw.io](https://draw.io).
 Changes to the components require a manual update of the component diagram.
-To change it, the file [component diagram.drawio](component%20diagram.drawio) can be opened and adjusted in draw.io.
+To change it, the file [component diagram.drawio](component diagram.drawio) can be opened and adjusted in draw.io.
 After changing it, a new png image needs to be generated.
 The state of the app that the current diagram represents can be read via the last commit date of the file.

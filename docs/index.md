@@ -8,4 +8,6 @@
 
  * [Python](python/README.md)
  * [TypeScript](typescript/README.md)
+ * [React](typescript/react/README.md)
+ * [Angular](typescript/angular/README.md)
  * HTML / CSS
