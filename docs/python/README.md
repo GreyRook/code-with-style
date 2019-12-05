@@ -120,7 +120,6 @@ abbreviation. In particular, do not use abbreviations that are ambiguous or
 unfamiliar to readers outside your project, and do not abbreviate by deleting
 letters within a word.
 
-Always use a `.py` filename extension. Never use dashes.
 
 ### Names have context
 
@@ -170,48 +169,45 @@ While from outside of the module expect the function to be called like `building
 
 ### Naming Conventions
 
--   "Internal" means internal to a module, or protected or private within a
-    class.
-
--   Prepending a single underscore (`_`) has some support for protecting module
-    variables and functions (not included with `from module import *`). While
-    prepending a double underscore (`__` aka "dunder") to an instance variable
-    or method effectively makes the variable or method private to its class
-    (using name mangling) we discourage its use as it impacts readability and
-    testability and isn't *really* private.
-
--   Place related classes and top-level functions together in a
-    module.
+-   Place related classes and top-level functions together in a module.
     Unlike Java, there is no need to limit yourself to one class per module.
 
--   Use CapWords for class names, but lower\_with\_under.py for module names.
-    Although there are some old modules named CapWords.py, this is now
-    discouraged because it's confusing when the module happens to be named after
-    a class. ("wait -- did I write `import StringIO` or `from StringIO import
-    StringIO`?")
+### Naming Unit tests
 
--   Underscores may appear in *unittest* method names starting with `test` to
-    separate logical components of the name, even if those components use
-    CapWords. One possible pattern is `test<MethodUnderTest>_<state>`; for
-    example `testPop_EmptyStack` is okay. There is no One Correct Way to name
-    test methods.
+-   Name unit test files like the module they test, `test_<module>.py`
+
+-   In *unittest* method names may not conform with usual naming guidelines
+    since they should contain the name of what they test, even if those components use
+    CapWords.  The following schema is preferred: `test_<what_you_test>`. Where `<what_you_test>` might be a function, class or method name, for example: `test_HTTPConnection_set_tunnel`.
 
 
 <a id="file-naming"></a>
 
 ### File Naming
 
-Python filenames must have a `.py` extension and must not contain dashes (`-`).
+Python filenames must comply with the following regex: `[a-z][a-z0-9_]*\.py`.
 This allows them to be imported and unittested. If you want an executable to be
 accessible without the extension use `entry_points.console_scripts` in `setup.py`.
 
 
 ### Double underscore
 
-While Python supports making things private by using a leading double underscore
-`__` (aka. "dunder") prefix on a name, this is discouraged. Prefer the use of a
-single underscore. They are easier to type, read, and to access from small
-unittests. Lint warnings take care of invalid access to protected members.
+"Internal" means internal to a module, or protected or private within a class.
+
+Prepending a single underscore (`_`) has some support for protecting module
+variables and functions (not included with `from module import *`). While
+prepending a double underscore (`__` aka "dunder") to an instance variable
+or method effectively makes the variable or method private to its class
+(using name mangling) we discourage its use as it impacts readability and
+testability and isn't *really* private. Prefer the use of a single underscore.
+They are easier to type, read, and to access from small unittests.
+
+<!---
+TODO
+Add: Lint warnings take care of invalid access to protected members.
+TODO Currently this is not the case as we had to many false positives with it.
+
+-->
 
 ## testing
 
