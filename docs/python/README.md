@@ -66,6 +66,14 @@ Use `import` statements for packages and modules only, not for individual
 classes or functions. Note that there is an explicit exemption for imports from
 the [typing module](#typing-imports).
 
+Bad:
+
+```python
+from datetime import datetime
+```
+
+To the reader of the code it is unclear if `datetime` is the module `datetime` or the class `datetime.datetime`.
+
 ### import as
 
 Do not rename modules on import:
