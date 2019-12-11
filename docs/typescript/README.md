@@ -36,7 +36,7 @@ Angular Guide: [angular/README.md](angular/README.md)
 ##### Reasons
     - Our personal standard for coding style
 ##### Best Practices
-Config: [gr-admin/.prettierrc](https://git.r0k.de/s.blaettgen/gr-admin/blob/master/.prettierrc)
+Config: [.prettierrc](.prettierrc)
 
 ### Jasmine (unit testing)
 ##### Reasons
