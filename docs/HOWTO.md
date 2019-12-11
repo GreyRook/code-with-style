@@ -7,7 +7,7 @@ There are two ways to get changes into the developer guide:
 2. *Gitlab Issue* -> Merge Request -> Dev Guide + ChangeLog
 
 Independent of how the change was initiated, applying the actual change is always done using a merge request that includes an addendum in the change log.
-Merge requests need to be approved by at least 50% of the affected team members, changes relating to workflows and project management generally need to be approved by at least half of the whole team.
+Merge requests need to be approved by more than 50% of the affected team members changes relating to workflows and project management need to be approved by at least more than half of the whole team.
 
 
 Working Contracts
