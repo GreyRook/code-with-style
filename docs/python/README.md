@@ -185,7 +185,7 @@ While from outside of the module expect the function to be called like `building
 
 ### File Naming
 
-Python filenames must comply with the following regex: `[a-z][a-z0-9_]*\.py`.
+Python filenames must comply with the following regex: `[a-z][a-z0-9_]+\.py`.
 This allows them to be imported and unittested. If you want an executable to be
 accessible without the extension use `entry_points.console_scripts` in `setup.py`.
 
