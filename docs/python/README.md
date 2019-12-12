@@ -168,10 +168,27 @@ While from outside of the module expect the function to be called like `building
 
 ### Names to Avoid
 
--   single character names except for counters or iterators. You may use "e" as
-    an exception identifier in try/except statements.
--   dashes (`-`) in any package/module name
--   `__double_leading_and_trailing_underscore__` names (reserved by Python)
+Avoid single character names and abbrivations with the following exceptions:
+
+- `i,j` - iterators (must be integers)
+- `x,y,z` - coordinates
+- `e` - exceptions in `except Foo as e`
+- `f` - file
+- `t` - time
+- `td` - time delta / duration
+- `db` - database
+- `fn` - function
+- `fs` - filesystem
+- `cfg` - configuration
+- `cli` - command line interface
+
+Protocol names are generally okay to use:
+- `ws` - websocket
+- `ftp` - websocket
+
+Important: Those names MUST NOT be used for other meanings.
+
+Also avoid  `__double_leading_and_trailing_underscore__` names (reserved by Python)
 
 
 <a id="naming-conventions"></a>
