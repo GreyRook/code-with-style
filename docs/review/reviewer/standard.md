@@ -3,7 +3,7 @@
 
 
 The primary purpose of code review is to make sure that the overall
-code health of Google's code
+code health of Grey Rooks's code
 base is improving over time. All of the tools and processes of code review are
 designed to this end.
 
@@ -71,7 +71,7 @@ indicate that it's not mandatory for the author to resolve it in this CL.
 
 *   Technical facts and data overrule opinions and personal preferences.
 
-*   On matters of style, the [style guide](http://google.github.io/styleguide/)
+*   On matters of style, the [style guide](https://git.r0k.de/gr/code-with-style)
     is the absolute authority. Any purely style point (whitespace, etc.) that is
     not in the style guide is a matter of personal preference. The style should
     be consistent with what is there. If there is no previous style, accept the
@@ -88,6 +88,11 @@ indicate that it's not mandatory for the author to resolve it in this CL.
 *   If no other rule applies, then the reviewer may ask the author to be
     consistent with what is in the current codebase, as long as that doesn't
     worsen the overall code health of the system.
+
+*Adjustment Grey Rook:*
+*A decision must still be made as to whether the style guide contains architectual*
+*decisions or the Jira ticket (taking into account the short livetime of a ticket).*
+*Furthermore, it is important to note that this decision does not relate to the stack.*
 
 ## Resolving Conflicts {#conflicts}
 

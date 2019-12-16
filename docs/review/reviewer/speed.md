@@ -4,7 +4,7 @@
 
 ## Why Should Code Reviews Be Fast? {#why}
 
-**At Google, we optimize for the speed at which a team of developers can produce
+**At Grey Rook, we optimize for the speed at which a team of developers can produce
 a product together**, as opposed to optimizing for the speed at which an
 individual developer can write code. The speed of individual development is
 important, it's just not _as_ important as the velocity of the entire team.
@@ -38,6 +38,12 @@ review request (i.e. first thing the next morning).
 
 Following these guidelines means that a typical CL should get multiple rounds of
 review (if needed) within a single day.
+
+*Adjustment Grey Rook:*
+*Given that the above stated is the goal, it is sometimes difficult to implement*
+*due to meetings, changing working hours etc.*
+*In some cases, it is required to inform the developer that the code review is*
+*delaying the process.*
 
 ## Speed vs. Interruption {#interruption}
 
@@ -77,6 +83,9 @@ response at a reasonable break point in your work.)
 certain their "LGTM" means "this code meets [our standards](standard.md)."**
 However, individual responses should still ideally be [fast](#fast).
 
+*Adjustment Grey Rook:*
+*It is common practice to assign a reviewer.*
+
 ## Cross-Time-Zone Reviews {#tz}
 
 When dealing with time zone differences, try to get back to the author when they
@@ -100,6 +109,13 @@ otherwise clear.
 LGTM With Comments is especially worth considering when the developer and
 reviewer are in different time zones and otherwise the developer would be
 waiting for a whole day just to get "LGTM, Approval."
+
+*Adjustment Grey Rook:*
+*Different time zones are not the case at Grey Rook, but starting the review*
+*process the next working day is common.*
+*Thus LGTM with comments shall only be used for trivial small changes.*
+*Using Nit is ok.*
+*It is the reviewer who does the final verification and merges the code.*
 
 ## Large CLs {#large}
 
@@ -140,3 +156,6 @@ a description of which situations actually qualify as emergencies and which
 don't.
 
 Next: [How to Write Code Review Comments](comments.md)
+
+*Adjustment Grey Rook:*
+*It needs to be clearfied what emergencies are in a spint. *

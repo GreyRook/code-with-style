@@ -15,3 +15,6 @@ helpful to read the whole set.
 
 See also [How to Do a Code Review](../reviewer/), which gives detailed guidance
 for code reviewers.
+
+*Adjustment Grey Rook:*
+*It is not mandatory to use abbreviations such as LGTM etc.*

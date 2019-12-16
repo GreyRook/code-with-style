@@ -55,6 +55,9 @@ helpful. The primary goal of code review is to get the best CL possible. A
 secondary goal is improving the skills of developers so that they require less
 and less review over time.
 
+*Adjustment Grey Rook:*
+*We use gitlabs suggestion function to adapt the commit message.*
+
 ## Accepting Explanations {#explanations}
 
 If you ask a developer to explain a piece of code that you don't understand,

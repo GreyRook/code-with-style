@@ -62,6 +62,9 @@ for the cleanup and assign it to themselves so that it doesn't get lost. They
 can optionally also write a TODO comment in the code that references the filed
 bug.
 
+*Adjustment Grey Rook:*
+*It is not common practice to write a TODO comment in the code.*
+
 ## General Complaints About Strictness {#strictness}
 
 If you previously had fairly lax code reviews and you switch to having strict

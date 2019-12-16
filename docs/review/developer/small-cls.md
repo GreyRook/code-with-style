@@ -39,6 +39,16 @@ changes. It can be a lot of work to split up a change after you've already
 written it, or require lots of time arguing about why the reviewer should accept
 your large change. It's easier to just write small CLs in the first place.
 
+*Adjustment Grey Rook:*
+*The terminology "small" is misleading since there is no rule what "small" is*
+*and it should not be the actual number of lines.*
+*For us small means the minimal change that solves a single problem.*
+*The whole feature shall be visible for the reviewer when it is deployed on master.*
+*If the developer starts to work on the second small CL while the first one is*
+*in the review process, he uses gitlabs "depends on" function rather than indicating*
+*the second small CL as WIP.*
+*The ticket stays in the "in progress" column in Jira until the last small CL was merged.*
+
 ## What is Small? {#what_is_small}
 
 In general, the right size for a CL is **one self-contained change**. This means
@@ -83,6 +93,9 @@ There are a few situations in which large changes aren't as bad:
     although some of the caveats from above (such as merging and testing) still
     apply.
 
+*Adjustment Grey Rook:*
+*The topic "automated refactoring" needs to be addressed separately.*
+
 ### Splitting by Files {#splitting-files}
 
 Another way to split up a CL is by groupings of files that will require
@@ -99,6 +112,10 @@ configuration or experiment that uses that code; this is easier to roll back
 too, if necessary, as configuration/experiment files are sometimes pushed to
 production faster than code changes.
 
+*Adjustment Grey Rook:*
+*This is not a case at Grey Rook. However, we agree that merge requetst shall*
+*be self-contained. This is possible for using components in Angular.*
+
 ## Separate Out Refactorings {#refactoring}
 
 It's usually best to do refactorings in a separate CL from feature changes or
@@ -110,6 +127,9 @@ Small cleanups such as fixing a local variable name can be included inside of a
 feature change or bug fix CL, though. It's up to the judgment of developers and
 reviewers to decide when a refactoring is so large that it will make the review
 more difficult if included in your current CL.
+
+*Adjustment Grey Rook:*
+*Indentations are refactorings.*
 
 ## Keep related test code in the same CL {#test_code}
 
@@ -132,6 +152,10 @@ you might break the build for all your fellow developers for a few minutes
 between your CL submissions (or even longer if something goes wrong unexpectedly
 with your later CL submissions).
 
+*Adjustment Grey Rook:*
+*This is difficult to implement for microservices, the GR architecture needs to be*
+*modified for this. Compabilities cannot be change that easily.*
+
 ## Can't Make it Small Enough {#cant}
 
 Sometimes you will encounter situations where it seems like your CL *has* to be
@@ -151,3 +175,6 @@ for a long time, be vigilant about not introducing bugs, and be extra diligent
 about writing tests.
 
 Next: [How to Handle Reviewer Comments](handling-comments.md)
+
+*Adjustment Grey Rook:*
+*The developer should inform the team as soon as possibel about a large CL.*

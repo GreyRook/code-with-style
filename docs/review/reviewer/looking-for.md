@@ -79,11 +79,19 @@ different test methods?
 Remember that tests are also code that has to be maintained. Don't accept
 complexity in tests just because they aren't part of the main binary.
 
+*Adjustment Grey Rook:*
+*Tests are not always possible (legacy code).*
+*It is stated in our [working contracts](https://git.r0k.de/gr/code-with-style/guide/issues?label_name%5B%5D=WoCo+active)*
+*that we aim to write tests. If that is not possible we write an excuse to inform the reviewer about the missing test.*
+
 ## Naming
 
 Did the developer pick good names for everything? A good name is long enough to
 fully communicate what the item is or does, without being so long that it
 becomes hard to read.
+
+*Adjustment Grey Rook:*
+*The naming conventions can be found in the style guide*
 
 ## Comments
 
@@ -104,9 +112,14 @@ Note that comments are different from *documentation* of classes, modules, or
 functions, which should instead express the purpose of a piece of code, how it
 should be used, and how it behaves when used.
 
+*Adjustment Grey Rook:*
+*Particular emphasis is placed on the fact that comments are different from documentation.*
+*There can be a comment in the code to inform the reviewer that something was already tried and discarded.*
+*ToDo comments can be deleted, spelling mistakes can be changed via suggestions.*
+
 ## Style
 
-We have [style guides](http://google.github.io/styleguide/) at Google for all
+We have [style guides](https://git.r0k.de/gr/code-with-style) at Grey Rook for all
 of our major languages, and even for most of the minor languages. Make sure the
 CL follows the appropriate style guides.
 
@@ -132,6 +145,9 @@ documentation should also be deleted.
 If documentation is
 missing, ask for it.
 
+*Adjustment Grey Rook:*
+*There is an ongoing process of finding the right place to store documentations at Grey Rook.*
+
 ## Every Line {#every_line}
 
 Look at *every* line of code that you have been assigned to review. Some things
@@ -144,7 +160,7 @@ code is doing.
 
 If it's too hard for you to read the code and this is slowing down the review,
 then you should let the developer know that
-and wait for them to clarify it before you try to review it. At Google, we hire
+and wait for them to clarify it before you try to review it. At Grey Rook, we hire
 great software engineers, and you are one of them. If you can't understand the
 code, it's very likely that other developers won't either. So you're also
 helping future developers understand this code, when you ask the developer to

@@ -13,6 +13,10 @@ relevance but without the specifics handy. If all the important information is
 in the code and not the description, it's going to be a lot harder for them to
 locate your CL.
 
+*Adjustment Grey Rook:*
+*The description contains the title and the text as well as links to other*
+*merge requests (especially when using small CLs)*
+
 ## First Line {#firstline}
 
 *   Short summary of what is being done.
@@ -33,6 +37,10 @@ of \"**Deleting** the FizzBuzz RPC and **replacing** it with the new system."
 You don't have to write the rest of the description as an imperative sentence,
 though.
 
+*Adjustment Grey Rook:*
+*The first line ist the title in gitlab that contains the ticket number*
+*and a short summary.*
+
 ## Body is Informative {#informative}
 
 The rest of the description should be informative. It might include a brief
@@ -47,6 +55,9 @@ possible include enough context for reviewers and future readers to understand
 the CL.
 
 Even small CLs deserve a little attention to detail. Put the CL in context.
+
+*Adjustment Grey Rook:*
+*An understanding how a commit message should look like is pending.*
 
 ## Bad CL Descriptions {#bad}
 
@@ -117,6 +128,9 @@ Example:
 The first sentence describes what's actually being done. The rest of the
 description explains *why* the change is being made and gives the reviewer a lot
 of context.
+
+*Adjustment Grey Rook:*
+*The examples need to be adjusted*
 
 ## Review the description before submitting the CL
 

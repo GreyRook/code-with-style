@@ -5,10 +5,11 @@
 A code review is a process where someone other than the author(s) of a piece of
 code examines that code.
 
-At Google we use code review to maintain the quality of our code and products.
+Google uses code review to maintain the quality of the code and products.
 
 This documentation is the canonical description of Google's code review
-processes and policies.
+processes and policies adapted by Grey Rook to fit our needs. 
+The original documentation can be found here: [Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/index.md)
 
 
 
@@ -34,7 +35,7 @@ Code reviews should look at:
 -   **Naming**: Did the developer choose clear names for variables, classes,
     methods, etc.?
 -   **Comments**: Are the comments clear and useful?
--   **Style**: Does the code follow our
+-   **Style**: Does the code follow the
     [style guides](http://google.github.io/styleguide/)?
 -   **Documentation**: Did the developer also update relevant documentation?
 
@@ -54,13 +55,24 @@ CL.
 If you find an ideal reviewer but they are not available, you should at least CC
 them on your change.
 
+*Adjustment Grey Rook:*
+*This is optional due to our company size, time contraints and fixed deadlines.* 
+*Despite these limitations, we aim to pick the best reviewer.*
+
 ### In-Person Reviews {#in_person}
 
 If you pair-programmed a piece of code with somebody who was qualified to do a
 good code review on it, then that code is considered reviewed.
 
+*Adjustment Grey Rook:*
+*There is not yet a guidline how to do pair-programming at Grey Rook.* 
+*This needs to be implemented before in-person reviews can take place* 
+
 You can also do in-person code reviews where the reviewer asks questions and the
 developer of the change speaks only when spoken to.
+
+*Adjustment Grey Rook:*
+*The developer presents the reviewer his piece of code.* 
 
 ## See Also {#seealso}
 
