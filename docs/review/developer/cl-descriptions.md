@@ -57,7 +57,7 @@ the CL.
 Even small CLs deserve a little attention to detail. Put the CL in context.
 
 *Adjustment Grey Rook:*
-*An understanding how a commit message should look like is pending.*
+*ToDo: An understanding how a commit message should look like is pending.*
 
 ## Bad CL Descriptions {#bad}
 
@@ -130,7 +130,7 @@ description explains *why* the change is being made and gives the reviewer a lot
 of context.
 
 *Adjustment Grey Rook:*
-*The examples need to be adjusted*
+*ToDo: The examples need to be adjusted*
 
 ## Review the description before submitting the CL
 

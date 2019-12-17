@@ -82,7 +82,8 @@ complexity in tests just because they aren't part of the main binary.
 *Adjustment Grey Rook:*
 *Tests are not always possible (legacy code).*
 *It is stated in our [working contracts](https://git.r0k.de/gr/code-with-style/guide/issues?label_name%5B%5D=WoCo+active)*
-*that we aim to write tests. If that is not possible we write an excuse to inform the reviewer about the missing test.*
+*that we aim to write tests. If that is not possible we write an excuse to*
+*inform the reviewer about the missing test.*
 
 ## Naming
 
@@ -91,7 +92,7 @@ fully communicate what the item is or does, without being so long that it
 becomes hard to read.
 
 *Adjustment Grey Rook:*
-*The naming conventions can be found in the style guide*
+*ToDo: The naming conventions can be found in the style guide*
 
 ## Comments
 
@@ -113,9 +114,12 @@ functions, which should instead express the purpose of a piece of code, how it
 should be used, and how it behaves when used.
 
 *Adjustment Grey Rook:*
-*Particular emphasis is placed on the fact that comments are different from documentation.*
-*There can be a comment in the code to inform the reviewer that something was already tried and discarded.*
-*ToDo comments can be deleted, spelling mistakes can be changed via suggestions.*
+*Particular emphasis is placed on the fact that comments are different from*
+*documentation. There can be a comment in the code to inform the reviewer that*
+*something was already tried and discarded.*
+*The developer needs to delete his ToDo comments after he fixed them. They*
+*shall not enter the actual merge request.* 
+*Spelling mistakes can be changed via suggestions.*
 
 ## Style
 
@@ -146,7 +150,8 @@ If documentation is
 missing, ask for it.
 
 *Adjustment Grey Rook:*
-*There is an ongoing process of finding the right place to store documentations at Grey Rook.*
+*ToDo: There is an ongoing process of finding the right place to store*
+*documentations at Grey Rook.*
 
 ## Every Line {#every_line}
 

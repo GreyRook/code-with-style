@@ -90,9 +90,11 @@ indicate that it's not mandatory for the author to resolve it in this CL.
     worsen the overall code health of the system.
 
 *Adjustment Grey Rook:*
-*A decision must still be made as to whether the style guide contains architectual*
-*decisions or the Jira ticket (taking into account the short livetime of a ticket).*
-*Furthermore, it is important to note that this decision does not relate to the stack.*
+*ToDo: A decision must still be made as to whether the style guide contains*
+*architectual decisions or the Jira ticket (taking into account the short*
+*lifetime of a ticket).*
+*Furthermore, it is important that this decision does not*
+*conflict with the stack.*
 
 ## Resolving Conflicts {#conflicts}
 

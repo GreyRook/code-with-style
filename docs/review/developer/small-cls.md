@@ -94,7 +94,7 @@ There are a few situations in which large changes aren't as bad:
     apply.
 
 *Adjustment Grey Rook:*
-*The topic "automated refactoring" needs to be addressed separately.*
+*ToDo: The topic "automated refactoring" needs to be addressed separately.*
 
 ### Splitting by Files {#splitting-files}
 
@@ -153,8 +153,16 @@ between your CL submissions (or even longer if something goes wrong unexpectedly
 with your later CL submissions).
 
 *Adjustment Grey Rook:*
-*This is difficult to implement for microservices, the GR architecture needs to be*
-*modified for this. Compabilities cannot be change that easily.*
+*TBD: This is difficult to implement for microservices, the GR architecture needs*
+*to be modified for this. Compabilities cannot be change that easily.*
+*We prefer non breaking small CLs which build on each other although they are*
+*in different respositories e.g.*
+*When we have to adjust service A and B and B is lower in the tech stack*
+*the procedure is the following:*
+* *1. change the service in B so that it is not breaking A* 
+* *2. have the newest festures in B*
+* *3. adjust A after the MR is on Master*
+
 
 ## Can't Make it Small Enough {#cant}
 

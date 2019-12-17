@@ -38,8 +38,8 @@ are written. It's better to tell people "no" before they've done a ton of work
 that now has to be thrown away or drastically re-written.
 
 *Adjustment Grey Rook:*
-*We aim to inform the developer as soon as possible if changes do not contribute to the*
-*sanity of the code.*
+*We aim to inform the developer as soon as possible if changes do not contribute*
+*to the desired direction of the project.*
 
 ## Step Two: Examine the main parts of the CL {#step_two}
 

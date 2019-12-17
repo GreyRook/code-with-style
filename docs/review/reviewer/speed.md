@@ -42,8 +42,10 @@ review (if needed) within a single day.
 *Adjustment Grey Rook:*
 *Given that the above stated is the goal, it is sometimes difficult to implement*
 *due to meetings, changing working hours etc.*
-*In some cases, it is required to inform the developer that the code review is*
-*delaying the process.*
+*In some cases, it is required to inform the reviewer of the priority of the*
+*feature so that the code review is not delaying the process.*
+*If this feature has a higher priority, also the developer is required*
+*to adjust the code as soon as possible.*
 
 ## Speed vs. Interruption {#interruption}
 
@@ -84,7 +86,8 @@ certain their "LGTM" means "this code meets [our standards](standard.md)."**
 However, individual responses should still ideally be [fast](#fast).
 
 *Adjustment Grey Rook:*
-*It is common practice to assign a reviewer.*
+*It is common practice to assign a reviewer at Grey Rook even though that*
+*it is not the default.*
 
 ## Cross-Time-Zone Reviews {#tz}
 
@@ -112,10 +115,11 @@ waiting for a whole day just to get "LGTM, Approval."
 
 *Adjustment Grey Rook:*
 *Different time zones are not the case at Grey Rook, but starting the review*
-*process the next working day is common.*
-*Thus LGTM with comments shall only be used for trivial small changes.*
-*Using Nit is ok.*
-*It is the reviewer who does the final verification and merges the code.*
+*process on the next working day is common and should be avoided.*
+*We aim to approve a merge request within 24 hours.*
+* *LGTM with comments shall only be used for trivial small changes.*
+* *Using Nit is ok.*
+* *It is the reviewer who does the final verification and merges the code.*
 
 ## Large CLs {#large}
 
@@ -158,4 +162,4 @@ don't.
 Next: [How to Write Code Review Comments](comments.md)
 
 *Adjustment Grey Rook:*
-*It needs to be clearfied what emergencies are in a spint. *
+*ToDo: It needs to be clearfied what emergencies are in a sprint.*

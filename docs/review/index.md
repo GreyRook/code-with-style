@@ -9,7 +9,8 @@ Google uses code review to maintain the quality of the code and products.
 
 This documentation is the canonical description of Google's code review
 processes and policies adapted by Grey Rook to fit our needs. 
-The original documentation can be found here: [Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/index.md)
+The original documentation can be found here: 
+[Code Review Developer Guide](https://github.com/google/eng-practices/blob/master/review/index.md)
 
 
 
@@ -58,6 +59,7 @@ them on your change.
 *Adjustment Grey Rook:*
 *This is optional due to our company size, time contraints and fixed deadlines.* 
 *Despite these limitations, we aim to pick the best reviewer.*
+*TBD: process of code owners and picking the best reviewer.*
 
 ### In-Person Reviews {#in_person}
 
@@ -65,7 +67,7 @@ If you pair-programmed a piece of code with somebody who was qualified to do a
 good code review on it, then that code is considered reviewed.
 
 *Adjustment Grey Rook:*
-*There is not yet a guidline how to do pair-programming at Grey Rook.* 
+*ToDo: There is not yet a guidline how to do pair-programming at Grey Rook.* 
 *This needs to be implemented before in-person reviews can take place* 
 
 You can also do in-person code reviews where the reviewer asks questions and the

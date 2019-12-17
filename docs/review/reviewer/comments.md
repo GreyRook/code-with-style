@@ -56,7 +56,8 @@ secondary goal is improving the skills of developers so that they require less
 and less review over time.
 
 *Adjustment Grey Rook:*
-*We use gitlabs suggestion function to adapt the commit message.*
+*We use gitlabs suggestion function only when we adapt the commit messages*
+*after we add them by gitlab.*
 
 ## Accepting Explanations {#explanations}
 
