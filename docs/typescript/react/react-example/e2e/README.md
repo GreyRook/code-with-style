@@ -1,7 +1,7 @@
-## How to ingeration-tests
+## How to E2E-tests
 
-For integration-testing Nightwatch is used. A special docker-image is run for testing the
-test suite against the code in the branch you commit your code to. The folder `integration-tests` contains all files relevant for the integration-test.
+For E2E-testing Nightwatch is used. A special docker-image is run for testing the
+test suite against the code in the branch you commit your code to. The folder `e2e` contains all files relevant for the E2E-test.
 (ref. cde-dev-greywatch repository for reference to the docker image)
 
 A test consists of fields containing a function with the browser API as a parameter (ref. e.g. `tests/app.ts`).

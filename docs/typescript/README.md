@@ -28,7 +28,7 @@ Angular Guide: [angular/README.md](angular/README.md)
 ##### Best Practices
     - Use rem a lot (or at least Saschas rem-mixin)
 
-### TSLint
+### TSLint (linter)
 ##### Reasons
     - default with Angular CLI
 

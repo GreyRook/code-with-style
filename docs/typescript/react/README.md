@@ -1,6 +1,4 @@
-# TypeScript / JavaScript
-
-## Coding Stack Description
+# React Style Guide
 
 ### Create React App
 ##### Reasons
@@ -13,48 +11,17 @@
     - scope independence
     - custom hook library possible
 
-### Yarn
+### ESLint (linter)
 ##### Reasons
-    - Our standard Package Manager
-
-### TypeScript
-##### Reasons
-    - we want types
-    - future proof
-    - large and growing community
-    - high typedef availability for packages
-
-### SCSS
-##### Reasons
-    - Our standard CSS Extension Language
-##### Best Practices
-    - Mirror jsx/html hierarchy in SCSS
-    - Use rem a lot (or at least Saschas rem-mixin)
-
-### ESLint
-##### Reasons
-    - comes with CRA
+    - default with CRA
     - TSLint will be deprecated in 2019
 
-### Prettier
+### Jest (unit testing)
 ##### Reasons
-    - Our personal standard for coding style
-##### Best Practices
-    - See config in example/prettierrc.js
+    - default with CRA
 
-### Jest
-##### Reasons
-    - Unit Test
-
-### NightwatchJS
-##### Reasons
-    - Integration Test (s. `example/integration-tests/README.md`)
-
-### Sentry
-##### Reasons
-    - Automatic error tracking
-Frontend documentation: [docs.sentry.io/platforms/javascript/react/](https://docs.sentry.io/platforms/javascript/react/)
-Self-hosting documentation: [docs.sentry.io/server/](https://docs.sentry.io/server/)
+### NightwatchJS (E2E testing)
+Example: [react-example/e2e/](react-example/e2e/README.md)
 
 ### Packages
     - classNames // easy conditional CSS Classes
@@ -64,7 +31,7 @@ Self-hosting documentation: [docs.sentry.io/server/](https://docs.sentry.io/serv
     - AnimeJS // Animation Library
       https://www.npmjs.com/package/animejs
 
-## How to Doc
+## TypeDoc (documentation)
 
 [TypeDoc](https://typedoc.org) is used for the generation of inline documentation. Possible annotation can be looked up [here](https://typedoc.org/guides/doccomments/)
 
