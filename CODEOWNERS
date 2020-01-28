@@ -1,0 +1,6 @@
+
+# special interest groups
+/docs/python/ @sig/python
+/docs/typescript/ @sig/frontend-web
+/docs/c/ @sig/c
+/docs/rest-api/ @sig/api-web
