@@ -5,5 +5,5 @@ verify_ssl = true
 
 [dev-packages]
 sphinx = "*"
-sphinx-markdown-parser = {git = "https://github.com/codejamninja/sphinx-markdown-parser.git@af951189"}
+sphinx-markdown-parser = {git = "https://github.com/codejamninja/sphinx-markdown-parser.git@4f9a6c9c"}
 

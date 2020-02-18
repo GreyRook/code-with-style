@@ -1,0 +1,35 @@
+stages:
+  - test-project
+  - test
+  - build
+  - dist
+
+docs:
+  stage: build
+  image: greyrook/cde-texlive:32ea33a8b61ae09318f80e6648b131fcb0c82a6c
+  script:
+    - pipenv --python 3
+    - pipenv install --dev
+    - cd docs/
+    - pipenv run make html
+    - pipenv run make latexpdf
+  artifacts:
+    name: docs
+    # only available in newer gitlab versions
+    # expose_as: docs
+    paths:
+      - docs/_build/html
+      - docs/_build/latex/*.pdf
+
+pages:
+  stage: dist
+  image: greyrook/cde-texlive:32ea33a8b61ae09318f80e6648b131fcb0c82a6c
+  script:
+    - mkdir public
+    - mv docs/_build/html/* public/
+    - mv docs/_build/latex/*.pdf public/
+  artifacts:
+    paths:
+    - public
+    # only:
+  #   - master
