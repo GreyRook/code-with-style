@@ -83,11 +83,11 @@ When your code is unreadable you failed writing it in [a clean way](http://princ
 
 ### Architecture
 
-The architecture documentation can be found in the [architecture folder](/example/architecture) of the example project.
-A description of the files is written in the [ARCHITECTURE.md](/example/architecture/ARCHITECTURE.md).
+The architecture documentation can be found in the [architecture folder](/react-example/architecture) of the example project.
+A description of the files is written in the [ARCHITECTURE.md](/react-example/architecture/ARCHITECTURE.md).
 
 Every component, property and function is required to have a doc comment describing its functionality. Keep in mind you describe the component's interface and DO NOT describe what exactly the component is doing inside.
-A TypeDoc component example can be found [here](example/src/TypeDocExample.tsx)
+A TypeDoc component example can be found [here](/react-example/src/TypeDocExample.tsx)
 
 ## Helpful CI tools
 
