@@ -231,7 +231,7 @@ They are easier to type, read, and to access from small unittests.
 <!---
 TODO
 Add: Lint warnings take care of invalid access to protected members.
-TODO Currently this is not the case as we had to many false positives with it.
+TODO Currently this is not the case as we had too many false positives with it.
 
 -->
 
