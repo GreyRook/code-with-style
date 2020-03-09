@@ -13,7 +13,9 @@ Merge requests need to be approved by more than 50% of the affected team members
 Working Contracts
 -----------------
 
-Working contracts are general working agreements that are regularly revisited and should be used to test best practices in the field before converting them to a fixed rule in the developer guide. They never concern code styling and usually affect all developers and project managers.
+Working contracts are general working agreements that are regularly revisited and should be used to develop best practices in the field before converting them to a fixed rule in the developer guide. They never concern code styling and usually affect all developers and project managers.
+See: [Code review discipline and working contracts](https://www.youtube.com/watch?v=iGBWyhiqBsk&feature=youtu.be&t=64)
+
 Contracts can generally be divided into two non-exclusive groups:
 
 - Internal developer rules
