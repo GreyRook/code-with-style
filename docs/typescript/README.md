@@ -104,5 +104,5 @@ the CI can check, against the fulfillment of code style guidelines.
 ## User Interaction
 
 ### Best practise for mouse/tap events
-Use hammer.js or another framework that implements the needed functionality.  
+To unify usage of mouse and touch interfaces and to prevent unforeseen problems when self-implementing use hammer.js or another framework that implements the needed functionality.  
 If you don't, at least be careful **not to** differentiate between a user interaction and a click/tap by checking if 'onDown' position is **the same** as the 'onUp' position. **Use a threshold!** On mobile it is nearly impossible to let go in the same position where you touched the screen.
