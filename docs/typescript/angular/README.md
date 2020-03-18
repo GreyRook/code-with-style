@@ -63,7 +63,7 @@ Shared styles, like scss variables and mixins, are placed in the `styles` folder
 ###### Modules folder
 
 The `modules` folder contains all other application modules.
-Every page or larger functionality of the application should have it's own module. 
+Every page or larger functionality of the application should have its own module. 
 
 
 ### Best practices
