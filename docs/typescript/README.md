@@ -67,6 +67,15 @@ Documentation: https://compodoc.app/guides/getting-started.html
 
 ## How to write comments
 
+#### Doc comments
+
+Every component, property and function is required to have a doc comment describing its functionality.  
+Keep in mind you describe the component's interface and DO NOT describe what exactly the component is doing inside.  
+
+The JSDoc tags supported by Compodoc can be found [here](https://compodoc.app/guides/jsdoc-tags.html).
+
+#### Code comments
+
 When writing comments always keep in mind:
 "The best comment is the code explaining itself." - loosely cited from Clean Code
 
