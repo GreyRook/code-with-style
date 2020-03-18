@@ -55,7 +55,7 @@ The `SharedModule` can be imported in any other module when those items will be 
 The shared module shouldn’t have any dependency to the rest of the application and should therefore not rely on any other module.
 
 The components folder contains all the “shared” components.
-This are components like loaders and buttons, which multiple components would benefit from.
+These are components like loaders and buttons, which multiple components would benefit from.
 
 The `directives`, `interfaces` and `pipes` folders contain the directives, interfaces and pipes used across the application.
 Shared styles, like scss variables and mixins, are placed in the `styles` folder.
