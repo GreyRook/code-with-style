@@ -1,7 +1,7 @@
 # Story Points
 1. A measure of team output
 * Correlated to but not necessarily the same as effort
-* Describe the complexity of a requirement
+* Describes the complexity of a requirement
 2. A relative measure 
 * Measured relative to a known “reference” story
 * Consistent over time for the same team
