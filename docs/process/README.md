@@ -10,7 +10,7 @@
 (hours, meters, kilograms, etc.)
 * Physical measures come with emotional baggage
 * Quick to use, once you have established a reference story 
-3. Make use of the Fibonacci Sequence 
+3. Makes use of the Fibonacci Sequence 
 * That is a pattern where the next number in the sequence is the sum 
 of the previous two
 * E.g. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
