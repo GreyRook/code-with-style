@@ -13,7 +13,7 @@
 3. Makes use of the Fibonacci Sequence 
 * That is a pattern where the next number in the sequence is the sum 
 of the previous two
-* E.g. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
+* E.g. 0, 1, 2, 3, 5, 8, 13, 21, 34, 55…
 * Ubiquitous in natural systems, so humans have millennia of experience with it
 * The sequence is effective in estimation because the sum of the quantities of 
 the larger number is equal to the ratio of the larger number to the smaller one
