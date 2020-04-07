@@ -1,4 +1,4 @@
-The aim of the agile approach of Scrum is transprency regarding the issues that need to be done in a certain time frame. 
+The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame. 
 Thus, a Sprint (2 weeks) is planned with an amount of issues that the Development Team is certain to accomplish.
 The issues follow a strict workflow in Jira, so that the Development Team and the Scrum owner see at any moment of the Sprint the status of an issue.
 As a simple rule a developer can only work on one issue at a time i.e. can only have one issue with the status "in Arbeit".
