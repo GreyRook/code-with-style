@@ -7,7 +7,7 @@ A new Sprint starts immediately after the conclusion of the previous Sprint.
 
 During the Sprint:
 
-* No changes are made that would endanger the Sprint Goal
+* No changes are made that would endanger the Sprint goal
 * Quality goals do not decrease
 * the scope stays the same but issues can be exchanged
 
