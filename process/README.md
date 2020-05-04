@@ -24,7 +24,7 @@ in the code. Issues can be exchanged at any point in the Sprint process given th
 following conditions:
 
 * It is feasible to complete the new issue within the Sprint
-* The new issue has the same Story Points (given that issues can only replace
+* The new issue has the same amount of Story Points (given that issues can only replace
 issues and bugs only bugs)
 * It is discussed with at least one of the members of the Development Team
 * The client is informed about the change and agrees
