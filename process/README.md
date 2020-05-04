@@ -19,7 +19,7 @@ condition that the quality does not suffer. In order to assure that the velocity
 increases, the scope of the Sprint needs to stay the same. At *Grey Rook* we aim 
 to plan the Sprint so that no issues need to be changed. However, as it is an agile 
 process, there are always circumstances that demand for a quick change. That can be 
-hotfixes and breaking bugs als well as presentations for clients that need adjustments 
+hotfixes and breaking bugs as well as presentations for clients that need adjustments 
 in the code. Issues can be exchanged at any point in the Sprint process given the 
 following conditions:
 
