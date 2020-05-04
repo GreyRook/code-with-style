@@ -29,9 +29,9 @@ GitLab issues can be used to internally track and discuss any change requests be
 A language specific style change only affects the developers using said language for their projects and is always initiated with a GitLab issue or merge request. 
 In order to allow the easy categorization of issues and merge requests, GitLab contains labels corresponding to the different languages and frameworks used:
 
-- Frontend Devs => Typescript, CSS/SCSS, HTML
+- Frontend Devs => TypeScript, CSS/SCSS, HTML
 - Backend Devs => Python, Mongo, Rest
-- Hardware Devs => C, C#, C++
+- Embedded Devs => C, C++
 
 
 
