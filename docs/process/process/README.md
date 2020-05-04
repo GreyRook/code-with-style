@@ -3,4 +3,4 @@ Thus, a Sprint (2 weeks) is planned with an amount of issues that the Developmen
 The issues follow a strict workflow in Jira, so that the Development Team and the Scrum owner see at any moment of the Sprint the status of an issue.
 As a simple rule a developer can only work on one issue at a time i.e. can only have one issue with the status "in Arbeit".
 There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move or delegate the ticket and write a comment into the issue to explain it to the other developers. 
-Only if there is a comment, the developer can chose a new issue to work on. 
+Only if there is a comment, the developer can choose a new issue to work on. 
