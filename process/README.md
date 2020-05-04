@@ -10,7 +10,7 @@ ending on Friday the following week).
 
 During the Sprint:
 
-* No changes are made that would endanger the Sprint goal
+* No changes are made to the Sprint that would endanger the Sprint goal
 * Quality goals do not decrease
 * The scope stays the same but issues can be exchanged
 
