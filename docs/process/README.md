@@ -18,10 +18,12 @@ of the previous two
 * The sequence is effective in estimation because the sum of the quantities of 
 the larger number is equal to the ratio of the larger number to the smaller one
 
+Story Points are given in the planning phase of a Sprint.  
 At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8, 13. However, we tend to split up a tickets that gets a 13.  
-If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.
+If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.  
 Tickets can also have 4,6,7 or 10 Story Points, due to the fact that in an estimate session the average of the estimate of the Development Team is generated. 
-Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. 
-All members of the Development Team have the right to change their original estimate after this discussion. 
+Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. All members of the Development Team have the right to change their original estimate after this discussion.  
+Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on.    
+Bug tickets on the other hand do not get story points.
 
 **Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
