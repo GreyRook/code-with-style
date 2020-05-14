@@ -66,7 +66,8 @@ the larger number is equal to the ratio of the larger number to the smaller one
 The complexity of tickets is estimated using Story Points. These are given to each individual Story Ticket in the planning phase of a Sprint.  
 At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8, 13 for estimating.  
 If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.  
-Tickets can end up with 4,6,7 or 10 Story Points, due to the fact that in an estimate session the average of the estimate of the Development Team is generated. 
+Tickets that are not doable in one sprint (as indicated by the opinion of most of the developers or a number of story points equal to or greater than 13 after estimating) are to be rejected and to be split up into smaller tickets.  
+Tickets can end up with 4,6,7 or 10 Story Points, due to the fact that in an estimate session the average of the estimate of the Development Team is generated.  
 Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. All members of the Development Team have the right to change their original estimate after this discussion.  
 Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on.    
 Bug tickets on the other hand do not get story points.
