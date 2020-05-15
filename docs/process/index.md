@@ -43,6 +43,9 @@ Sprint Planning answers the following:
 * What can be delivered in the Increment resulting from the upcoming Sprint?
 * How will the work needed to deliver the Increment be achieved?
 
+In the context of the *Sprint Planning* tickets should get subtasks tagged with
+backend or frontend to better understand which part of the team can deal with 
+which task.
 # Story Points
 1. A measure of team output
 * Correlated to but not necessarily the same as effort
