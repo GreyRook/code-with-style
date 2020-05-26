@@ -64,7 +64,7 @@ of the previous two
 the larger number is equal to the ratio of the larger number to the smaller one
 
 The complexity of tickets is estimated using Story Points. These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.  
-Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, he has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
+Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, the developer has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
 At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8, 13 for estimating.  
 If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.  
 Tickets that are not doable in one sprint (as indicated by the opinion of most of the developers or a number of story points equal to or greater than 13 after estimating) are to be rejected and to be split up into smaller tickets.  
