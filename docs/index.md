@@ -1,8 +1,12 @@
+# Introduction
+
+
 ## General Topics
 
- * Project Structure
+ 
+ * [Project Structure](projects/README.md)
  * git guidelines
- * How to edit this guide
+ * [Code Review Guide](review/index.md)
 
 ## Language Specific
 
@@ -10,4 +14,3 @@
  * [TypeScript](typescript/README.md)
  * [React](typescript/react/README.md)
  * [Angular](typescript/angular/README.md)
- * HTML / CSS
