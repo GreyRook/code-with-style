@@ -9,10 +9,10 @@
 * Make Type annotations, be as specific as possible but it's okay to use `Any` or `dict` (without being more specific)
 * All libraries needed for development and running tests belong into `[dev-packages]`, debug packages must not be installed in production
 * `Pipfile.lock`
-  * is to be commited to git
+  * is to be committed to git
 * `Pipfile`
   * Versioning: should specify version range, for example: `pytest = ">=4.6.0,<5"`
-    * Specify minimum version acording to features needed and security fixes
+    * Specify minimum version according to features needed and security fixes
     * Avoid next major version
   * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
   * Must not include `[requires] python_version = "3.6"` since we want to test the code with multiple python versions.  [Pipenv does not support multiple versions of python](https://github.com/pypa/pipenv/issues/1050).
@@ -47,7 +47,7 @@ To ignore blocks of code for formatting mark them with
 
 NOTE: not necessary all linting errors are fixed by black, so check your linter before committing.
 
-isort to sort imports
+`isort` to sort imports
 
 ```
 pip install isort
@@ -160,15 +160,14 @@ class House:
     def ring_bell(self):
 ```
 
-When inside the `building` module it would be clear that `build` refers to buildings.
-While from outside of the module expect the function to be called like `building.build()`.
+When inside the `building` module, it would be clear that `build` refers to buildings. While from outside the module, expect the function to be called like `building.build()`.
 
 
 <a id="names-to-avoid"></a>
 
 ### Names to Avoid
 
-Avoid single character names and abbrivations with the following exceptions:
+Avoid single character names and abbreviations with the following exceptions:
 
 - `i,j` - iterators (must be integers)
 - `x,y,z` - coordinates
@@ -188,7 +187,7 @@ Protocol names are generally okay to use:
 
 Important: Those names MUST NOT be used for other meanings.
 
-Also avoid  `__double_leading_and_trailing_underscore__` names (reserved by Python)
+Also avoid `__double_leading_and_trailing_underscore__` names (reserved by Python)
 
 
 <a id="naming-conventions"></a>
@@ -245,7 +244,7 @@ pytest-testmon = "*"
 pytest-watch = "*"
 ```
 
-Addtions for aiohttp based projects:
+Additions for aiohttp based projects:
 
 ```
 pytest-asyncio = "*"
