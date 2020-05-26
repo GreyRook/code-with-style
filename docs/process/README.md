@@ -1,12 +1,12 @@
-# Srum
-## Sprint 
-* A Sprint, a time-box of one month or less during which a “Done”, useable, and
-potentially releasable product Increment is created. 
-* Sprints have consistent durations throughout a development effort. 
-A new Sprint starts immediately after the conclusion of the previous Sprint.
+# Scrum
 
-At *Grey Rook* the time-box of a Sprint is always 2 weeks (starting on Monday and 
-ending on Friday the following week).
+## Sprint 
+
+* A Sprint, a time-box of one month or less during which a “Done”, useable, and potentially releasable product Increment is created. 
+* Sprints have consistent durations throughout a development effort. 
+* A new Sprint starts immediately after the conclusion of the previous Sprint.
+
+At *Grey Rook* the time-box of a Sprint is always 2 weeks (starting on Monday and ending on Friday the following week).
 
 During the Sprint:
 
