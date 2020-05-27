@@ -22,11 +22,10 @@ Angular Guide: [angular/index.md](angular/index.md)
     - large and growing community
     - high typedef availability for packages
 
-### SCSS
+### Sass with SCSS syntax
 ##### Reasons
     - Our standard CSS Extension Language
-##### Best Practices
-    - Use rem a lot (or at least Saschas rem-mixin)
+SCSS Guide: [scss/README.md](./../scss/README.md)
 
 ### TSLint (linter)
 ##### Reasons
