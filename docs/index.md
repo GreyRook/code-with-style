@@ -4,13 +4,13 @@
 ## General Topics
 
  
- * [Project Structure](projects/README.md)
+ * [Project Structure](projects/index.md)
  * git guidelines
  * [Code Review Guide](review/index.md)
 
 ## Language Specific
 
- * [Python](python/README.md)
- * [TypeScript](typescript/README.md)
- * [React](typescript/react/README.md)
- * [Angular](typescript/angular/README.md)
+ * [Python](python/index.md)
+ * [TypeScript](typescript/index.md)
+ * [React](typescript/react/index.md)
+ * [Angular](typescript/angular/index.md)

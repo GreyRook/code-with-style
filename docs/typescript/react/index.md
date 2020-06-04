@@ -21,7 +21,7 @@
     - default with CRA
 
 ### NightwatchJS (E2E testing)
-Example: [react-example/e2e/](react-example/e2e/README.md)
+Example: [react-example/e2e/](react-example/e2e/index.md)
 
 ### Packages
     - classNames // easy conditional CSS Classes

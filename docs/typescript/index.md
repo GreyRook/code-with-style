@@ -7,7 +7,7 @@
     - easy to keep updated
     - easy to structure
     - easy to scale
-Angular Guide: [angular/README.md](angular/README.md)
+Angular Guide: [angular/index.md](angular/index.md)
 
 ### Yarn
 ##### Reasons
