@@ -86,7 +86,7 @@ Must not be used.
 ## Line Breaks
 
  * Do not add line breaks within paragraphs. There is no line length limit.
- * Between paragraphs have a signle empty line.
+ * Between paragraphs have a single empty line.
 
 ### Rational
 
