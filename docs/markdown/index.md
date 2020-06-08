@@ -1,6 +1,6 @@
 # Markdown
 
-This chapter is deticated to best practices writing mardown (`.md`) documents. Markdown does not have one coherent specification. The goal of the following rules is to have a consistent way of writing documentation in markdown and make sure they are interpreted correctly in parsers we care about, which are:
+This chapter is dedicated to best practices writing markdown (`.md`) documents. Markdown does not have one coherent specification. The goal of the following rules is to have a consistent way of writing documentation in markdown and make sure they are interpreted correctly in parsers we care about, which are:
 
  * [Python-Markdown](https://github.com/Python-Markdown/markdown)
  * GitLab, based on [kramdown](https://kramdown.gettalong.org/)
