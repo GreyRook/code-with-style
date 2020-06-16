@@ -6,12 +6,16 @@ There are two ways to get changes into the developer guide:
 2. *GitLab Issue* -> Merge Request -> Dev Guide + ChangeLog
 
 Regardless of how the change was initiated, applying the actual change is always done using a merge request that includes an addendum in the change log.
-Merge requests need to be approved by more than 50% of the affected team members changes relating to their workflows. Project management changes need to be approved by at least more than half of the whole team.
+
+Merge requests need to be approved by more than 50% of the affected team members changes relating to their workflows.
+Project management changes need to be approved by at least more than half of the whole team.
 
 
 ## Working Contracts
 
-Working contracts are general working agreements that are regularly revisited and should be used to develop best practices in the field before converting them to a fixed rule in the developer guide. They never concern code styling and usually affect all developers and project managers.
+Working contracts are general working agreements that are regularly revisited and should be used to develop best practices in the field before converting them to a fixed rule in the developer guide.
+They never concern code styling and usually affect all developers and project managers.
+
 See: [Code review discipline and working contracts](https://www.youtube.com/watch?v=iGBWyhiqBsk&feature=youtu.be&t=64)
 
 Contracts can generally be divided into two non-exclusive groups:
@@ -20,11 +24,47 @@ Contracts can generally be divided into two non-exclusive groups:
 - External Customer-Relationship-Management 
 
 
+### Working Contract process
+
+The ultimate goal of a Working Contract is to add a rule into this guide that improves the process of working on projects for the individual team member and as a team and optimize communication with the customer.
+
+For a Working Contract to be added to the guide it has to go through the following phases, each represented by a tag in the [code-with-style guide issue board](https://git.r0k.de/gr/code-with-style/guide/-/boards/62):
+1. WoCo proposition
+2. WoCo active
+   - WoCo double-down
+3. WoCo move-to-guide and merge request
+
+#### 1. WoCo proposition
+Working Contracts can be proposed by anyone at any time by creating a new issue in this guides [repository](https://git.r0k.de/gr/code-with-style/guide) and flagging it with the 'WoCo proposition' tag.
+As the essence of a Working Contract needs to be easily accessible by any team member it should consist of a short, simple and precise sentence.
+If absolutely neccessary, clarification can be added in the issues description.
+
+#### 2. WoCo active
+In a regular Working Contract meeting it is decided whether the proposed Working Contract will be put into action and thus be flagged with the 'WoCo active' flag.
+For that to happen it needs full support of all team members.
+To reach consensus team members can discuss their concerns or propose modifications to the Working Contract.
+
+An active Working Contract will be tried out in the field until the next Working Contract meeting.
+Everybody should try to follow the Working Contract to the best of their abilities until then and only break the contract with very good reasons.
+
+In subsequent Working Contract meetings everybody will then be asked if they were able to comply with the Working Contract and if not, how and why that happened.
+
+If there were problems in complying with the Working Contract but everybody still agrees the Working Contract should be followed, the 'WoCo double-down' tag can be applied, reasons for breaking the Working Contract can be discussed and addressed and everybody should double down in their ambitions of complying with the Working Contract.
+
+#### 3. WoCo move-to-guide
+If everybody agrees they were able to comply with the Working Contract for multiple subsequent Working Contract meetings, it is time for the Working Contract to become part of the code-with-style guide.
+It gets labelled 'WoCo move-to-guide' and assigned to a team member that creates a merge request that adds its essence to the guide.
+
+As usual, the merge request can only be merged if more than half of the affected team members give their thumbs up.
+As the Working Contracts should not cover the styling of specific programming languages and instead address general working processes, they should always affect everyone on the dev team and most of the time even the dev ops and project management team.
+
+
 ## GitLab Issues and Merge Requests
 
 GitLab issues can be used to internally track and discuss any change requests before working on the corresponding merge request or working contract.
 
-A language specific style change only affects the developers using said language for their projects and is always initiated with a GitLab issue or merge request. 
+A language specific style change only affects the developers using said language for their projects and is always initiated with a GitLab issue or merge request.
+
 In order to allow the easy categorization of issues and merge requests, GitLab contains labels corresponding to the different languages and frameworks used:
 
 - Frontend Devs => TypeScript, CSS/SCSS, HTML
