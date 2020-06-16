@@ -6,10 +6,10 @@ There are two ways to get changes into the developer guide:
 2. *GitLab Issue* -> Merge Request -> Dev Guide + ChangeLog
 
 Regardless of how the change was initiated, applying the actual change is always done using a merge request that includes an addendum in the change log.
+As long as the change is not yet part of a release, the changes must be filed as `[UNRELEASED]` in the [changelog](CHANGELOG.md), and have to be filed as part of a new version as soon as they are released.
 
 Merge requests need to be approved by more than 50% of the affected team members changes relating to their workflows.
 Project management changes need to be approved by at least more than half of the whole team.
-
 
 ## Working Contracts
 
