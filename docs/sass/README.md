@@ -58,7 +58,7 @@ If another developer creates an element at another position in the DOM which als
 
 ### Use rem instead of px as a unit for size whenever possible
 #### Explanation
-`rem` refers to `root em`, where `em` refers to the font size. That means one `rem` is the font size given to the root element (`<html>`), so when the `<html>` element has a font size of 16px, one `rem` will always be 16px. While the problem with using `em` is that it is relative to the font size of the element in which it is used (so an element with a width of `10em` may be of different absolute width depending on the current font size), `rem` never changes in the context of an html document.  
+`rem` refers to `root em`, where `em` refers to the font size. That means one `rem` is the font size given to the root element (`<html>`), so when the `<html>` element has a font size of 16px, one `rem` will be 16px in every child element. While the problem with using `em` is that it is relative to the font size of the element in which it is used (so an element with a width of `10em` may be of different absolute width depending on the current font size), `rem` never changes in the context of an html document.  
 #### Reasons
 - accessibility – layout can adjust to user font size settings
 - responsive web design – we can easily switch general website size based on media queries
