@@ -14,4 +14,4 @@
  * [TypeScript](typescript/index.md)
  * [React](typescript/react/index.md)
  * [Angular](typescript/angular/index.md)
- * [Sass](sass/README.md)
+ * [Sass](sass/index.md)
