@@ -74,3 +74,18 @@ Given this process there should not be any story ticket inside a sprint without 
 Bug tickets on the other hand do not get story points.
 
 **Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
+
+# Ticket description
+Tickets need to have a detailed description explaining the following aspect:
+
+- Story tickets
+	- *Purpose*: Why is the feature added?
+	- *Scope*: What needs to be done to finish the story?
+	- *Value*: What is the value for the user?
+	- *Implementation* (optional): How can the story be implemented?
+- Bug tickets
+	- *Problem*: What is the problem and how can it be reproduced? What OS and browser was used? Optimally provide a short video that shows how the problem can be reproduced
+	- *Expectation*: What is the expected behavior?
+	- *Implementation* (optional): How can the bug be fixed?
+
+If a ticket has no description or is missing information, the developer tackling the ticket has to either fix the description or contact the person who can fix it, e.g. the ticket author, before starting to work on it.
