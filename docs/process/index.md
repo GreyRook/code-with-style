@@ -44,7 +44,7 @@ Sprint Planning answers the following:
 * How will the work needed to deliver the Increment be achieved?
 
 In the context of the *Sprint Planning* tickets should get subtasks tagged with
-backend or frontend to better understand which part of the team can deal with 
+BE (backend) or FE (frontend) to better understand which part of the team can handle 
 which task.
 # Story Points
 1. A measure of team output
