@@ -30,7 +30,7 @@ A language specific style change only affects the developers using said language
 In order to allow the easy categorization of issues and merge requests, GitLab contains labels corresponding to the different languages and frameworks used:
 
 - Frontend Devs => TypeScript, CSS/SCSS, HTML
-- Backend Devs => Python, Mongo, Rest
+- Backend Devs => Python, MongoDB, Rest
 - Embedded Devs => C, C++
 
 
