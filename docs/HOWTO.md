@@ -33,5 +33,20 @@ In order to allow the easy categorization of issues and merge requests, GitLab c
 - Backend Devs => Python, Mongo, Rest
 - Embedded Devs => C, C++
 
+# Attribution
 
+When using other open guides as a base for what you are writing follow the following steps:
 
+* Make sure the license of the guide you are copying allows that
+* Copy the part verbatim you are interested in
+* Add an entry to the `attribution.md` file
+* Commit both together with a commit message including an attribution, license and source URL. Example:
+
+  ```
+       copy eng-practices from Google
+  
+       Source: https://github.com/google/eng-practices
+       Rev: 5761c2c63024a1b9292b891643616286a2fff6ca
+       License: CC-By 3.0
+  ```
+* Make any changes to the copied text afterwards in separate commits.
