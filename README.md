@@ -4,9 +4,14 @@ An opinionated guide on how [we](https://www.greyrook.com) like our code.
 
 The HTML version can be found publicly on [gitlab.com pages](https://greyrook.gitlab.io/code-with-style/).
 
-## Building
+## Note to Grey Rook employees
 
-Using podman it can be build locally using:
+Please keep in mind that the internal git repository is regularly synced with the public ones at [gitlab.com](https://gitlab.com/GreyRook/code-with-style) and [github.com](https://github.com/GreyRook/code-with-style).  Do not include internal information in the guide.
+
+
+## Building HTML and PDF locally
+
+Using `podman` it can be build locally using:
 
 ```
 export IMAGE=greyrook/cde-texlive:32ea33a8b61ae09318f80e6648b131fcb0c82a6c
