@@ -1,5 +1,12 @@
 # Scrum
 
+The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame. 
+Thus, a Sprint (2 weeks) is planned with an amount of issues that the Development Team is certain to accomplish.
+The issues follow a strict workflow in Jira, so that the Development Team and the Scrum owner see at any moment of the Sprint the status of an issue.
+As a simple rule a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
+There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket to "ToDo", delegate the ticket to another developer and write a comment into the issue to explain the current status to the other developer. 
+Only if there is a comment, the developer can choose a new issue to work on. 
+
 ## Sprint 
 
 * A Sprint, a time-box of one month or less during which a “Done”, useable, and potentially releasable product Increment is created. 
@@ -74,7 +81,7 @@ Tickets that are not doable in one sprint (as indicated by the opinion of most o
 The final amount of story points for the Ticket is decided on by the Scrum Master by calculating the average of the estimates of all developers. When the result is a fraction we usually round up, but that can be influenced by general opinion or specific reasons. Due to the nature of the process Tickets can end up with 4,6,7 or 10 Story Points, even though those numbers are not part of the Fibonacci numbers. 
 Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. All members of the Development Team have the right to change their original estimate after this discussion.  
 Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on.    
-Bug tickets on the other hand do not get story points.
+Bug tickets1ints.
 
 **Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
 
