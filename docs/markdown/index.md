@@ -16,7 +16,7 @@ Prefer ATX-style headers, without closing hash:
 # H1 heading
 ```
 
-### Heading Strucutre
+### Heading Structure
 
 Heading levels must not be skipped, for example:
 
