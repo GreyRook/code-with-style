@@ -1,8 +1,13 @@
+![](https://i.creativecommons.org/l/by/4.0/80x15.png)
+
 # Code with Style
 
 An opinionated guide on how [we](https://www.greyrook.com) like our code.
 
 The HTML version can be found publicly on [gitlab.com pages](https://greyrook.gitlab.io/code-with-style/).
+
+This work is licensed under a [Creative Commons Attribution 4.0 Generic License](http://creativecommons.org/licenses/by/4.0/).
+
 
 ## Note to Grey Rook employees
 
