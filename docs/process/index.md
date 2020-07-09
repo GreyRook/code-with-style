@@ -2,28 +2,40 @@
 
 The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame. 
 Thus, a Sprint (2 weeks) is planned with an amount of issues that the Development Team is certain to accomplish.
-The issues follow a strict workflow in Jira, so that the Development Team and the Scrum owner see at any moment of the Sprint the status of an issue.
-As a simple rule a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
+The issues follow a strict workflow in Jira, so that the Development Team and the Product Owner see at any moment of the Sprint the status of an issue.
+
+At *Grey Rook* we implemented the simple rule that a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
 There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket to "ToDo", delegate the ticket to another developer and write a comment into the issue to explain the current status to the other developer. 
 Only if there is a comment, the developer can choose a new issue to work on. 
 
+## Scrum Roles
+
+The Scrum Team is self-organising (choose how to best do their work), cross-functional (has all competencies to accomplish work without depending on others) and is optimised for flexibility, creativity and productivity. 
+The Scrum Team includes the Development Team (DEV Team), the Product Owner (PO) and the Scrum Master (SM):
+
+* The Development Team (3-9 people) creates the increment at the end of the Sprint. It is a self-organising, cross-functional team with no titles and sub-teams.
+* The Product Owner is one person whose job it is to maximise and optimise value of development work. The PO organises the Product backlog (or delegates it, but is still accountable) and makes sure that the DEV Team understands the Product backlog items and knows what to work on next. Thus, the Product backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
+* The Scrum Master does not decide, the SM is a servant leader with the task to maximise value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
+
 ## Sprint 
 
-* A Sprint is a time-box during which a “Done”, useable, and potentially releasable product Increment is created. 
-* Sprints have consistent durations throughout a development effort. The duration should be one month or less. At *Grey Rook* it is 2 weeks, starting on Monday and ending on Friday the following week.
+* A Sprint is a time-box during which a “Done”, useable, and potentially releasable product increment is created. 
+* The Sprint is a container for all other Sprint Events with a consistent duration throughout a development effort. The duration should be one month or less. At *Grey Rook* it is 2 weeks, starting on Monday and ending on Friday the following week.
 * A new Sprint starts immediately after the conclusion of the previous Sprint.
-
 
 During the Sprint:
 
 * No changes are made to the Sprint that would endanger the Sprint goal
 * Quality goals do not decrease
-* The scope stays the same but issues can be exchanged
+* The scope may be clarified and negotiated between the PO and the DEV Team as more is learned. At *Grey Rook* we aim not to change the scope but to exchange issues if needed.
 
-The Sprint Goal is to increase the velocity (done issues in a Sprint) under the 
-condition that the quality does not suffer. In order to assure that the velocity
-increases, the scope of the Sprint needs to stay the same. At *Grey Rook* we aim 
-to plan the Sprint so that no issues need to be changed. However, as it is an agile 
+### Sprint Goal
+The Sprint goal is the objective that can be met through implementation of the Product backlog. It is a guidance of why the DEV Team is building the increment. The Sprint goal offers some flexibility regarding the implemented functionality while ensuring that the Product backlog items devliver one coherent function.
+
+* What can be delivered in the increment?
+The DEV Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint goal. 
+
+At *Grey Rook* we aim to plan the Sprint so that no issues need to be changed. However, as it is an agile 
 process, there are always circumstances that demand for a quick change. That can be 
 hotfixes and breaking bugs as well as presentations for clients that need adjustments 
 in the code. Issues can be exchanged at any point in the Sprint process given the 
@@ -32,22 +44,43 @@ following conditions:
 * It is feasible to complete the new issue within the Sprint
 * The new issue has the same amount of Story Points (given that issues can only replace
 issues and bugs only bugs)
-* It is discussed with at least one of the members of the Development Team
-* The client is informed about the change and agrees
+* It is discussed with at least one of the members of the DEV Team
+* The PO is informed about the change and agrees
+
+## Scrum Events
+
+The *Daily Scrum* is not a status meeting but a time-boxed (15 minutes) meeting at the same time and date to inspect on the progress towards the Sprint Goal. The Dev Team is responsible while the SM may guide. 
+* What did I do yesterday to meet the Sprint Goal?
+* What will I do today to meet the Sprint Goal?
+* What are impediments to meet the Sprint Goal?
 
 ### Sprint Planning
-The work to be performed in the Sprint is planned at the *Sprint Planning*. 
-This plan is created by the collaborative work of the entire Scrum Team.
 
-Sprint Planning is time-boxed to a maximum of eight hours for two-week Sprint. 
-The Scrum Master ensures that the event takes place and that attendants 
-understand its purpose. The Scrum Master teaches the Scrum Team to keep it 
+The work to be performed in the Sprint is planned at the *Sprint Planning*. 
+This plan is created by the collaborative work of the entire Scrum Team, thus the PO the DEV Team and the SM take part.
+The Sprint Planning is time-boxed to a maximum of eight hours for a one month Sprint. 
+The SM ensures that the event takes place and that the attendants 
+understand its purpose. The SM teaches the Scrum Team to keep it 
 within the time-box.
 
 Sprint Planning answers the following:
 
-* What can be delivered in the Increment resulting from the upcoming Sprint?
-* How will the work needed to deliver the Increment be achieved?
+* What can be delivered in the increment resulting from the upcoming Sprint?
+* How will the work needed to deliver the increment be achieved?
+
+### Sprint Review
+
+The Sprint Review is a collaborative working session at the end of the Sprint, not a demonstration. The PO, the Dev Team and the SM take part as well as the stakeholder that are invited by the PO. The meeting is time-boxed for 4 hours for a one month Sprint. The goal is to inspect the increment and to adapt the *Product backlog*, thus giving input to the *Sprint Planning*. The SM ensures that the meeting takes place. 
+
+### Sprint Retro
+
+The Retro is a time-boxed (3 hours for a one month Sprint) meeting that takes place after the *Sprint Review* and prior to the *Sprint Planning*.  
+The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*. It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools. The Scrum Team is advised to identify and order major items that went well and potential imporvements.
+The whole Scrum Teams takes part, while the SM ensures that the meeting is productive. The SM participates as peer team member. 
+The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
+
+## Sprint Refinement
+The Refinement is not an official Scrum Event, more an ongoing process where the DEV Team and the PO add detail, estimates and order to the Product backlog. The Scrum Teams decides when the refinment is done but it should consume no more than 10% of DEV capacity. 
 
 In the context of the *Sprint Planning* tickets and subtasks should get tagged with
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
