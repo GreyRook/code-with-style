@@ -1,5 +1,4 @@
-Editing the developer guide
-===========================
+# Editing the developer guide
 
 There are two ways to get changes into the developer guide:
 
@@ -10,8 +9,7 @@ Regardless of how the change was initiated, applying the actual change is always
 Merge requests need to be approved by more than 50% of the affected team members changes relating to their workflows. Project management changes need to be approved by at least more than half of the whole team.
 
 
-Working Contracts
------------------
+## Working Contracts
 
 Working contracts are general working agreements that are regularly revisited and should be used to develop best practices in the field before converting them to a fixed rule in the developer guide. They never concern code styling and usually affect all developers and project managers.
 See: [Code review discipline and working contracts](https://www.youtube.com/watch?v=iGBWyhiqBsk&feature=youtu.be&t=64)
@@ -22,8 +20,8 @@ Contracts can generally be divided into two non-exclusive groups:
 - External Customer-Relationship-Management 
 
 
-GitLab Issues
--------------
+## GitLab Issues
+
 GitLab issues can be used to internally track and discuss any change requests before working on the corresponding merge request or working contract.
 
 A language specific style change only affects the developers using said language for their projects and is always initiated with a GitLab issue or merge request. 
