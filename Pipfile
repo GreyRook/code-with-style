@@ -4,6 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-sphinx = "*"
+sphinx = "==3.1.2"
 sphinx-markdown-parser = {git = "https://github.com/codejamninja/sphinx-markdown-parser.git@4f9a6c9c"}
 
