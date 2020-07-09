@@ -80,7 +80,7 @@ Tickets that are not doable in one sprint (as indicated by the opinion of most o
 The final amount of story points for the Ticket is decided on by the Scrum Master by calculating the average of the estimates of all developers. When the result is a fraction we usually round up, but that can be influenced by general opinion or specific reasons. Due to the nature of the process Tickets can end up with 4,6,7 or 10 Story Points, even though those numbers are not part of the Fibonacci numbers. 
 Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. All members of the Development Team have the right to change their original estimate after this discussion.  
 Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on.    
-Bug tickets1ints.
+Bug tickets on the other hand do not get story points.
 
 **Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
 
