@@ -10,12 +10,12 @@ Only if there is a comment, the developer can choose a new issue to work on.
 
 ## Scrum Roles
 
-The Scrum Team is self-organising (choose how to best do their work), cross-functional (has all competencies to accomplish work without depending on others) and is optimised for flexibility, creativity and productivity. 
+The Scrum Team is self-organizing (choose how to best do their work), cross-functional (has all competencies to accomplish work without depending on others) and is optimized for flexibility, creativity and productivity. 
 The Scrum Team includes the Development Team (DEV Team), the Product Owner (PO) and the Scrum Master (SM):
 
-* The Development Team (3-9 people) creates the increment at the end of the Sprint. It is a self-organising, cross-functional team with no titles and sub-teams.
-* The Product Owner is one person whose job it is to maximise and optimise value of development work. The PO organises the Product backlog (or delegates it, but is still accountable) and makes sure that the DEV Team understands the Product backlog items and knows what to work on next. Thus, the Product backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
-* The Scrum Master does not decide, the SM is a servant leader with the task to maximise value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
+* The Development Team (3-9 people) creates the increment at the end of the Sprint. It is a self-organizing, cross-functional team with no titles and sub-teams.
+* The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product backlog (or delegates it, but is still accountable) and makes sure that the DEV Team understands the Product backlog items and knows what to work on next. Thus, the Product backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
+* The Scrum Master does not decide, the SM is a servant leader with the task to maximize value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
 
 ## Sprint 
 
@@ -30,7 +30,7 @@ During the Sprint:
 * The scope may be clarified and negotiated between the PO and the DEV Team as more is learned. At *Grey Rook* we aim not to change the scope but to exchange issues if needed.
 
 ### Sprint Goal
-The Sprint goal is the objective that can be met through implementation of the Product backlog. It is a guidance of why the DEV Team is building the increment. The Sprint goal offers some flexibility regarding the implemented functionality while ensuring that the Product backlog items devliver one coherent function.
+The Sprint goal is the objective that can be met through implementation of the Product backlog. It is a guidance of why the DEV Team is building the increment. The Sprint goal offers some flexibility regarding the implemented functionality while ensuring that the Product backlog items deliver one coherent function.
 
 * What can be delivered in the increment?
 The DEV Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint goal. 
