@@ -69,7 +69,7 @@ Sprint Planning answers the following:
 
 ### Sprint Review
 
-The Sprint Review is a collaborative working session at the end of the Sprint, not a demonstration. The PO, the Dev Team and the SM take part as well as the stakeholder that are invited by the PO. The meeting is time-boxed for 4 hours for a one month Sprint. The goal is to inspect the increment and to adapt the *Product backlog*, thus giving input to the *Sprint Planning*. The SM ensures that the meeting takes place. 
+The Sprint Review is a collaborative working session at the end of the Sprint, not a demonstration. The PO, the Dev Team and the SM take part as well as the stakeholder that are invited by the PO. The meeting is time-boxed for 4 hours for a one month Sprint. The goal is to inspect the increment and to adapt the *Product Backlog*, thus giving input to the *Sprint Planning*. The SM ensures that the meeting takes place. 
 
 ### Sprint Retro
 
