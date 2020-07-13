@@ -56,12 +56,11 @@ The *Daily Scrum* is not a status meeting but a time-boxed (15 minutes) meeting 
 
 ### Sprint Planning
 
-The work to be performed in the Sprint is planned at the *Sprint Planning*. 
-This plan is created by the collaborative work of the entire Scrum Team, thus the PO the Dev Team and the SM take part.
-The Sprint Planning is time-boxed to a maximum of eight hours for a one month Sprint. 
-The SM ensures that the event takes place and that the attendants 
-understand its purpose. The SM teaches the Scrum Team to keep it 
-within the time-box.
+The work to be performed in the Sprint is planned at the *Sprint Planning*.
+This plan is created by the collaborative work of the entire Scrum Team, thus the PO, the Dev Team and the SM take part.
+The Sprint Planning is time-boxed to a maximum of eight hours for a one month Sprint.
+The SM ensures that the event takes place and that the attendants understand its purpose.
+The SM teaches the Scrum Team to keep it within the time-box.
 
 Sprint Planning answers the following:
 
