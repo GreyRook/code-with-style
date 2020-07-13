@@ -11,10 +11,10 @@ Only if there is a comment, the developer can choose a new issue to work on.
 ## Scrum Roles
 
 The Scrum Team is self-organizing (choose how to best do their work), cross-functional (has all competencies to accomplish work without depending on others) and is optimized for flexibility, creativity and productivity. 
-The Scrum Team includes the Development Team (DEV Team), the Product Owner (PO) and the Scrum Master (SM):
+The Scrum Team includes the Development Team (Dev Team), the Product Owner (PO) and the Scrum Master (SM):
 
-* The Development Team (3-9 people) creates the increment at the end of the Sprint. It is a self-organizing, cross-functional team with no titles and sub-teams.
-* The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product backlog (or delegates it, but is still accountable) and makes sure that the DEV Team understands the Product backlog items and knows what to work on next. Thus, the Product backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
+* The Development Team (3-9 people) creates the increment at the end of the Sprint. It is a self-organizing, cross-functional team, while Scrum does not recognize any titles and sub-teams within it.
+* The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product Backlog (or delegates it, but is still accountable) and makes sure that the Dev Team understands the Product Backlog items and knows what to work on next. Thus, the Product Backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
 * The Scrum Master does not decide, the SM is a servant leader with the task to maximize value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
 
 ## Sprint 
@@ -27,13 +27,13 @@ During the Sprint:
 
 * No changes are made to the Sprint that would endanger the Sprint goal
 * Quality goals do not decrease
-* The scope may be clarified and negotiated between the PO and the DEV Team as more is learned. At *Grey Rook* we aim not to change the scope but to exchange issues if needed.
+* The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the scope but to exchange issues if needed.
 
 ### Sprint Goal
-The Sprint goal is the objective that can be met through implementation of the Product backlog. It is a guidance of why the DEV Team is building the increment. The Sprint goal offers some flexibility regarding the implemented functionality while ensuring that the Product backlog items deliver one coherent function.
+The Sprint Goal is the objective that can be met through implementation of the Product Backlog. It is a guidance of why the Dev Team is building the increment. The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
 
 * What can be delivered in the increment?
-The DEV Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint goal. 
+The Dev Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint Goal. 
 
 At *Grey Rook* we aim to plan the Sprint so that no issues need to be changed. However, as it is an agile 
 process, there are always circumstances that demand for a quick change. That can be 
@@ -44,7 +44,7 @@ following conditions:
 * It is feasible to complete the new issue within the Sprint
 * The new issue has the same amount of Story Points (given that issues can only replace
 issues and bugs only bugs)
-* It is discussed with at least one of the members of the DEV Team
+* It is discussed with at least one of the members of the Dev Team
 * The PO is informed about the change and agrees
 
 ## Scrum Events
@@ -57,7 +57,7 @@ The *Daily Scrum* is not a status meeting but a time-boxed (15 minutes) meeting 
 ### Sprint Planning
 
 The work to be performed in the Sprint is planned at the *Sprint Planning*. 
-This plan is created by the collaborative work of the entire Scrum Team, thus the PO the DEV Team and the SM take part.
+This plan is created by the collaborative work of the entire Scrum Team, thus the PO the Dev Team and the SM take part.
 The Sprint Planning is time-boxed to a maximum of eight hours for a one month Sprint. 
 The SM ensures that the event takes place and that the attendants 
 understand its purpose. The SM teaches the Scrum Team to keep it 
@@ -80,7 +80,7 @@ The whole Scrum Teams takes part, while the SM ensures that the meeting is produ
 The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
 
 ## Sprint Refinement
-The Refinement is not an official Scrum Event, more an ongoing process where the DEV Team and the PO add detail, estimates and order to the Product backlog. The Scrum Teams decides when the refinment is done but it should consume no more than 10% of DEV capacity. 
+The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinment is done but it should consume no more than 10% of DEV capacity. 
 
 In the context of the *Sprint Planning* tickets and subtasks should get tagged with
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
