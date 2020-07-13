@@ -71,11 +71,11 @@ Sprint Planning answers the following:
 
 The Sprint Review is a collaborative working session at the end of the Sprint, not a demonstration. The PO, the Dev Team and the SM take part as well as the stakeholder that are invited by the PO. The meeting is time-boxed for 4 hours for a one month Sprint. The goal is to inspect the increment and to adapt the *Product Backlog*, thus giving input to the *Sprint Planning*. The SM ensures that the meeting takes place. 
 
-### Sprint Retro
+### Sprint Retrospective
 
-The Retro is a time-boxed (3 hours for a one month Sprint) meeting that takes place after the *Sprint Review* and prior to the *Sprint Planning*.  
-The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*. It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools. The Scrum Team is advised to identify and order major items that went well and potential imporvements.
-The whole Scrum Teams takes part, while the SM ensures that the meeting is productive. The SM participates as peer team member. 
+The Retrospective (Retro) is a time-boxed (3 hours for a one month Sprint and 1.5 hours for a two week Sprint) meeting that takes place after the *Sprint Review* and prior to the *Sprint Planning*.  
+The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*. It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools. The Scrum Team is advised to identify and order major items that went well and potential imporvements.  
+The whole Scrum Teams takes part, while the SM ensures that the meeting is productive. The SM participates as peer team member.  
 The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
 
 ## Sprint Refinement
