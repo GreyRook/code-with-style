@@ -79,7 +79,7 @@ The whole Scrum Teams takes part, while the SM ensures that the meeting is produ
 The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
 
 ## Sprint Refinement
-The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinment is done but it should consume no more than 10% of DEV capacity. 
+The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity. 
 
 In the context of the *Sprint Planning* tickets and subtasks should get tagged with
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
