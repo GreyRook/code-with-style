@@ -25,7 +25,7 @@ Angular Guide: [angular/index.md](angular/index.md)
 ### Sass with SCSS syntax
 ##### Reasons
     - Our standard CSS Extension Language
-SCSS Guide: [scss/README.md](./../scss/README.md)
+See [SCSS Guide](./../scss/index.md)
 
 ### TSLint (linter)
 ##### Reasons
