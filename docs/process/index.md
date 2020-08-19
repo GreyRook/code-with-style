@@ -1,6 +1,8 @@
 # Scrum
 
-The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame. 
+Scrum is a framework to address complex adaptive problems while productively and creatively delivering products of the highest possible value.
+
+The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame, which opens up the opportunity to easily inspect the work that has been done and to quickly adapt to changed conditions or requirements.
 Thus, a Sprint (2 weeks) is planned with an amount of issues that the Development Team is certain to accomplish.
 The issues follow a strict workflow in Jira, so that the Development Team and the Product Owner see at any moment of the Sprint the status of an issue.
 
