@@ -87,6 +87,9 @@ In the context of the *Sprint Planning* tickets and subtasks should get tagged w
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
 which task.
 ### Story Points
+
+**Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
+
 1. A relative estimation of effort for a requirement
 * Measured relative to a known “reference” story
 * Consistent over time for the same team
@@ -126,8 +129,6 @@ All members of the Development Team have the right to change their original esti
 Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on. 
 
 Bug tickets on the other hand do not get story points.
-
-**Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
 
 # Ticket description
 Tickets need to have a detailed description explaining the following aspect:
