@@ -86,7 +86,7 @@ The Refinement is not an official Scrum Event, more an ongoing process where the
 In the context of the *Sprint Planning* tickets and subtasks should get tagged with
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
 which task.
-# Story Points
+### Story Points
 1. A relative estimation of effort for a requirement
 * Measured relative to a known “reference” story
 * Consistent over time for the same team
