@@ -78,9 +78,15 @@ The SM ensures that the meeting takes place.
 
 ### Sprint Retrospective
 
-The Retrospective (Retro) is a time-boxed (3 hours for a one month Sprint and 1.5 hours for a two week Sprint) meeting that takes place after the *Sprint Review* and prior to the *Sprint Planning*.  
-The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*. It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools. The Scrum Team is advised to identify and order major items that went well and potential improvements.  
-The whole Scrum Teams takes part, while the SM ensures that the meeting is productive. The SM participates as peer team member.  
+The Retrospective (Retro) is a time-boxed (3 hours for a one month Sprint and 1.5 hours for a two week Sprint) meeting that takes place after the *Sprint Review* and prior to the *Sprint Planning*.
+
+The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*.
+It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools.
+The Scrum Team is advised to identify and order major items that went well and potential improvements.
+
+The whole Scrum Team takes part, while the SM ensures that the meeting is productive.
+The SM participates as peer team member.
+
 The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
 
 ## Sprint Refinement
