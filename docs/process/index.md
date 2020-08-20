@@ -101,7 +101,9 @@ which task.
 
 The complexity of tickets is estimated using Story Points. These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.
 
-At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8 and 13 for estimating.
+Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, the developer has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
+
+At **Grey Rook** the developer may choose one of the numbers 0, 1, 2, 3, 5, 8 and 13 for her or his estimate.
 These are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
 That means it is continued "21, 34, 55, ...", but for reasons described below we cap the sequence after the 13.
 
@@ -110,15 +112,16 @@ It is effective in estimation because the sum of the quantities of the larger nu
 It is almost impossible to precisely estimate a ticket that has a high complexity, i.e. decide if a ticket deserves 7 or 8 Story Points.
 In this respect, the fibonacci sequence offers a reasonable gradation.
 
-Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, the developer has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
-
 If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.
 
 Tickets that are not doable in one sprint (as indicated by the opinion of most of the developers or a number of story points equal to or greater than 13 after estimating) are to be rejected and to be split up into smaller tickets.
 
-The final amount of story points for the Ticket is decided on by the Scrum Master by calculating the average of the estimates of all developers. When the result is a fraction we usually round up, but that can be influenced by general opinion or specific reasons. Due to the nature of the process Tickets can end up with 4,6,7 or 10 Story Points, even though those numbers are not part of the Fibonacci numbers. 
+The final amount of story points for the Ticket is decided on by the Scrum Master by calculating the average of the estimates of all developers. 
+When the result is a fraction we usually round up, but that can be influenced by general opinion or specific reasons.
+Due to the nature of the process Tickets can end up with a number of Story Points that is not actually from the Fibonacci Sequence.
 
-Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate have to explain their reasons for their estimate. All members of the Development Team have the right to change their original estimate after this discussion.
+Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate may have to explain their reasons for their estimate.
+All members of the Development Team have the right to change their original estimate after this discussion.
 
 Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on. 
 
