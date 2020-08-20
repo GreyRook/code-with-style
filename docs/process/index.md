@@ -105,9 +105,12 @@ which task.
 * Correlated to but not necessarily the same as effort
 * Describes the complexity of a requirement
 
-The complexity of tickets is estimated using Story Points. These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.
+The complexity of tickets is estimated using Story Points.
+These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.
 
-Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, the developer has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
+Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated.
+When that is the case, the developer has to decide on a number that reflects the complexity of the ticket.
+Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
 
 At **Grey Rook** the developer may choose one of the numbers 0, 1, 2, 3, 5, 8 and 13 for her or his estimate.
 These are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
