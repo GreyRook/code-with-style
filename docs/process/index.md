@@ -87,10 +87,7 @@ In the context of the *Sprint Planning* tickets and subtasks should get tagged w
 BE (backend) or FE (frontend) to better understand which part of the team can handle 
 which task.
 # Story Points
-1. A measure of team output
-* Correlated to but not necessarily the same as effort
-* Describes the complexity of a requirement
-2. A relative measure 
+1. A relative estimation of effort for a requirement
 * Measured relative to a known “reference” story
 * Consistent over time for the same team
 * Not necessarily comparable across teams
@@ -98,17 +95,23 @@ which task.
 (hours, meters, kilograms, etc.)
 * Physical measures come with emotional baggage
 * Quick to use, once you have established a reference story 
-3. Based on the Fibonacci Sequence 
-* That is a pattern where the next number in the sequence is the sum 
-of the previous two
-* i.e. 0, 1, 2, 3, 5, 8, 13, 21, 34, 55…
-* Ubiquitous in natural systems, so humans have millennia of experience with it
-* The sequence is effective in estimation because the sum of the quantities of the larger number is equal to the ratio of the larger number to the smaller one
+2. A measure of team output
+* Correlated to but not necessarily the same as effort
+* Describes the complexity of a requirement
 
 The complexity of tickets is estimated using Story Points. These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.
 
+At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8 and 13 for estimating.
+These are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
+That means it is continued "21, 34, 55, ...", but for reasons described below we cap the sequence after the 13.
+
+Humans have millennia of experience with it, because it is ubiquitous in natural systems.
+It is effective in estimation because the sum of the quantities of the larger number is equal to the ratio of the larger number to the smaller one.
+It is almost impossible to precisely estimate a ticket that has a high complexity, i.e. decide if a ticket deserves 7 or 8 Story Points.
+In this respect, the fibonacci sequence offers a reasonable gradation.
+
 Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated. When that is the case, the developer has to decide on a number that reflects the complexity of the ticket. Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
-At **Grey Rook** we use the numbers 0, 1, 2, 3, 5, 8, 13 for estimating.
+
 If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.
 
 Tickets that are not doable in one sprint (as indicated by the opinion of most of the developers or a number of story points equal to or greater than 13 after estimating) are to be rejected and to be split up into smaller tickets.
