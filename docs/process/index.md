@@ -8,7 +8,8 @@ The issues follow a strict workflow in Jira, so that the Development Team and th
 That gives the Development Team and the Product Owner the chance to identify and react to risks that endanger the Sprint Goal.
 
 At *Grey Rook* we implemented the simple rule that a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
-There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket back to "ToDo".
+There can be reasons that hinder the developer to complete an issue.
+If such a case happens, the developer is obliged to move the ticket either back to "ToDo" or, if information is missing that is needed to complete the ticket, to "Information needed".
 If the developer is sure he will not be able to finish the ticket at a later time in the Sprint, he should remove him- or herself from the ticket as an assignee so that another developer can pick up the work.
 He should also put a comment into the issue to explain the current status (including the name of the branch with the unfinished work), so that whoever continues working on the ticket can easily do so.
 To be sure someone else will continue the ticket, the original developer should also inform the team in the daily meeting or via other communication channels that the ticket is to be reassigned.
@@ -95,7 +96,8 @@ Sprint Planning answers the following questions:
 
 The Sprint Review is a collaborative working session at the end of the Sprint, not a demonstration.
 The PO, the Dev Team and the SM take part as well as the stakeholder that are invited by the PO.
-The meeting is time-boxed for 4 hours for a one month Sprint.
+The meeting is time-boxed for 4 hours for a one month Sprint and shorter for shorter Sprints, respectively.
+At *Grey Rook* we usually have two week Sprints, so the Sprint Review is time boxed to 2 hours.
 The goal is to inspect the increment and to adapt the *Product Backlog*, thus giving input to the *Sprint Planning*.
 The SM ensures that the meeting takes place and facilitates discussion.
 
@@ -139,7 +141,7 @@ Those numbers are to be presented to the Scrum Master at the same time to preven
 
 At *Grey Rook* the developer may choose one of the numbers 1, 2, 3, 5, 8 and 13 for their estimate. 
 If there is uncertainty they may choose the questionmark "?".
-These are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
+These numbers are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
 That means it is continued "21, 34, 55, ...", but for reasons described below we cap the sequence after the 13.
 
 It is effective in estimation because the sum of the quantities of the larger number is equal to the ratio of the larger number to the smaller one.
@@ -155,8 +157,18 @@ Due to the nature of the process tickets can end up with a number of Story Point
 Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate may have to explain their reasons for their estimate.
 All members of the Development Team have the right to change their original estimate after this discussion.
 
-Given this process there should not be any Story or Bug ticket inside a sprint without an estimation.
-Tickets without an estimation are not allowed to be worked on.
+Given this process there should not be any story ticket inside a Sprint without an estimation. 
+User stories without an estimation are not allowed to be worked on. 
+
+Depending on the project or customer, bug tickets may or may not get story points.
+In some cases it is impossible to estimate the complexity of bug tickets, as most of the time it is unclear why a bug occurs and how to fix it.
+Not estimating bug tickets takes that into account.
+Still, there are good reasons for estimating bug tickets.
+For example, planning a Sprint that can be successfully completed is easier if we know the amount of time it might take to resolve the contained bug tickets.
+It may be preferable to complete all tickets in a Sprint in time and to add more tickets later on than to have a maxed out Sprint with a lot of bug tickets that do not count into the overall complexity and be unable to complete the Sprint in time.
+
+When estimating bug tickets, we assume the worst case scenario.
+That way we minimize the risk of underestimating the complexity of the work needed to fix the bug and to complete the ticket.
 
 # Ticket description
 Tickets need to have a detailed description explaining the following aspects:
@@ -171,4 +183,39 @@ Tickets need to have a detailed description explaining the following aspects:
 	- *Expectation*: What is the expected behavior?
 	- *Implementation* (optional): How can the bug be fixed?
 
-If a ticket has no description or is missing information, the developer tackling the ticket has to gather additional information for example by contacting the ticket author, before starting to work on it.
+If a ticket has no description or is missing information, the developer tackling the ticket has to either fix the description or contact the person who can fix it, e.g. the ticket author, before starting to work on it.
+
+# Definition of "Done"
+
+## About the Definition of "Done"
+
+A Sprint can only be successfully completed if all the work done in it conforms to a shared Definition of "Done" (DoD).
+
+For everyone who takes part in developing a product (including the Product Owner) to have a shared understanding of what it means to be "done" with the work in a Sprint, the Scrum Team needs to define what "Done" means.
+Otherwise different definitions of what "done" means would lead to dissent about if a Sprint is successfully finished, i.e. if work on the Product Increment is complete.
+Another goal of this DoD is to make sure the increment is something the Scrum Team is sure it can confidently put in front of the customer or the end users of the product.
+
+To reach these goals, the Scrum Team defines the DoD as a checklist of things that has to be completed for every ticket in the Sprint for a Product Increment to be potentially shippable. 
+The DoD describes a final state that is to be reached, so it will be formulated in statements of conclusion ("Code is checked in"), not in the future tense ("Code will be checked in").
+This final state has to be reachable.
+If the final state could not be reached while working on the Sprint, the Scrum Master works together with the Dev Team to remove the impediments that prevented it from reaching the final state.
+
+The DoD may be subject to optimization or modification as soon as good reasons pop up.
+Changes to the DoD should be discussed with the whole Scrum Team, including Scrum Master and Product Owner.
+
+As a shared understanding of the DoD is important for everyone on the team, it should always be visible to everyone.
+That means it is good pratice to e.g. put up a poster in the office (or the home office of the individual team member) with the recent DoD on it.
+
+## The Definition of "Done" at **Grey Rook**
+
+Each ticket must comply with every item on the following checklist to meet our DoD:
+
+- The acceptance criteria of the ticket are met (i.e. the described functionality is fully implemented)
+- The functionality was tested on all target platforms
+- The code is maintainable (i.e. understandable and sufficiently documented)
+- The coding guidelines as stated in [this guide](../index.md) or in the project readme are met
+- There are either Unit Tests for the code and they pass, or a very good excuse why there are none
+- There are either E2E Tests for the code and they pass, or a very good excuse why there are none
+- The code has been reviewed by at least one other developer
+- The security best pratices are met (i.e. code does not contain obvious security holes)
+- The code is performant and scalable as required for its use case
