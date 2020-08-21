@@ -5,6 +5,7 @@ Scrum is a framework to address complex adaptive problems while productively and
 The aim of the agile approach of Scrum is transparency regarding the issues that need to be done in a certain time frame, which opens up the opportunity to easily inspect the work that has been done and to quickly adapt to changed conditions or requirements.
 Thus, a Sprint (2 weeks) is planned with an amount of issues that the Development Team is certain to accomplish.
 The issues follow a strict workflow in Jira, so that the Development Team and the Product Owner see at any moment of the Sprint the status of an issue.
+That gives the Development Team and the Product Owner the chance to identify and react to risks that endanger the Sprint Goal.
 
 At *Grey Rook* we implemented the simple rule that a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
 There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket to "ToDo", delegate the ticket to another developer and write a comment into the issue to explain the current status to the other developer. 
