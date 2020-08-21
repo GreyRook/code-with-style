@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - How to add attributions ([HOWTO.md](HOWTO.md))
 - `docs/sass/index.md` with best practices about sass/scss
 - Rules on line breaks in markdown files ([markdown/index.md](markdown/index.md))
+- Detailed additions about Scrum to the process guide
 
 ### Fixed
 - Small spelling and grammar fixes all around.
