@@ -8,7 +8,10 @@ The issues follow a strict workflow in Jira, so that the Development Team and th
 That gives the Development Team and the Product Owner the chance to identify and react to risks that endanger the Sprint Goal.
 
 At *Grey Rook* we implemented the simple rule that a developer can only work on one issue at a time i.e. can only have one issue with the status "WIP".
-There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket to "ToDo", delegate the ticket to another developer and write a comment into the issue to explain the current status to the other developer. 
+There can be reasons that hinder the developer to complete an issue. If such a case happens, the developer is obliged to move the ticket back to "ToDo".
+If the developer is sure he will not be able to finish the ticket at a later time in the Sprint, he should remove him- or herself from the ticket as an assignee so that another developer can pick up the work.
+He should also put a comment into the issue to explain the current status (including the name of the branch with the unfinished work), so that whoever continues working on the ticket can easily do so.
+To be sure someone else will continue the ticket, the original developer should also inform the team in the daily meeting or via other communication channels that the ticket is to be reassigned.
 Only if there is a comment, the developer can choose a new issue to work on. 
 
 ## Scrum Roles
