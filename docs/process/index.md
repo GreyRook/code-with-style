@@ -70,7 +70,7 @@ The SM teaches the Scrum Team to keep it within the time-box.
 Sprint Planning answers the following:
 
 * What can be delivered in the increment resulting from the upcoming Sprint?
-* How will the work needed to deliver the increment be achieved?
+* How will the work which is needed to deliver the increment be achieved?
 
 ### Sprint Review
 
