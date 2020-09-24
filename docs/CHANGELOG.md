@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Attributions for previously copied texts ([attribution.md](attribution.md))
 - How to add attributions ([HOWTO.md](HOWTO.md))
 - `docs/sass/index.md` with best practices about sass/scss
+- Rules on line breaks in markdown files ([markdown/index.md](markdown/index.md))
 
 ### Fixed
 - Small spelling and grammar fixes all around.
