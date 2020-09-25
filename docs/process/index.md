@@ -33,10 +33,10 @@ During the Sprint:
 
 * No changes are made to the Sprint that would endanger the Sprint goal
 * Quality goals do not decrease
-* The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the scope but to exchange issues if needed.
+* The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the commited story points but to exchange issues if needed.
 
 ### Sprint Goal
-The Sprint Goal is the objective that can be met through implementation of the Product Backlog. It is a guidance of why the Dev Team is building the increment. The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
+The Sprint Goal is the objective that can be met through implementation of the Sprint Backlog. It is a guidance of why the Dev Team is building the increment. The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
 
 * What can be delivered in the increment?
 The Dev Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint Goal. 
@@ -48,16 +48,18 @@ Issues can be exchanged at any point in the Sprint process given the following c
 
 * It is feasible to complete the new issue within the Sprint
 * The new issue has the same amount of Story Points (given that issues can only replace
-issues and bugs only bugs)
+issues and bugs can only replace bugs)
 * It is discussed with at least one of the members of the Dev Team
 * The PO is informed about the change and agrees
 
 ## Scrum Events
 
-The *Daily Scrum* is not a status meeting but a time-boxed (15 minutes) meeting at the same time and date to inspect on the progress towards the Sprint Goal. The Dev Team is responsible while the SM may guide. 
+The *Daily Scrum* is not a status meeting but a daily, time-boxed (15 minutes) meeting at the same time to inspect on the progress towards the Sprint Goal. The Dev Team is responsible while the SM may guide its facilitation.
+Typical questions to be discussed during the Daily Scrum are:
 * What did I do yesterday to meet the Sprint Goal?
 * What will I do today to meet the Sprint Goal?
 * What are impediments to meet the Sprint Goal?
+The outcome of the Daily Scrum should be optimized collaboration and a list of impediments.
 
 ### Sprint Planning
 
