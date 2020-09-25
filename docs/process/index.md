@@ -54,6 +54,8 @@ issues and bugs can only replace bugs)
 
 ## Scrum Events
 
+### Daily Scrum
+
 The *Daily Scrum* is not a status meeting but a daily, time-boxed (15 minutes) meeting at the same time to inspect on the progress towards the Sprint Goal. The Dev Team is responsible while the SM may guide its facilitation.
 Typical questions to be discussed during the Daily Scrum are:
 * What did I do yesterday to meet the Sprint Goal?
