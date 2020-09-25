@@ -150,16 +150,16 @@ Given this process there should not be any Story or Bug Ticket inside a sprint w
 Tickets without an estimation are not allowed to be worked on.
 
 # Ticket description
-Tickets need to have a detailed description explaining the following aspect:
+Tickets need to have a detailed description explaining the following aspects:
 
 - Story tickets
 	- *Purpose*: Why is the feature added?
-	- *Scope*: What needs to be done to finish the story?
+	- *Scope*: What needs to be done to finish the story and what is out of scope?
 	- *Value*: What is the value for the user?
 	- *Implementation* (optional): How can the story be implemented?
 - Bug tickets
-	- *Problem*: What is the problem and how can it be reproduced? What OS and browser was used? Optimally provide a short video that shows how the problem can be reproduced
+	- *Problem*: What is the problem and how can it be reproduced? Details may include but are not limited to: OS, browser, component, functionality/feature, etc. Optimally provide a short video that shows how the problem can be reproduced
 	- *Expectation*: What is the expected behavior?
 	- *Implementation* (optional): How can the bug be fixed?
 
-If a ticket has no description or is missing information, the developer tackling the ticket has to either fix the description or contact the person who can fix it, e.g. the ticket author, before starting to work on it.
+If a ticket has no description or is missing information, the developer tackling the ticket has to gather additional information for example by contacting the ticket author, before starting to work on it.
