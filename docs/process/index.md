@@ -96,7 +96,7 @@ The Scrum Team is advised to identify and order major items that went well and p
 The whole Scrum Team takes part, while the SM ensures that the meeting is productive.
 The SM participates as peer team member.
 
-The *Sprint backlog* includes at least one high priority process improvement identified in the *Sprint Retro*. 
+The *Scrum Master* ensures that at least one high priority process improvement, identified in the *Sprint Retro*, is worked on during the upcoming sprint. 
 
 ## Sprint Refinement
 The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity. 
