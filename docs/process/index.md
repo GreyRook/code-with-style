@@ -106,28 +106,26 @@ In the context of the *Sprint Planning* tickets and subtasks should get tagged w
 
 ### Story Points
 
-**Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
+*Summary:* A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements.
 
 1. A relative estimation of effort for a requirement
-* Measured relative to a known “reference” story
+* Measured relative to a known “reference” story. At *Grey Rook* we grow accustomed over time to how complex one Story Point is
 * Consistent over time for the same team
 * Not necessarily comparable across teams
-* Deliberately abstracted from common units of measurement 
-(hours, meters, kilograms, etc.)
-* Physical measures come with emotional baggage
+* Deliberately abstracted from common units of measurement (hours, meters, kilograms, etc.)
 * Quick to use, once you have established a reference story 
 2. A measure of team output
 * Correlated to but not necessarily the same as effort
-* Describes the complexity of a requirement
+* Describes the complexity, risk involved and uncertainty of a requirement
 
-The complexity of tickets is estimated using Story Points.
-These are given to each individual Story Ticket in the planning phase of a Sprint in a process called 'Planning Poker'.
+The complexity, risk involved and uncertainty of tickets is estimated using Story Points.
+These are given to each individual Story Ticket - and depending on the project, Bug Ticket - in the planning phase of a Sprint in a process called 'Planning Poker'.
 
 Every developer in the Planning Poker meeting needs to have an understanding of what work is to be done to complete the ticket that is to be estimated.
 When that is the case, the developer has to decide on a number that reflects the complexity of the ticket.
 Those numbers are to be presented to the Scrum Master at the same time to prevent influencing other peoples guesses.
 
-At **Grey Rook** the developer may choose one of the numbers 0, 1, 2, 3, 5, 8 and 13 for her or his estimate.
+At **Grey Rook** the developer may choose one of the numbers 0, 1, 2, 3, 5, 8 and 13 plus ? for their estimate.
 These are based on the Fibonacci Sequence, a sequence of numbers where the next number in the sequence is the sum of the previous two numbers.
 That means it is continued "21, 34, 55, ...", but for reasons described below we cap the sequence after the 13.
 
@@ -137,19 +135,19 @@ It is almost impossible to precisely estimate a ticket that has a high complexit
 In this respect, the fibonacci sequence offers a reasonable gradation.
 
 If a developer thinks it takes more time to discuss a ticket than to actually resolve it, he should give the ticket a 0.
+If a developer is uncertain about the complexity, risk involved and uncertainty they may choose to put down a ?.
 
 Tickets that are not doable in one sprint (as indicated by the opinion of most of the developers or a number of story points equal to or greater than 13 after estimating) are to be rejected and to be split up into smaller tickets.
 
-The final amount of story points for the Ticket is decided on by the Scrum Master by calculating the average of the estimates of all developers. 
+The final amount of story points for the Ticket is decided on by calculating the average of the estimates of all developers. 
 When the result is a fraction we usually round up, but that can be influenced by general opinion or specific reasons.
 Due to the nature of the process Tickets can end up with a number of Story Points that is not actually from the Fibonacci Sequence.
 
 Moreover, in order to reach consensus when the estimates are very different, the developer with the highest and the lowest estimate may have to explain their reasons for their estimate.
 All members of the Development Team have the right to change their original estimate after this discussion.
 
-Given this process there should not be any story ticket inside a sprint without an estimation. User stories without an estimation are not allowed to be worked on. 
-
-Bug tickets on the other hand do not get story points.
+Given this process there should not be any Story or Bug Ticket inside a sprint without an estimation.
+Tickets without an estimation are not allowed to be worked on.
 
 # Ticket description
 Tickets need to have a detailed description explaining the following aspect:
