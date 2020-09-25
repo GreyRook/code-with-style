@@ -101,14 +101,14 @@ For this guide, we made some rules to optimize both editability and readability 
 * There is no line length limit.
 * Add one line break (`\n`) after each sentence.
 * No line breaks within a sentence.
-* Except within lists - there you are allowed to put multiple sentenences within one line. But try to avoid to do so as it means you are not actually making a list but paragraphs with dots infront of them.
+* Except within lists - there you are allowed to put multiple sentences within one line. But try to avoid to do so as it means you are not actually making a list but paragraphs with dots in front of them.
 * Between paragraphs have a single empty line. (`\n\n`)
 
 ### Line Breaks within paragraphs
 
 * Generally avoid line breaks in paragraphs.
-* Do not use two spaces at the end of a line to indicate a line break within a pagraph.
-* If really nececarry - e.g. for readablility - use `<br>`.
+* Do not use two spaces at the end of a line to indicate a line break within a paragraph.
+* If really necessary - e.g. for readability - use `<br>`.
 
 ### Rationale
 
