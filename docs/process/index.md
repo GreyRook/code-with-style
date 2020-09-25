@@ -71,10 +71,11 @@ The Sprint Planning is time-boxed to a maximum of eight hours for a one month Sp
 The SM ensures that the event takes place and that the attendants understand its purpose.
 The SM teaches the Scrum Team to keep it within the time-box.
 
-Sprint Planning answers the following:
+Sprint Planning answers the following questions:
 
-* What can be delivered in the increment resulting from the upcoming Sprint?
+* What can be delivered in the increment resulting from the current Sprint?
 * How will the work which is needed to deliver the increment be achieved?
+* What Sprint Goal does the current Sprint have?
 
 ### Sprint Review
 
