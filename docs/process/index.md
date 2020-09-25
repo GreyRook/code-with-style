@@ -36,7 +36,9 @@ During the Sprint:
 * The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the commited story points but to exchange issues if needed.
 
 ### Sprint Goal
-The Sprint Goal is the objective that can be met through implementation of the Sprint Backlog. It is a guidance of why the Dev Team is building the increment. The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
+The Sprint Goal is the objective that can be met through implementation of the Sprint Backlog. 
+It is a guidance of why the Dev Team is building the increment. 
+The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
 
 * What can be delivered in the increment?
 The Dev Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint Goal. 
@@ -56,7 +58,8 @@ issues and bugs can only replace bugs)
 
 ### Daily Scrum
 
-The *Daily Scrum* is not a status meeting but a daily, time-boxed (15 minutes) meeting at the same time to inspect on the progress towards the Sprint Goal. The Dev Team is responsible while the SM may guide its facilitation.
+The *Daily Scrum* is not a status meeting but a daily, time-boxed (15 minutes) meeting at the same time to inspect on the progress towards the Sprint Goal. 
+The Dev Team is responsible while the SM may guide its facilitation.
 Typical questions to be discussed during the Daily Scrum are:
 * What did I do yesterday to meet the Sprint Goal?
 * What will I do today to meet the Sprint Goal?
@@ -99,7 +102,8 @@ The SM participates as peer team member.
 The *Scrum Master* ensures that at least one high priority process improvement, identified in the *Sprint Retro*, is worked on during the upcoming sprint. 
 
 ## Sprint Refinement
-The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity.
+The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. 
+The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity.
 It also gives the Dev Team an insight into what is currently planned for the next Sprints.
 
 In the context of the *Sprint Planning* tickets and subtasks should get tagged with BE (backend) or FE (frontend) to better understand which part of the team can handle which task.
@@ -109,14 +113,14 @@ In the context of the *Sprint Planning* tickets and subtasks should get tagged w
 *Summary:* A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements.
 
 1. A relative estimation of effort for a requirement
-* Measured relative to a known “reference” story. At *Grey Rook* we grow accustomed over time to how complex one Story Point is
-* Consistent over time for the same team
-* Not necessarily comparable across teams
-* Deliberately abstracted from common units of measurement (hours, meters, kilograms, etc.)
-* Quick to use, once you have established a reference story 
+	* Measured relative to a known “reference” story. At *Grey Rook* we grow accustomed over time to how complex one Story Point is
+	* Consistent over time for the same team
+	* Not necessarily comparable across teams
+	* Deliberately abstracted from common units of measurement (hours, meters, kilograms, etc.)
+	* Quick to use, once you have established a reference story 
 2. A measure of team output
-* Correlated to but not necessarily the same as effort
-* Describes the complexity, risk involved and uncertainty of a requirement
+	* Correlated to but not necessarily the same as effort
+	* Describes the complexity, risk involved and uncertainty of a requirement
 
 The complexity, risk involved and uncertainty of tickets is estimated using Story Points.
 These are given to each individual Story Ticket - and depending on the project, Bug Ticket - in the planning phase of a Sprint in a process called 'Planning Poker'.
