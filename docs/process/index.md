@@ -99,11 +99,11 @@ The SM participates as peer team member.
 The *Scrum Master* ensures that at least one high priority process improvement, identified in the *Sprint Retro*, is worked on during the upcoming sprint. 
 
 ## Sprint Refinement
-The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity. 
+The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity.
+It also gives the Dev Team an insight into what is currently planned for the next Sprints.
 
-In the context of the *Sprint Planning* tickets and subtasks should get tagged with
-BE (backend) or FE (frontend) to better understand which part of the team can handle 
-which task.
+In the context of the *Sprint Planning* tickets and subtasks should get tagged with BE (backend) or FE (frontend) to better understand which part of the team can handle which task.
+
 ### Story Points
 
 **Summary:** *A Story Point is a relative unit of measure, decided upon and used by individual Scrum teams, to provide relative estimates of effort for completing requirements*
