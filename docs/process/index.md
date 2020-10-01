@@ -56,6 +56,16 @@ issues and bugs can only replace bugs)
 
 ## Scrum Events
 
+### Timboxes
+The Scrum Guide gives clear rules on the timbox of the Scrum Events.
+These are listed below with the following format:
+Scrum Guide Timebox / What we aim for at **Grey Rook**.
+* Sprint: 4 weeks / 2 weeks
+* Daily Scrum: 15 minutes / 15 minutes
+* Sprint Planning: 8 hours / 2 hours
+* Sprint Review: 4 hours / 2 hours
+* Sprint Retrospective: 3 hours / 1½ hours
+
 ### Daily Scrum
 
 The *Daily Scrum* is not a status meeting but a daily, time-boxed (15 minutes) meeting at the same time of the day to inspect on the progress towards the Sprint Goal. 
