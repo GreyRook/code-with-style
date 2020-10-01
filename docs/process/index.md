@@ -23,7 +23,20 @@ The Scrum Team includes the Development Team (Dev Team), the Product Owner (PO) 
 * The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product Backlog (or delegates it, but is still accountable) and makes sure that the Dev Team understands the Product Backlog items and knows what to work on next. Thus, the Product Backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
 * The Scrum Master does not decide, the SM is a servant leader with the task to maximize value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
 
-## Sprint 
+
+## Scrum Events
+
+### Timboxes
+The Scrum Guide gives clear rules on the timbox of the Scrum Events.
+These are listed below with the following format:<br>
+Scrum Guide Timebox / What we aim for at **Grey Rook**.
+* Sprint: 4 weeks / 2 weeks
+* Daily Scrum: 15 minutes / 15 minutes
+* Sprint Planning: 8 hours / 2 hours
+* Sprint Review: 4 hours / 2 hours
+* Sprint Retrospective: 3 hours / 1½ hours
+
+### Sprint 
 
 * A Sprint is a time-box during which a “Done”, useable, and potentially releasable product increment is created. 
 * The Sprint is a container for all other Sprint Events with a consistent duration throughout a development effort. The duration should be one month or less. At *Grey Rook* it is 2 weeks, starting on Monday and ending on Friday the following week.
@@ -35,7 +48,7 @@ During the Sprint:
 * Quality goals do not decrease
 * The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the commited story points but to exchange issues if needed.
 
-### Sprint Goal
+#### Sprint Goal
 The Sprint Goal is the objective that can be met through implementation of the Sprint Backlog. 
 It is a guidance of why the Dev Team is building the increment. 
 The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
@@ -53,18 +66,6 @@ Issues can be exchanged at any point in the Sprint process given the following c
 issues and bugs can only replace bugs)
 * It is discussed with at least one of the members of the Dev Team
 * The PO is informed about the change and agrees
-
-## Scrum Events
-
-### Timboxes
-The Scrum Guide gives clear rules on the timbox of the Scrum Events.
-These are listed below with the following format:
-Scrum Guide Timebox / What we aim for at **Grey Rook**.
-* Sprint: 4 weeks / 2 weeks
-* Daily Scrum: 15 minutes / 15 minutes
-* Sprint Planning: 8 hours / 2 hours
-* Sprint Review: 4 hours / 2 hours
-* Sprint Retrospective: 3 hours / 1½ hours
 
 ### Daily Scrum
 
