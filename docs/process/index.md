@@ -54,7 +54,7 @@ It is a guidance of why the Dev Team is building the increment.
 The Sprint Goal offers some flexibility regarding the implemented functionality while ensuring that the Product Backlog items deliver one coherent function.
 
 * What can be delivered in the increment?
-The Dev Team forecasts functionality while the task of the PO is to discuss the objetive and Product Backlog items needed for the Sprint Goal. 
+The Dev Team forecasts functionality while the task of the PO is to discuss the objective and Product Backlog items needed for the Sprint Goal. 
 
 At *Grey Rook* we aim to plan the Sprint so that no issues need to be changed. 
 However, as it is an agile process, there are always circumstances that demand for a quick change. 
