@@ -46,7 +46,7 @@ During the Sprint:
 
 * No changes are made to the Sprint that would endanger the Sprint goal
 * Quality goals do not decrease
-* The scope may be clarified and negotiated between the PO and the Dev Team as more is learned. At *Grey Rook* we aim not to change the commited story points but to exchange issues if needed.
+* The scope may be clarified and negotiated between the PO and the Dev Team as the sprint progresses and more is learned. At *Grey Rook* we aim not to change the commited story points but to exchange issues if needed.
 
 #### Sprint Goal
 The Sprint Goal is the objective that can be met through implementation of the Sprint Backlog. 
