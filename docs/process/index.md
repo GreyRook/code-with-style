@@ -16,12 +16,12 @@ Only if there is a comment, the developer can choose a new issue to work on.
 
 ## Scrum Roles
 
-The Scrum Team is self-organizing (choose how to best do their work), cross-functional (has all competencies to accomplish work without depending on others) and is optimized for flexibility, creativity and productivity. 
-The Scrum Team includes the Development Team (Dev Team), the Product Owner (PO) and the Scrum Master (SM):
+Scrum does not recognize any titles and sub-teams within it, but there are three roles within a team.
+The Scrum Team is made up of the Development Team (Dev Team), the Product Owner (PO) and the Scrum Master (SM):
 
-* The Development Team (3-9 people) creates the increment during the Sprint. It is a self-organizing, cross-functional team, while Scrum does not recognize any titles and sub-teams within it.
-* The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product Backlog (or delegates it, but is still accountable) and makes sure that the Dev Team understands the Product Backlog items and knows what to work on next. Thus, the Product Backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the goals and missions. 
-* The Scrum Master does not decide, the SM is a servant leader with the task to maximize value. The SM helps to understand and promotes the Scrum theory/practices/rules and values and supports Scrum. 
+* The Development Team (3-9 people) creates the increment during the Sprint. It is a self-organizing (choose how to best do their work), cross-functional team (has all competencies to accomplish work without depending on others) that is optimized for flexibility, creativity and productivity.  
+* The Product Owner is one person whose job it is to maximize and optimize value of development work. The PO organizes the Product Backlog (or delegates it, but is still accountable) and makes sure that the Dev Team understands the Product Backlog items and knows what to work on next. Thus, the Product Backlog should be visible, transparent and clear. The PO is responsible for ordering the items to best achieve the product vision. 
+* The Scrum Master does not decide, the SM is a servant leader. The SM helps to understand and promotes the Scrum theory, practices, rules and values and supports Scrum. 
 
 
 ## Scrum Events
