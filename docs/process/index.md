@@ -117,7 +117,7 @@ The Refinement is not an official Scrum Event, more an ongoing process where the
 The Scrum Teams decides when the refinement is done but it should consume no more than 10% of DEV capacity.
 It also gives the Dev Team an insight into what is currently planned for the next Sprints.
 
-In the context of the *Sprint Planning* tickets and subtasks should get tagged with BE (backend) or FE (frontend) to better understand which part of the team can handle which task.
+In the context of the *Sprint Planning* tickets and subtasks must get tagged with BE (backend) or FE (frontend) if applicable, to better understand which part of the team can handle which task.
 
 ### Story Points
 
