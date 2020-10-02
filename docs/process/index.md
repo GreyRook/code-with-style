@@ -58,7 +58,7 @@ The Dev Team forecasts functionality while the task of the PO is to discuss the 
 
 At *Grey Rook* we aim to plan the Sprint so that no issues need to be changed. 
 However, as it is an agile process, there are always circumstances that demand for a quick change. 
-That can be hotfixes and breaking bugs as well as presentations for clients that need adjustments in the code. 
+For example hotfixes and breaking bugs as well as presentations for clients that need adjustments in the code. 
 Issues can be exchanged at any point in the Sprint process given the following conditions:
 
 * It is feasible to complete the new issue within the Sprint
