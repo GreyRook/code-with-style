@@ -105,12 +105,12 @@ The Retrospective (Retro) is a time-boxed (3 hours for a one month Sprint and 1.
 
 The aim ot the Retro is to improve the work processes defined by the Dev Team and adapt the *Definition of Done (DoD)*.
 It is a formal opportunity to focus on inspection and adaption regarding people/relationships/processes/tools.
-The Scrum Team is advised to identify and order major items that went well and potential improvements.
+The Scrum Team is advised to identify and order major items that went well and point out potential improvements.
 
 The whole Scrum Team takes part, while the SM ensures that the meeting is productive.
 The SM participates as peer team member.
 
-The *Scrum Master* ensures that at least one high priority process improvement, identified in the *Sprint Retro*, is worked on during the upcoming sprint. 
+The *Scrum Master* ensures that at least one high priority process improvement, identified in the *Sprint Retrospective*, is worked on during the upcoming sprint. 
 
 ## Sprint Refinement
 The Refinement is not an official Scrum Event, more an ongoing process where the Dev Team and the PO add detail, estimates and order to the Product Backlog. 
