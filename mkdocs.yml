@@ -1,0 +1,34 @@
+site_name: Code With Style
+theme:
+  name: material
+  palette:
+    primary: deep purple
+  
+  font:
+    text: Lato
+
+  language: en
+
+  features:
+    - navigation.tabs
+
+nav:
+  - Home:
+    - "Intro": index.md
+    - "Editing this Guide": "HOWTO.md"
+    - "Attributions": "attribution.md"
+    - "Changelog": "CHANGELOG.md"
+  - Process Guides:
+    - Scrum Guide: "process/index.md"
+    - Code Reviews: "review/index.md"
+  - "Coding Guides":
+    - git: "git/index.md"
+    - Project Structure: "projects/index.md"
+    - Frontend:
+      - TypeScript: "typescript/index.md"
+      - Angular:  "typescript/angular/index.md"
+      - sass:  "typescript/sass/index.md"
+      - react:  "typescript/react/index.md"
+    - Python:
+      - Python: "python/index.md"
+      - Django: "python/django.md"
