@@ -1,6 +1,6 @@
 # Code With Syle Guide
 
-An opinionated guide on how [we](https://www.greyrook.com) like our code.
+An opinionated guide on how [we](https://www.greyrook.com) like our code and how we like to write it
 
 
 ## General Topics
