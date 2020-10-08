@@ -1,10 +1,11 @@
-# Introduction
+# Code With Syle Guide
+
+An opinionated guide on how [we](https://www.greyrook.com) like our code.
 
 
 ## General Topics
  
  * [Project Structure](projects/index.md)
- * git guidelines
  * [Code Review Guide](review/index.md)
 
 ## Language Specific
