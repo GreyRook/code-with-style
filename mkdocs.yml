@@ -27,7 +27,7 @@ nav:
     - Frontend:
       - TypeScript: "typescript/index.md"
       - Angular:  "typescript/angular/index.md"
-      - sass:  "typescript/sass/index.md"
+      - sass:  "sass/index.md"
       - react:  "typescript/react/index.md"
     - Python:
       - Python: "python/index.md"
