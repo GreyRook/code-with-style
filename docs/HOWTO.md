@@ -20,7 +20,7 @@ Contracts can generally be divided into two non-exclusive groups:
 - External Customer-Relationship-Management 
 
 
-## GitLab Issues
+## GitLab Issues and Merge Requests
 
 GitLab issues can be used to internally track and discuss any change requests before working on the corresponding merge request or working contract.
 
@@ -30,6 +30,9 @@ In order to allow the easy categorization of issues and merge requests, GitLab c
 - Frontend Devs => TypeScript, CSS/SCSS, HTML
 - Backend Devs => Python, MongoDB, Rest
 - Embedded Devs => C, C++
+
+To avoid "feature creep" in merge requests, merge requests must not be declined for being "too small".
+If the scope of a MR is changed it needs to be reviewed again by everyone involved, so it is better to create an additional MR in case a "we should also define/regulate/include X"-situation comes up while reviewing.
 
 # Attribution
 

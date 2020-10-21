@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `docs/sass/index.md` with best practices about sass/scss
 - Rules on line breaks in markdown files ([markdown/index.md](markdown/index.md))
 - Detailed additions about Scrum to the process guide ([process/index.md](process/index.md))
+- Avoid scope creep in merge requests [HOWTO.md](HOWTO.md)
 
 ### Fixed
 - Small spelling and grammar fixes all around.
