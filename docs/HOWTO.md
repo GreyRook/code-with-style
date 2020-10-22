@@ -52,3 +52,20 @@ License: CC-By 3.0
 ```
 
 * Make any changes to the copied text afterwards in separate commits.
+
+
+# Adding diagrams and other graphics
+
+The preferred software to create diagrams and other graphics for the guide is [draw.io](https://github.com/jgraph/drawio-desktop).
+The source file of any graphic must be added to the guide's git repo.
+A png version for easier online-viewing must also be provided.
+The png version must be size-optimized and stored in LFS.
+
+Example:
+
+```bash
+# Export drawio file to png
+drawio -f png --export docs/git/issue-mr-commit.drawio
+# optimize the png's size before adding to git
+optipng -o 7 docs/git/issue-mr-commit.png
+```
