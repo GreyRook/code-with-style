@@ -1,0 +1,40 @@
+# require different bullets for sublists
+MD004:
+  style: sublist
+
+# do not allow hard line break with two trailing spaces
+MD009:
+  br_spaces: 0
+
+# do not specify maximum line length
+MD013: false
+
+# The same heading name is only forbidden for siblings.
+# Rationale: headings should have different names because some markdown parsers generate anchors based on the heading name.
+# Anyway, it is necessary to allow same sublevel heading names on different toplevel headings in documents like changelogs.
+MD024:
+  allow_different_nesting: true
+
+# allow multiple top level headings in the same document
+MD025: false
+
+# forbid trailing punctuation in headings, except for '?' or '!'
+MD026:
+  punctuation: ".,;:。，；："
+
+# allow inline html tag for hard line break, since two spaces at eol are not allowed for that
+MD033:
+  allowed_elements:
+    - "<br>"
+
+# allow only '---' for horizontal rules
+MD035:
+  style: "---"
+
+# allow only fenced code blocks
+MD046:
+  style: fenced
+
+# allow only backticks for fenced code blocks
+MD048:
+  style: backtick
