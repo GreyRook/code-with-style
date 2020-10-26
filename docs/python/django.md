@@ -4,7 +4,7 @@
 
 * Project specific apps should be inside the project folder inside an `apps` folder
 
-```
+```plaintext
 project-name/
   apps/               # project-specific applications
     about/

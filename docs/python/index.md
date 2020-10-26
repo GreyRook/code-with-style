@@ -9,13 +9,13 @@
 * Make Type annotations, be as specific as possible but it's okay to use `Any` or `dict` (without being more specific)
 * All libraries needed for development and running tests belong into `[dev-packages]`, debug packages must not be installed in production
 * `Pipfile.lock`
-  * is to be committed to git
+  + is to be committed to git
 * `Pipfile`
-  * Versioning: should specify version range, for example: `pytest = ">=4.6.0,<5"`
-    * Specify minimum version according to features needed and security fixes
-    * Avoid next major version
-  * Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
-  * Must not include `[requires] python_version = "3.6"` since we want to test the code with multiple python versions.  [Pipenv does not support multiple versions of python](https://github.com/pypa/pipenv/issues/1050).
+  + Versioning: should specify version range, for example: `pytest = ">=4.6.0,<5"`
+    - Specify minimum version according to features needed and security fixes
+    - Avoid next major version
+  + Must not include the package itself (including no `package-name = {editable = true,path = "."}`)
+  + Must not include `[requires] python_version = "3.6"` since we want to test the code with multiple python versions.  [Pipenv does not support multiple versions of python](https://github.com/pypa/pipenv/issues/1050).
 * use [bump2version](https://github.com/c4urself/bump2version) to manage releases
 
 ## linting
@@ -32,7 +32,7 @@
 Black for code-formatting
 <https://github.com/python/black>
 
-```
+```sh
 pip install black
 black [folder]
 ```
@@ -49,13 +49,11 @@ NOTE: not necessary all linting errors are fixed by black, so check your linter 
 
 `isort` to sort imports
 
-```
+```sh
 pip install isort
 isort -c -rc [folder]  # to check for wrong import order
 isort -rc [folder]  # to fix wring import order
 ```
-
-<a id="imports"></a>
 
 ## imports
 
@@ -88,8 +86,6 @@ Good:
 ```python
 import plotly
 ```
-
-<a id="typing-imports"></a>
 
 ### Imports For Typing
 
@@ -158,49 +154,43 @@ class House:
 
 When inside the `building` module, it would be clear that `build` refers to buildings. While from outside the module, expect the function to be called like `building.build()`.
 
-<a id="names-to-avoid"></a>
-
 ### Names to Avoid
 
 Avoid single character names and abbreviations with the following exceptions:
 
-- `i,j` - iterators (must be integers)
-- `x,y,z` - coordinates
-- `e` - exceptions in `except Foo as e`
-- `f` - file
-- `t` - time
-- `td` - time delta / duration
-- `db` - database
-- `fn` - function
-- `fs` - filesystem
-- `cfg` - configuration
-- `cli` - command line interface
+* `i,j` - iterators (must be integers)
+* `x,y,z` - coordinates
+* `e` - exceptions in `except Foo as e`
+* `f` - file
+* `t` - time
+* `td` - time delta / duration
+* `db` - database
+* `fn` - function
+* `fs` - filesystem
+* `cfg` - configuration
+* `cli` - command line interface
 
 Protocol names are generally okay to use:
 
-- `ws` - websocket
-- `ftp` - websocket
+* `ws` - websocket
+* `ftp` - websocket
 
 Important: Those names MUST NOT be used for other meanings.
 
 Also avoid `__double_leading_and_trailing_underscore__` names (reserved by Python)
 
-<a id="naming-conventions"></a>
-
 ### Naming Conventions
 
-- Place related classes and top-level functions together in a module.
-    Unlike Java, there is no need to limit yourself to one class per module.
+* Place related classes and top-level functions together in a module.
+  Unlike Java, there is no need to limit yourself to one class per module.
 
 ### Naming Unit tests
 
-- Name unit test files like the module they test, `test_<module>.py`
+* Name unit test files like the module they test, `test_<module>.py`
 
-- In *unittest* method names may not conform with usual naming guidelines
-    since they should contain the name of what they test, even if those components use
-    CapWords.  The following schema is preferred: `test_<what_you_test>`. Where `<what_you_test>` might be a function, class or method name, for example: `test_HTTPConnection_set_tunnel`.
-
-<a id="file-naming"></a>
+* In *unittest* method names may not conform with usual naming guidelines since they should contain the name of what they test, even if those components use CapWords.
+  The following schema is preferred: `test_<what_you_test>`.
+  Where `<what_you_test>` might be a function, class or method name, for example: `test_HTTPConnection_set_tunnel`.
 
 ### File Naming
 
@@ -307,7 +297,7 @@ Getting the log level and messages right can be tricky. Apart from the level and
 
 ## Testing
 
-```
+```toml
 [dev-packages]
 pytest = "*"
 pytest-cov = "*"
@@ -317,7 +307,7 @@ pytest-watch = "*"
 
 Additions for aiohttp based projects:
 
-```
+```toml
 pytest-asyncio = "*"
 pytest-aiohttp = "*"
 ```
@@ -346,7 +336,7 @@ Use cookiecutter and our custom template as described below.
 
 ### Install Grey Rook cookiecutter template
 
-```
+```sh
 sudo pip3 install cookiecutter
 mkdir ~/.cookiecutters
 git clone https://github.com/FlorianLudwig/cookiecutter-py3.git ~/.cookiecutters/py3
@@ -371,6 +361,10 @@ Python 3 project with aiohttp: ```cookiecutter ~/.cookiecutters/py3-aiohttp```
   * the data is not valid indefinitely
   * the TTL is max. 7 days
   * it is only logged on debug level
+  + the data is not valid indefinitely
+  + the TTL is max. 7 days
+  + it is only logged on debug level
+
 
 # Preferable ways
 
