@@ -30,7 +30,7 @@
 ## formatting
 
 Black for code-formatting
-https://github.com/python/black
+<https://github.com/python/black>
 
 ```
 pip install black
@@ -54,7 +54,6 @@ pip install isort
 isort -c -rc [folder]  # to check for wrong import order
 isort -rc [folder]  # to fix wring import order
 ```
-
 
 <a id="imports"></a>
 
@@ -90,7 +89,6 @@ Good:
 import plotly
 ```
 
-
 <a id="typing-imports"></a>
 
 ### Imports For Typing
@@ -123,12 +121,10 @@ General naming is based on [PEP 8](https://www.python.org/dev/peps/pep-0008/):
 `function_name`, `GLOBAL_CONSTANT_NAME`, `global_var_name`, `instance_var_name`,
 `function_parameter_name`, `local_var_name`.
 
-
 Function names, variable names, and filenames should be descriptive; eschew
 abbreviation. In particular, do not use abbreviations that are ambiguous or
 unfamiliar to readers outside your project, and do not abbreviate by deleting
 letters within a word.
-
 
 ### Names have context
 
@@ -162,7 +158,6 @@ class House:
 
 When inside the `building` module, it would be clear that `build` refers to buildings. While from outside the module, expect the function to be called like `building.build()`.
 
-
 <a id="names-to-avoid"></a>
 
 ### Names to Avoid
@@ -182,6 +177,7 @@ Avoid single character names and abbreviations with the following exceptions:
 - `cli` - command line interface
 
 Protocol names are generally okay to use:
+
 - `ws` - websocket
 - `ftp` - websocket
 
@@ -189,22 +185,20 @@ Important: Those names MUST NOT be used for other meanings.
 
 Also avoid `__double_leading_and_trailing_underscore__` names (reserved by Python)
 
-
 <a id="naming-conventions"></a>
 
 ### Naming Conventions
 
--   Place related classes and top-level functions together in a module.
+- Place related classes and top-level functions together in a module.
     Unlike Java, there is no need to limit yourself to one class per module.
 
 ### Naming Unit tests
 
--   Name unit test files like the module they test, `test_<module>.py`
+- Name unit test files like the module they test, `test_<module>.py`
 
--   In *unittest* method names may not conform with usual naming guidelines
+- In *unittest* method names may not conform with usual naming guidelines
     since they should contain the name of what they test, even if those components use
     CapWords.  The following schema is preferred: `test_<what_you_test>`. Where `<what_you_test>` might be a function, class or method name, for example: `test_HTTPConnection_set_tunnel`.
-
 
 <a id="file-naming"></a>
 
@@ -213,7 +207,6 @@ Also avoid `__double_leading_and_trailing_underscore__` names (reserved by Pytho
 Python filenames must comply with the following regex: `[a-z][a-z0-9_]+\.py`.
 This allows them to be imported and unittested. If you want an executable to be
 accessible without the extension use `entry_points.console_scripts` in `setup.py`.
-
 
 ### Double underscore
 

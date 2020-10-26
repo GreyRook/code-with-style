@@ -2,7 +2,7 @@
 
 ## Project strucutre
 
- * Project specific apps should be inside the project folder inside an `apps` folder
+* Project specific apps should be inside the project folder inside an `apps` folder
 
 ```
 project-name/
@@ -29,4 +29,4 @@ manage.py
 
 In addition to the [common python linting] rules also run
 
- * `pipenv run python manage.py check --deploy --fail-level WARNING`
+* `pipenv run python manage.py check --deploy --fail-level WARNING`
