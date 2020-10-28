@@ -271,7 +271,9 @@ Docs:
 
 ## creating a new project
 
-  Use cookiecutter: ``
+Use cookiecutter and our custom template as described below.
+
+### Install Grey Rook cookiecutter template
 
 ```
 sudo pip3 install cookiecutter
@@ -281,6 +283,15 @@ cp -r ~/.cookiecutters/py3 ~/.cookiecutters/py3-aiohttp
 cd ~/.cookiecutters/py3-aiohttp
 git checkout aiohttp
 ```
+
+### Create new Project
+In the parent folder of the new project, run:
+
+Plain Python 3 project: ```cookiecutter ~/.cookiecutters/py3```
+
+Python 3 project with aiohttp: ```cookiecutter ~/.cookiecutters/py3-aiohttp```
+
+
 
 # Security guidelines
 
