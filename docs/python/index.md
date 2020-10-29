@@ -300,3 +300,12 @@ Python 3 project with aiohttp: ```cookiecutter ~/.cookiecutters/py3-aiohttp```
   * the data is not valid indefinitely
   * the TTL is max. 7 days
   * it is only logged on debug level
+
+# Preferable ways
+
+There are often multiple options to get things working.
+In some cases, one option is preferred over another.
+This list is to be continued.
+
+* prefer `isinstance(foo, int)` over `type(foo) == int`
+  * Rationale: Using `isinstance` matches all classes inheriting from the expected type. Using `type` returns the class type of an object, which can lead to unexpected results when subclasses or superclasses are passed.
