@@ -110,6 +110,7 @@ For this guide, we made some rules to optimize both editability and readability 
 
 * Most if not all tools are able to do proper word-wrapping. Not many editors provide automatic wrapping by adding actual line breaks into the document. This makes editing text more cumbersome, especially in long paragraphs.
 * Diffs (and therefore merge requests) get smaller and easier to read if every sentence is on its own line.
+<<<<<<< HEAD
 * Tools for analyzing grammar, like [languagetool](https://languagetool.org/), are confused by the extra line breaks.
 
 ## Internal Links
@@ -124,3 +125,20 @@ You can link to chapters within your document or to chapters within another docu
 * Links must be all lowercase.
 * Spaces must be replaced with hyphens `-`.
 
+=======
+ * Tools for analyzing grammar, like [languagetool](https://languagetool.org/), are confused by the extra line breaks.
+
+ ## Linting
+
+ Use [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) for linting.
+ There is a configuration file available to fit our styleguide.
+ To use it, the `.markdownlint.yml` file, located in the root of the `guide` repository, must be present at the current directory or any parent directory.
+ Alternatively, the `--config` argument can be used to specify a config file.
+ 
+ Tip: `markdownlint-cli` can automatically fix minor issues, see [Fixing errors](https://github.com/igorshubovych/markdownlint-cli#fixing-errors).
+
+ Note: There exist [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli) and [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2).
+ Prefer `markdownlint-cli` over `markdownlint-cli2`.
+ The first one is a traditional command-line interface, the second one is configuration-based.
+ They both use the same [markdownlint](https://github.com/DavidAnson/markdownlint) library, see: [markdownlint-cli2 overview](https://github.com/DavidAnson/markdownlint-cli2#overview).
+>>>>>>> 6effe82... added linting section to python styleguide
