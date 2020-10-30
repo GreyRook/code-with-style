@@ -352,6 +352,61 @@ Plain Python 3 project: ```cookiecutter ~/.cookiecutters/py3```
 
 Python 3 project with aiohttp: ```cookiecutter ~/.cookiecutters/py3-aiohttp```
 
+# Documentation guideline
+
+Document code in-line using comments and docstrings.
+Most important: **Comments document 'why'** - not 'what' or 'how'.
+**Docstrings document 'usage'**.
+
+Your fellow developers comprehend the 'what' and 'how' as it is documented by the code itself. Therefore, documenting 'what' and 'how' is inefficient. <br>
+However, the code does not reveal critical reasons like architectural, constraint, or performance decisions.
+Code may also 'hide' relationships or side-effects. By documenting 'why', you make your own and your fellow developer's life (extending, maintenance, ...) much easier and also provides a great starting point for learning and reviewing.
+
+## Docstrings
+Docstrings document class, module, function, method, or variable definitions. 
+They facilitate your life as they are accessible from the doc attribute (__doc__) of any of the Python objects, are accessible with the built-in help() function, and IDE's display them when the corresponding definition is being used.
+
+Always try to avoid having to write long docstrings. Starting points:
+- if a function/class/attribute... names do not intuitively express what the underlying code shall be used for, then consider renaming it.
+- use type hints whenever possible
+- if an attribute/variable (dict) has nested required fields, consider using [pydantic](https://pydantic-docs.helpmanual.io/) or dataclasses.
+
+But add docstrings if:
+- function/method raises exceptions that are expected to get handled by the invoker.
+- function/class/attribute... names might be misleading or still not intuitively express the code's purpose. <br>
+    For example, if the name refers to uncommon domain language/terms, term(s) are used in various domains differently or could be confused with other functionality.
+- type hints are not sufficient for understanding the required structure or content of parameters, attributes, and alike. <br>
+    For example, if a function requires a specific structure in a dict parameter, then specify the structure in the docstring.
+
+
+For writing docstrings, we use Google Style Python Docstrings. 
+Simple example for a function:
+
+```python
+def function_with_pep484_type_annotations(param1: int, param2: str) -> bool:
+    """Example function with PEP 484 type annotations.
+
+    Args:
+        param1: The first parameter.
+        param2: The second parameter.
+
+    Returns:
+        The return value. True for success, False otherwise.
+
+    Raises:
+        ValueError: If `param2` is equal to `param1`
+    """
+```
+
+Instead of documenting attributes and variables in a class's or function's docstring, you can also add docstring in-line like this:
+
+```python
+class ExampleClass():
+  attr1: str = 1
+  """Attribute of class ExampleClass"""
+```
+
+You can check out [further examples here](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
 
 
 # Security guidelines
