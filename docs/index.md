@@ -10,6 +10,9 @@ An opinionated guide on how [we](https://www.greyrook.com) like our code and how
 
 ## Language Specific
 
+> Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.
+> -- [John F. Woods](http://ruby.zigzo.com/2014/08/01/who-said-that-one-violent-psychopath-quote/)
+
  * [Markdown](markdown/index.md)
  * [Python](python/index.md)
  * [TypeScript](typescript/index.md)
