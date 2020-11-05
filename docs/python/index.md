@@ -234,7 +234,85 @@ TODO Currently this is not the case as we had too many false positives with it.
 
 -->
 
-## testing
+## Logging
+
+Log messages empower you to comprehend erroneous or suspicious application behavior in deployment environments.
+That is, without access to a debugger or controlling the application's data flow.
+Since log message get classified by levels, like error, warning, or info, the rate of error/warning messages also provides a sense on the application's quality of service.
+
+Therefore, it is paramount that we write good messages and use log levels correctly.
+The next sections outline how to do this.
+
+### Log levels
+Each log message gets classified by a log level.
+This log level either indicates the status of an execution request (like a method or API invocation) within the application and/or which kind of data the log message provides.
+
+In higher deployment environments, like production environments with a lot of load and real end-users, messages get dropped/filtered by log level.
+This allows for reducing the amount of 'noise', i.e. a flood of non-actionable log messages and leaking sensitive data.
+
+The following list summarizes each level's properties:
+
+- ***Debug***
+    - Status: unspecified.
+    - Information: any data. Usually a very detailed message with extra data for debugging application behavior in-depth.
+    - Limitations: minimal. Messages are allowed to contain user information (like names or email addresses) but never unencrypted credentials, tokens, or other secrets.
+    - Availability: local and development environments.
+
+- ***Info***
+    - Status: successful(!) execution of a request.
+    - Information: what the application has done/reacted to successfully.
+    - Limitations: low. Messages are allowed to contain pseudonymized user data, e.g. a user id, transaction id, or session id. This is due to data privacy regulations. Note that e-mail addresses are not pseudonymized.
+    - Availability: local, development, and test environments.
+
+- ***Warning***
+    - Status: error occurred but final impact on external consumer(s) is not known yet.
+    - Information: something went wrong internally but it may be recoverable and/or does not necessarily have an impact on end users/external service consumers. Alternatively, the consumer provided invalid input. If there is an impact (error level log message) later on, this may be the cause.
+    - Limitations: medium. Messages must adhere to the log message rules. Messages are allowed to contain pseudonymized user data. 
+    - Availability: all environments.
+
+- ***Error***
+    - Status: error occurred and it impacts an external consumer.
+    - Information: a request from an end user or invocation by an external service consumer, e.g. via an API, failed. The request remains unfulfilled. 
+    - Limitations: high. Messages must adhere to the log message rules. Messages should to contain (transaction and/or session) ids. Never internal information or personal user information. 
+    - Availability: all environments.
+
+- ***Fatal***
+    - Status: application-wide error(s) crashed the application and/or rendered it inoperational. Many external consumers are impacted.
+    - Information: errors are not restricted to individual requests but application-wide. For example if storage is full or the database is not reachable. All or most requests remain unfulfilled. 
+    - Limitations: high. Messages must adhere to the log message rules. Messages must specify the cause. Must never contain pseudomized user data. 
+    - Availability: all environments.
+
+### Log Messages Rules
+Log messages with levels warning, error, and fatal must provide context, i.e. include answers to the following questions:
+
+- What was expected to happen?
+- What happened instead?
+- Why is it relevant?
+- What was the state of the application?
+    - Include the exception message.
+- Remediation information?
+  - What will/might/should happen next?
+  - If cause/workaround/fix known/suspected - add a hint!
+
+For example:
+- “Mongodb command failed.” vs “CID Failed to create new user 'demo' in database. Duplicate Key Error [...]. Aborting creating user account.”
+<!-- Improvement idea: not an ideal example yet, look for a real one -->
+
+### Best practices
+Getting the log level and messages right can be tricky. Apart from the level and message rules above, the following practices support you:
+
+1. Whenever an external request execution fails, then log a corresponding message. \
+    For example, if the application offers an RESTful API and were to return a 5xx or 4xx status code, then the application must log a corresponding message. 
+2. Use the error log level only when an external request cannot be fulfilled due to internal errors. \
+    This means internal functions and libraries must never log errors but warnings. Only consumer-facing interfaces use the error log level because they are able to differentiate whether a external request has been be fulfilled in the end (e.g. via fallbacks) and whether the error cause is internal or due to the consumer. For RESTful applications this implies only 5xx responses cause a error-level log entry (for 4xx see next section). If internal health and/or configuration checks fail, then use the fatal log level.
+3. Use the warning log level when an external request cannot be fulfilled due to invalid input or authorization by the external consumer. \
+    For RESTful applications this implies all 4xx responses cause a warning-level log entry.
+4. Bubble up exceptions. \
+    Raising exceptions in internal functions/methods facilitate tracking a failure to its source as included stack traces contain meta-information. Combine raising an exception with a warning log message for maximizing traceability.
+5. Hand-over transaction IDs, if available. \
+    If external requests provide a (transaction) ID, then pass them on as parameters to internal functions/methods. If you include those transaction IDs in log messages, then it is easier to correlate log messages, to reconstruct the failing data flow, and to investigate cascading errors across multiple services.
+
+## Testing
 
 ```
 [dev-packages]
@@ -251,7 +329,7 @@ pytest-asyncio = "*"
 pytest-aiohttp = "*"
 ```
 
-## type annotations
+## Type annotations
 
 Use
 
