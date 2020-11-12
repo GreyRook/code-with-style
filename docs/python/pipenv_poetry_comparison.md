@@ -4,57 +4,63 @@
 
 | feature                                                                                   | pipenv             | poetry             |
 | ----------------------------------------------------------------------------------------- | :----------------: | :----------------: |
+| **Project setup**                                                                         |                    |                    |
+| dependency configuration a in single file                                                 | :x:                | :white_check_mark: |
 | automatic project setup                                                                   | :white_check_mark: | :white_check_mark: |
 | interactive project setup                                                                 | :x:                | :white_check_mark: |
+| define scripts in config file                                                             | :white_check_mark: | :white_check_mark: |
+| project specific configuration                                                            |  1                 | :white_check_mark: |
+| other python distributions                                                                | :white_check_mark: |                    |
+| automatic installation of required python version                                         | :white_check_mark: |                    |
+| **Virtual environment**                                                                   |                    |                    |
+| multiple virtual environments per project (e.g. for using with multiple python versions)  | :white_check_mark: | :white_check_mark: |
+| pass environmentvariables from a file to virtual environment                              | :white_check_mark: |                    |
+| use user-built virtual environment                                                        | :white_check_mark: |                    |
+| virtual environment can be placed in project folder                                       | :white_check_mark: | :white_check_mark: |
+| custom virtual environment location                                                       | :white_check_mark: | :white_check_mark: |
+| **Project build**                                                                         |                    |                    |
 | build project (wheel and sdlist)                                                          | :x:                | :white_check_mark: |
 | publish project on PyPI etc.                                                              | :x:                | :white_check_mark: |
+| **Dependencies**                                                                          |                    |                    |
+| lock dependencies (with hashes)                                                           | :white_check_mark: | :white_check_mark: |
 | dev-packages                                                                              | :white_check_mark: | :white_check_mark: |
 | extra-packages (packages that are not required bud enhance project)                       | :x:                | :white_check_mark: |
 | update dependencies within range specified in config file                                 | :white_check_mark: | :white_check_mark: |
-| dry-run on some commands                                                                  | :white_check_mark: | :white_check_mark: |
 | install from url/path                                                                     | :white_check_mark: | :white_check_mark: |
 | install packages from custom repos (git with https, ssh), install editable                | :white_check_mark: | :white_check_mark: |
 | install packages from other VC software than git                                          | :white_check_mark: | :x:                |
-| remove packages                                                                           | :white_check_mark: | :white_check_mark: |
 | list installed packages and sub-dependencies                                              | :white_check_mark: | :white_check_mark: |
-| run command                                                                               | :white_check_mark: | :white_check_mark: |
-| spawn interactive shell                                                                   | :white_check_mark: | :white_check_mark: |
-| define scripts in config file                                                             | :white_check_mark: | :white_check_mark: |
-| check project structure                                                                   | :x:                | :white_check_mark: |
-| search modules available on PiPI etc.                                                     | :x:                | :white_check_mark: |
-| lock dependencies (with hashes)                                                           | :white_check_mark: | :white_check_mark: |
+| remove packages                                                                           | :white_check_mark: | :white_check_mark: |
 | export to requirements.txt                                                                | :white_check_mark: | :white_check_mark: |
 | exprot to requirements.txt with hashes                                                    | :white_check_mark: | :white_check_mark: |
-| multiple virtual environments per project (e.g. for using with multiple python versions)  | :white_check_mark: | :white_check_mark: |
-| project specific configuration                                                            |  1                 | :white_check_mark: |
-| settings via environment variables                                                        | :white_check_mark: | :white_check_mark: |
-| multiple constraints dependencies                                                         | :white_check_mark: | :white_check_mark: |
-| plugins                                                                                   | :white_check_mark: | :white_check_mark: |
 | importing from requirements.txt                                                           | :white_check_mark: | :x:                |
+| multiple constraints dependencies                                                         | :white_check_mark: | :white_check_mark: |
 | specify versions of packages                                                              | :white_check_mark: | :white_check_mark: |
 | specify versions of python                                                                | :white_check_mark: | :white_check_mark: |
-| abort installation/warn if lock file is out-of-date                                       | :white_check_mark: | :white_check_mark: |
-| fancy shell mode                                                                          | :white_check_mark: |                    |
 | sequential installation to be as deterministic as possible                                | :white_check_mark: | 2                  |
-| expand environment variables in configuration file                                        | :white_check_mark: |                    |
-| Install dependencies from configuration file into parent system                           | :white_check_mark: |                    |
-| other python distributions                                                                | :white_check_mark: |                    |
-| scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 3                  |
-| shortcut for opening a module in editor                                                   | :white_check_mark: |                    |
-| automatic installation of required python version                                         | :white_check_mark: |                    |
-| pass environmentvariables from a file to virtual environment                              | :white_check_mark: |                    |
-| use user-built virtual environment                                                        | :white_check_mark: |                    |
-| search for configuration file in parent directories                                       | :white_check_mark: | :white_check_mark: |
-| override PyPI mirror url / set alternative repository                                     | :white_check_mark: | :white_check_mark: |
-| virtual environment can be placed in project folder                                       | :white_check_mark: | :white_check_mark: |
-| custom virtual environment location                                                       | :white_check_mark: | :white_check_mark: |
-| tox                                                                                       | :white_check_mark: | :white_check_mark: |
-| shell completion                                                                          | :white_check_mark: | :white_check_mark: |
 | use site-packages                                                                         | :white_check_mark: |                    |
 | install packages automatically discovered from import statements in code                  | :white_check_mark: |                    |
+| allow pre-releases                                                                        | :white_check_mark: |                    |
+| **Interface**                                                                             |                    |                    |
+| run command                                                                               | :white_check_mark: | :white_check_mark: |
+| spawn interactive shell                                                                   | :white_check_mark: | :white_check_mark: |
+| dry-run on some commands                                                                  | :white_check_mark: | :white_check_mark: |
+| check project structure                                                                   | :x:                | :white_check_mark: |
+| search modules available on PiPI etc.                                                     | :x:                | :white_check_mark: |
+| settings via environment variables                                                        | :white_check_mark: | :white_check_mark: |
+| plugins                                                                                   | :white_check_mark: | :white_check_mark: |
+| abort installation/warn if lock file is out-of-date                                       | :white_check_mark: | :white_check_mark: |
+| fancy shell mode                                                                          | :white_check_mark: |                    |
+| expand environment variables in configuration file                                        | :white_check_mark: |                    |
+| Install dependencies from configuration file into parent system                           | :white_check_mark: |                    |
+| scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 3                  |
+| shortcut for opening a module in editor                                                   | :white_check_mark: |                    |
+| search for configuration file in parent directories                                       | :white_check_mark: | :white_check_mark: |
+| override PyPI mirror url / set alternative repository                                     | :white_check_mark: | :white_check_mark: |
+| tox                                                                                       | :white_check_mark: | :white_check_mark: |
+| shell completion                                                                          | :white_check_mark: | :white_check_mark: |
 | show dependencies potentially unused in code                                              | :white_check_mark: |                    |
 | show dependency graph                                                                     | :white_check_mark: | :white_check_mark: |
-| allow pre-releases                                                                        | :white_check_mark: |                    |
 | list outdated dependencies                                                                | :white_check_mark: | :white_check_mark: |
 
 * configuration file: pipfile/pyproject.toml
@@ -270,4 +276,5 @@ Package operations: 0 installs, 1 update, 0 removals
 
 # Notes
 
-- 
+- [Pipenv is faster for full installs -> good for CI/CD, Poetry for everything else -> good for development](https://johnfraney.ca/posts/2019/11/19/pipenv-poetry-benchmarks-ergonomics-2/)
+- [black formatter's configuration is handeled in pyproject.toml too](https://ahmed-nafies.medium.com/pip-pipenv-poetry-or-conda-7d2398adbac9)
