@@ -23,7 +23,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 | interactive project setup                                                                 | :x:                | :white_check_mark: |
 | define scripts in config file                                                             | :white_check_mark: | :white_check_mark: |
 | project specific configuration                                                            |  1                 | :white_check_mark: |
-| other python distributions                                                                | :white_check_mark: |                    |
+| other python distributions (Anaconda etc.)                                                | :white_check_mark: |                    |
 | automatic installation of required python version                                         | :white_check_mark: |                    |
 | **Virtual environment**                                                                   |                    |                    |
 | multiple virtual environments per project (e.g. for using with multiple python versions)  | :white_check_mark: | :white_check_mark: |
@@ -63,7 +63,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 | settings via environment variables                                                        | :white_check_mark: | :white_check_mark: |
 | plugins                                                                                   | :white_check_mark: | :white_check_mark: |
 | abort installation/warn if lock file is out-of-date                                       | :white_check_mark: | :white_check_mark: |
-| fancy shell mode                                                                          | :white_check_mark: |                    |
+| [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | :white_check_mark: |                    |
 | expand environment variables in configuration file                                        | :white_check_mark: |                    |
 | Install dependencies from configuration file into parent system                           | :white_check_mark: |                    |
 | scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 3                  |
