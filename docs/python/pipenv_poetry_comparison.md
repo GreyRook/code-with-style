@@ -1,5 +1,18 @@
 # Pipenv Poetry Comparison
 
+## Overview
+
+While Pipenv is used for dependency management only, Poetry also offers building `sdlist`s and `wheel`s and publishing them on PyPI or other repositories.
+In terms of dependency management, there are two core features, Poetry offers in contrast to pipenv.
+
+1. Pipenv uses `Pipfile` and `Pipfile.lock` for configuring dependency.
+   However, if you create a python module, you still need to specify the requirements in `setup.py`, which is more complex than just adding dependencies to a toml file.
+
+   Poetry just uses `pyproject.toml` and `poetry.lock`.
+   There is no need for `setup.py`
+2. Poetry lets you use multiple virtual environments per project.
+   You can use them to run your project with different python versions.
+
 ## Pipenv vs. Poetry Feature Comparison
 
 | feature                                                                                   | pipenv             | poetry             |
