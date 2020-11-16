@@ -286,6 +286,45 @@ Package operations: 0 installs, 1 update, 0 removals
   • Updating cowsay (2.0.2 -> 2.0.3)
 ```
 
+### Corrupted hashes in lock file
+
+#### Pipenv
+
+I installed the `cowsay` module with `pipenv install cowsay`.
+I then modified the two checksums (from `wheel` and `tar.gz`) in the `Pipenv.lock` file.
+After removing `cowsay` without locking using the `pipenv uninstall cowsay --skip-lock` command and reinstalling from lockfile using the `pipenv sync` or `pipenv install --ignore-pipfile` command, the following error was thrown:
+
+```plaintext
+Installing dependencies from Pipfile.lock (ca0ac4)…
+An error occurred while installing cowsay==2.0.3 --hash=sha256:debde99bae664bd91487613223c1cb291832d8703bf7d524c3a4877ad37b4dad --hash=sha256:7ec3ec1bb085cbb788b0de1e76291524469faf41c6cdbec08a7ac072a7d1d6eb! Will try again.
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 1/1 — 00:00:01
+Installing initially failed dependencies…
+[pipenv.exceptions.InstallError]: Collecting cowsay==2.0.3
+[pipenv.exceptions.InstallError]:   Using cached cowsay-2.0.3-py2.py3-none-any.whl (6.9 kB)
+[pipenv.exceptions.InstallError]: ERROR: THESE PACKAGES DO NOT MATCH THE HASHES FROM THE REQUIREMENTS FILE. If you have updated the package versions, please update the hashes. Otherwise, examine the package contents carefully; someone may have tampered with them.
+[pipenv.exceptions.InstallError]:     cowsay==2.0.3 from https://files.pythonhosted.org/packages/d4/68/af23fbf90493044fc2ea83cd62923b9952c2d38eeeab83e0c016706bfbc8/cowsay-2.0.3-py2.py3-none-any.whl#sha256=7ec3ec1bb085cbb788b0de1e762941b4469faf41c6cdbec08a7ac072a7d1d6eb (from -r /tmp/pipenv-l6fviwig-requirements/pipenv-cfcbsin2-requirement.txt (line 1)):
+[pipenv.exceptions.InstallError]:         Expected sha256 debde99bae664bd91487613223c1cb291832d8703bf7d524c3a4877ad37b4dad
+[pipenv.exceptions.InstallError]:         Expected     or 7ec3ec1bb085cbb788b0de1e76291524469faf41c6cdbec08a7ac072a7d1d6eb
+[pipenv.exceptions.InstallError]:              Got        7ec3ec1bb085cbb788b0de1e762941b4469faf41c6cdbec08a7ac072a7d1d6eb
+ERROR: Couldn't install package: cowsay
+ Package installation failed...
+  ☤  ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/1 — 00:00:01
+```
+
+If you just use `pipenv install`, Pipenv does not install anything, because there are no dependencies to install in the `Pipfile`.
+If you re-install cowsay manually using `pipenv install cowsay`, it installs `cowsay` and updates the `Pipfile.lock` without throwing an error (just prints `Pipfile.lock out of date, updating...`).
+Instead, if you saved the Pipfile before uninstalling `cowsay` and replace the new one with the saved one, Pipenv throws the same error as above.
+If you delete the virtual environment (`.venv`) and re-install it using `pipenv install`, pipenv throws the same error as above.
+
+#### Poetry
+
+I installed the `cowsay` module with `poetry add cowsay`.
+I then modified the two checksums in the `poetry.lock` file.
+When saving the `poetry.lock` file, removing the `cowsay` module, replacing the new generated `poetry.lock` file with the saved one and then running `poetry install`, a warning is shown, that `poetry.lock` is not up to date with `pyproject.toml`.
+When installing cowsay again, the warning is shown too, but cowsay is installed anyway.
+There is no warning that the hashsums from the lock files differ from the actual ones.
+When instead installing `cowsay`, modify the checksums in `poetry.lock`, removing the virtual environment (`.venv`) and installing it again using `poetry install` there is no error thrown, the dependencies are installed and the `poetry.lock` file remains unmodified.
+Even when installing in a brand new docker/podman where cowsay was never installed before, there is no error thrown.
 
 # Notes
 
