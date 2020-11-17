@@ -7,6 +7,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 
 1. Pipenv uses `Pipfile` and `Pipfile.lock` for configuring dependency.
    However, if you create a python module, you still need to specify the requirements in `setup.py`, which is more complex than just adding dependencies to a toml file.
+   The need to maintain two different files for dependencies also adds complexity.
 
    Poetry just uses `pyproject.toml` and `poetry.lock`.
    There is no need for `setup.py`
@@ -22,7 +23,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 | automatic project setup                                                                   | :white_check_mark: | :white_check_mark: |
 | interactive project setup                                                                 | :x:                | :white_check_mark: |
 | define scripts in config file                                                             | :white_check_mark: | :white_check_mark: |
-| project specific configuration                                                            |  1                 | :white_check_mark: |
+| project specific configuration of Pipenv/Poetry                                           |  1                 | :white_check_mark: |
 | other python distributions (Anaconda etc.)                                                | :white_check_mark: |                    |
 | automatic installation of required python version                                         | :white_check_mark: |                    |
 | **Virtual environment**                                                                   |                    |                    |
@@ -35,7 +36,9 @@ In terms of dependency management, there are two core features, Poetry offers in
 | build project (wheel and sdlist)                                                          | :x:                | :white_check_mark: |
 | publish project on PyPI etc.                                                              | :x:                | :white_check_mark: |
 | **Dependencies**                                                                          |                    |                    |
+| automatic version pinning in configuration file when manually installing dependency       | `"*"`              | `"^2.0.3"` etc.    |
 | lock dependencies (with hashes)                                                           | :white_check_mark: | :white_check_mark: |
+| hashes are verified whith lock file during dependency installation                        | :white_check_mark: | :x:, 2             |
 | dev-packages                                                                              | :white_check_mark: | :white_check_mark: |
 | extra-packages (packages that are not required bud enhance project)                       | :x:                | :white_check_mark: |
 | update dependencies within range specified in config file                                 | :white_check_mark: | :white_check_mark: |
@@ -50,23 +53,23 @@ In terms of dependency management, there are two core features, Poetry offers in
 | multiple constraints dependencies                                                         | :white_check_mark: | :white_check_mark: |
 | specify versions of packages                                                              | :white_check_mark: | :white_check_mark: |
 | specify versions of python                                                                | :white_check_mark: | :white_check_mark: |
-| sequential installation to be as deterministic as possible                                | :white_check_mark: | 2                  |
+| sequential installation to be as deterministic as possible                                | :white_check_mark: | 3                  |
 | use site-packages                                                                         | :white_check_mark: |                    |
 | install packages automatically discovered from import statements in code                  | :white_check_mark: |                    |
-| allow pre-releases                                                                        | :white_check_mark: |                    |
+| allow pre-releases                                                                        | :white_check_mark: | :white_check_mark: |
 | **Interface**                                                                             |                    |                    |
 | run command                                                                               | :white_check_mark: | :white_check_mark: |
 | spawn interactive shell                                                                   | :white_check_mark: | :white_check_mark: |
 | dry-run on some commands                                                                  | :white_check_mark: | :white_check_mark: |
 | check project structure                                                                   | :x:                | :white_check_mark: |
-| search modules available on PiPI etc.                                                     | :x:                | :white_check_mark: |
-| settings via environment variables                                                        | :white_check_mark: | :white_check_mark: |
+| search modules available on PyPI etc.                                                     | :x:                | :white_check_mark: |
+| Pipenv/Poetry configuration via environment variables (e.g. for CI usage)                 | :white_check_mark: | :white_check_mark: |
 | plugins                                                                                   | :white_check_mark: | :white_check_mark: |
 | abort installation/warn if lock file is out-of-date                                       | :white_check_mark: | :white_check_mark: |
 | [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | :white_check_mark: |                    |
 | expand environment variables in configuration file                                        | :white_check_mark: |                    |
 | Install dependencies from configuration file into parent system                           | :white_check_mark: |                    |
-| scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 3                  |
+| scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 4                  |
 | shortcut for opening a module in editor                                                   | :white_check_mark: |                    |
 | search for configuration file in parent directories                                       | :white_check_mark: | :white_check_mark: |
 | override PyPI mirror url / set alternative repository                                     | :white_check_mark: | :white_check_mark: |
@@ -78,8 +81,9 @@ In terms of dependency management, there are two core features, Poetry offers in
 
 * configuration file: pipfile/pyproject.toml
 * [1] possible when setting up per-project enviroment variables with direnv
-* [2] poetry automatically installs deepest dependencies first
-* [3] pipenv uses safety package for this purpuse. Although it is not directly integrated, it can be used with poetry too.
+* [2] see bug report: <https://github.com/python-poetry/poetry/issues/2422>
+* [3] poetry automatically installs deepest dependencies first
+* [4] pipenv uses safety package for this purpuse. Although it is not directly integrated, it can be used with poetry too.
 
 ### notes
 * in pipenv, `Pipfile` and `install_requires` section in `setup.py` may be used alongside
@@ -325,6 +329,8 @@ When installing cowsay again, the warning is shown too, but cowsay is installed 
 There is no warning that the hashsums from the lock files differ from the actual ones.
 When instead installing `cowsay`, modify the checksums in `poetry.lock`, removing the virtual environment (`.venv`) and installing it again using `poetry install` there is no error thrown, the dependencies are installed and the `poetry.lock` file remains unmodified.
 Even when installing in a brand new docker/podman where cowsay was never installed before, there is no error thrown.
+
+Thre is a bug report for this behaviour: <https://github.com/python-poetry/poetry/issues/2422>
 
 # Notes
 
