@@ -75,7 +75,7 @@ Otherwise, you should use the main tickets' number and inform inside the merge r
 
 ## Git LFS
 
-Binary files MUST be placed in git LFS unless smaller than 1kb.
+Binary files MUST be placed in [git LFS](https://git-lfs.github.com/) unless smaller than 1kb.
 Big non-binary files MIGHT be placed into LFS as well.
 
 An example `.gitattributes` can be found inside the guide's repo.
