@@ -2,9 +2,9 @@
 
 This chapter is dedicated to best practices writing markdown (`.md`) documents. Markdown does not have one coherent specification. The goal of the following rules is to have a consistent way of writing documentation in markdown and make sure they are interpreted correctly in parsers we care about, which are:
 
- * [Python-Markdown](https://github.com/Python-Markdown/markdown)
- * GitLab, based on [kramdown](https://kramdown.gettalong.org/)
- * [GitHub](https://github.github.com/gfm/)
+* [Python-Markdown](https://github.com/Python-Markdown/markdown)
+* GitLab, based on [kramdown](https://kramdown.gettalong.org/)
+* [GitHub](https://github.github.com/gfm/)
 
 ## Headings
 
@@ -55,25 +55,21 @@ For second level you may use `+` and third level `-`:
 
 ```markdown
 * Item 1
-  + Item 2
-    - Item 3
-  + Item 4
+    + Item 2
+        - Item 3
+    + Item 4
 * Item 5
-  + Item 6
+    + Item 6
 ```
 
 For second and third level `*` may be used instead if `+` and `-` might be confused in the particular context as positive or negative signs. Mixing styles must be avoided.
 
-Indent lists with two spaces.
+Indent lists with four spaces.
 
 ### Rationale
 
-Rationale: Indenting by 2 spaces allows the content of a nested item marker to be in line with the start of the content of the parent item, for example:
-
-```markdown
-* List item
-  * Nested list item indented by 2 spaces
-```
+Rationale: We use MkDocs for building documentations.
+MkDocs builds on Python-Markdown, which requires at least 4 spaces for indentation, see [Documentation](https://python-markdown.github.io/#differences).
 
 ## Inline HTML
 
@@ -112,6 +108,19 @@ For this guide, we made some rules to optimize both editability and readability 
 
 ### Rationale
 
- * Most if not all tools are able to do proper word-wrapping. Not many editors provide automatic wrapping by adding actual line breaks into the document. This makes editing text more cumbersome, especially in long paragraphs.
+* Most if not all tools are able to do proper word-wrapping. Not many editors provide automatic wrapping by adding actual line breaks into the document. This makes editing text more cumbersome, especially in long paragraphs.
 * Diffs (and therefore merge requests) get smaller and easier to read if every sentence is on its own line.
- * Tools for analyzing grammar, like [languagetool](https://languagetool.org/), are confused by the extra line breaks.
+* Tools for analyzing grammar, like [languagetool](https://languagetool.org/), are confused by the extra line breaks.
+
+## Internal Links
+
+You can link to chapters within your document or to chapters within another document by using the following syntax:
+
+`Jump to the [Heading Style Chapter](index.md#heading-style)`
+
+### Note
+
+* Linked chapters must be prefixed with the filename, even if they are located in the same file.
+* Links must be all lowercase.
+* Spaces must be replaced with hyphens `-`.
+
