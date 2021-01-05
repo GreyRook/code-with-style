@@ -1,0 +1,6 @@
+- id: check-lfs-files
+  name: check-lfs-files
+  description: check if files with certain extensions are being trackend with lfs
+  entry: check-lfs-files
+  language: python
+  types: [python]
