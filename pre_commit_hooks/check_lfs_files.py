@@ -1,15 +1,16 @@
 import subprocess
 import json
 import os
+from typing import Set, List
 
 
-def added_files():
+def added_files() -> Set[str]:
     cmd = ["git", "diff", "--staged", "--name-only"]
     added_files = subprocess.run(cmd, stdout=subprocess.PIPE, text=True)
     return set(added_files.stdout.splitlines())
 
 
-def check_lfs_files(file_types):
+def check_lfs_files(file_types: List[str]) -> int:
     staged_files = added_files()
 
     cmd = ["git", "lfs", "status", "--json"]
@@ -30,7 +31,7 @@ def check_lfs_files(file_types):
     return 0
 
 
-def main():
+def main() -> int:
     return check_lfs_files([".png"])
 
 
