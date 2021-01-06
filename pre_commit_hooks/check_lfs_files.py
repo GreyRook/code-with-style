@@ -2,6 +2,18 @@ import subprocess
 import json
 import os
 from typing import Set, List
+import pkg_resources
+
+import yaml
+
+
+def get_lfs_extensions() -> List[str]:
+    resource_package = __package__
+    cfg_file = pkg_resources.resource_filename(resource_package, "cfg.yaml")
+    with open(cfg_file, "r") as f:
+        cfg = yaml.safe_load(f)
+    extensions = cfg.get("extensions")
+    return extensions
 
 
 def added_files() -> Set[str]:
@@ -32,7 +44,8 @@ def check_lfs_files(file_types: List[str]) -> int:
 
 
 def main() -> int:
-    return check_lfs_files([".png"])
+    extensions = get_lfs_extensions()
+    return check_lfs_files(extensions)
 
 
 if __name__ == "__main__":

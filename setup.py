@@ -7,7 +7,7 @@ from setuptools import setup, find_packages
 with open("README.md") as readme_file:
     readme = readme_file.read()
 
-requirements = []
+requirements = ["pyyaml"]
 
 setup_requirements = ["pytest-runner"]
 
@@ -32,7 +32,7 @@ setup(
         ]
     },
     py_modules=[
-        "pre_commit_hooks",
+        "code-with-style",
     ],
     install_requires=requirements,
     long_description=readme,
