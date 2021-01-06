@@ -13,6 +13,8 @@ def get_lfs_extensions() -> List[str]:
     with open(cfg_file, "r") as f:
         cfg = yaml.safe_load(f)
     extensions = cfg.get("extensions")
+    # remove the astrik at the beginning of extension
+    extensions = [ext[1:] for ext in extensions]
     return extensions
 
 
