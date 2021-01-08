@@ -42,6 +42,7 @@ There is a lot of predefined hooks available [available-hooks](https://pre-commi
         entry: trailing-whitespace-fixer
         language: python
         types: [text]
+        stages: [commit, push]
     ```
 * make sure that hook repository is installable (e.g. contains by either `setup.py` or `pyproject.toml` for python)
 * add the script name (entry) either to `console_scripts` in `setup.py` or `[tool.poetry.scripts]` in `pyproject.toml`
@@ -60,3 +61,9 @@ There is a lot of predefined hooks available [available-hooks](https://pre-commi
 For testing a developed hook locally without pushing the code to a remote repo, run this command from the repo that uses the hook and contains `.pre-commit-config.yaml` file
 
 `pre-commit try-repo /path/to/hook's/repo hook-name --verbose --all-files`
+
+### Stages
+
+When creating a new hook we can confine at which stage it should be run. It would be helpful that quick hooks such as linters could be run on commit and time-consuming hooks e.g. unit tests could run just before pushing.
+
+Stages can be defined as a list when defining the hook in `.pre-commit-config.yaml` (default is all stages).
