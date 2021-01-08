@@ -43,14 +43,14 @@ There is a lot of predefined hooks available [available-hooks](https://pre-commi
         language: python
         types: [text]
     ```
-* make sure that hook repository is installable (e.g. contains `setup.py` file for python)
-* add the script to `console_scripts` in `setup.py`
+* make sure that hook repository is installable (e.g. contains by either `setup.py` or `pyproject.toml` for python)
+* add the script name (entry) either to `console_scripts` in `setup.py` or `[tool.poetry.scripts]` in `pyproject.toml`
 
     Example
     ```python
     entry_points={
         "console_scripts": [
-            "check-lfs-files=pre_commit_hooks.check_lfs_files:main",
+            "trailing-whitespace-fixer=pre_commit_hooks.trailing_whitespace_fixer:main",
         ]
     },
     ```
