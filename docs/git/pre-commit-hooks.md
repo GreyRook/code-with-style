@@ -6,7 +6,7 @@ This will save the reviewer some time as he/she will not be wasting time on triv
 
 For that we use a [pre-commit](https://pre-commit.com/), a framework for managing and maintaining multi-language pre-commit hooks.
 
-# HOWTO: use pre-commit
+# HOWTO: add pre-commit to a project
 
 * install pre-commit with `pip install pre-commit`
 * navigate to the project where the hooks wanted to be used
@@ -26,6 +26,8 @@ For that we use a [pre-commit](https://pre-commit.com/), a framework for managin
 * run `pre-commit run --all-files` to apply the hooks on the existing files (optional)
 
 Now the hooks will run on the staged files every time we try to commit changes.
+
+Note: these steps need to be done only once. If more hooks are needed repeat point 4 (add the new hook to `.pre-commit-config.yaml` file).
 
 # HOWTO: create a new hook
 
