@@ -3,8 +3,18 @@ import json
 import os
 from typing import Set, List
 import pkg_resources
+import sys
 
 import yaml
+
+
+def run(cmd: List[str]) -> str:
+    try:
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, text=True, check=True)
+        return result.stdout
+    except subprocess.CalledProcessError:
+        print(f"Something went wrong executing command {' '.join(cmd)}")
+        sys.exit(1)
 
 
 def get_lfs_extensions() -> List[str]:
@@ -20,16 +30,16 @@ def get_lfs_extensions() -> List[str]:
 
 def added_files() -> Set[str]:
     cmd = ["git", "diff", "--staged", "--name-only"]
-    added_files = subprocess.run(cmd, stdout=subprocess.PIPE, text=True)
-    return set(added_files.stdout.splitlines())
+    added_files = run(cmd)
+    return set(added_files.splitlines())
 
 
 def check_lfs_files(file_types: List[str]) -> int:
     staged_files = added_files()
 
     cmd = ["git", "lfs", "status", "--json"]
-    lfs_files = subprocess.run(cmd, stdout=subprocess.PIPE, text=True)
-    files_names = set(json.loads(lfs_files.stdout)["files"])
+    lfs_files = run(cmd)
+    files_names = set(json.loads(lfs_files)["files"])
 
     for complete_name in staged_files:
         _, file_extension = os.path.splitext(complete_name)
@@ -51,4 +61,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    exit(main())
+    sys.exit(main())
