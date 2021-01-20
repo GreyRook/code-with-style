@@ -18,3 +18,11 @@ The description part can vary, as it should describe the changes made in this br
 
 In the case of a subtask when only one task is involved use the ticket number of this task.
 Otherwise, you should use the main tickets' number and inform inside the merge request's description which subtasks will be affected by the merge. 
+
+
+## Git LFS
+
+Binary files MUST be placed in git LFS unless smaller than 1kb.
+Big non-binary files MIGHT be placed into LFS as well.
+
+An example `.gitattributes` can be found inside the guide's repo.

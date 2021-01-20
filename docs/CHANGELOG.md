@@ -16,9 +16,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Diagrams within this guide should be made with draw.io
     - How to add attributions
     - Added working contract process description
+- Use LFS for binaries and big files ([git/index.md](git/index.md))
 
 ### Fixed
 - Small spelling and grammar fixes all around.
+
 
 ## [0.1.0] - 2020-05-04
 ### Added
