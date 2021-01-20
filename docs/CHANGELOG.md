@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - How to add attributions
     - Added working contract process description
 - Use LFS for binaries and big files ([git/index.md](git/index.md))
+- Added REST API guideline ([api/rest.md](api/rest.md))
 
 ### Fixed
 - Small spelling and grammar fixes all around.

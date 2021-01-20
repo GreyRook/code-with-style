@@ -24,6 +24,8 @@ nav:
   - "Coding Guides":
     - git: "git/index.md"
     - Project Structure: "projects/index.md"
+    - APIs:
+      - REST: "api/rest.md"
     - Frontend:
       - TypeScript: "typescript/index.md"
       - Angular:  "typescript/angular/index.md"
