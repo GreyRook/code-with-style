@@ -1,6 +1,6 @@
 # Pre-commit Hooks
 
-Git Hook is a script that runs automatically on commit, to make sure that changes comply with the style guide before they are committed.
+Git Hook is a script that runs automatically on git commands, to make sure that changes comply with the style guide before they are committed.
 
 This will save the reviewer some time as he/she will not be wasting time on trivial style nitpicks such as forgetting to run linters, trailing whitespaces, and debug statements and focus on the architecture and functionality of the merge request.
 
