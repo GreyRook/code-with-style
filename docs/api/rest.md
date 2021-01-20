@@ -27,9 +27,9 @@ And follow these conventions:
  * All GET endpoints should not alter the state of the data! With exemption for metadata like the last access_time or write a log entry on access.
  * API base urls MUST be versioned, e.g. `/api/v1/`
  * The `version` is a single number and is only increased on back ward incompatible changes
- * The following pattern should be followed for public services: `/api/{service_name}/v{version}/{ressource}`
-    * API base urls for public APIs SHOULD start with `/api/`
+ * The following pattern MUST be followed for public services: `/api/{service_name}/v{version}/{ressource}`
     * The `service_name` part is per service, making the internal routing transparent   
     * The url path from the outside and on the service iteslf must be exactly the same. For example a service that is called from outside as `/api/sandwichmaker/v1/power` the service MUST also use `/api/sandwichmaker/v1/power` without requiring ingress or api gateways to remap any path. 
+    * The only exception for not following the pattern is beeing for compatilbity with third party software.
  * API base urls for private (between services) MUST start with`/interal/`. Internal APIs therefore should follow: `/internal/api/{service_name}/v{version}/{ressource}`
  * Every REST API should have it's openapi v3 definition
