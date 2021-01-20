@@ -12,15 +12,17 @@ Each resource has its own route or endpoint by which it can be accessed.
  * only nouns, no verbs (i.e. `/cars` instead of `/get-all-cars`)
 
 
-## Endpoints conventions
+## HTTP Verb usage
 
-We use the basic CRUD operations:
+Use the correct HTTP verb for your calls:
 
- * POST to (C)reate
- * GET to (R)ead
- * PATCH to (U)pdate
- * DELETE to (D)elete
+ * POST to create new ressources
+ * GET to read (only) operations
+ * PUT to update a ressource, providing the full ressource
+ * PATCH for partial updates
+ * DELETE to delete a ressource or ressources
 
+## URL Endpoint naming
 
 And follow these conventions:
 
