@@ -11,7 +11,7 @@
 
 ![cardinality: Ticket -1--n- MR -1--n- commit](issue-mr-commit.png)
 
- * One merge request can (and sometimes should) have muliple commits.
+ * One merge request can (and sometimes should) have multiple commits.
  * One ticket can (and sometimes should) have multiple merge requests.
  * But one merge request should only have one ticket. There might be cases where one MR solves multiple related issues that share a root cause.
 
@@ -28,9 +28,9 @@
 Lets consider two commits within one MR:
 
  * "Added file x"
- * "Deleted file x, accidently added"
+ * "Deleted file x, accidentally added"
 
-A file that was accidently commited should be removed entirely from the git history before code review.
+A file that was accidentally commited should be removed entirely from the git history before code review.
 This can be done by squashing (using `git rebase -i`) the commit deleting the file into the one adding it.
 
 
