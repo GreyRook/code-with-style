@@ -11,6 +11,7 @@
 # fonts
 *.ttf filter=lfs diff=lfs merge=lfs -text
 *.woff filter=lfs diff=lfs merge=lfs -text
+*.woff2 filter=lfs diff=lfs merge=lfs -text
 
 # if the source of the pdf is also inside the repo, consider not adding
 # pdfs at all to your repo.
