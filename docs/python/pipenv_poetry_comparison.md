@@ -28,7 +28,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 | automatic installation of required python version                                         | ✓ |    |
 | **Virtual environment**                                                                   |    |    |
 | multiple virtual environments per project (e.g. for using with multiple python versions)  | ✓ | ✓ |
-| pass environmentvariables from a file to virtual environment                              | ✓ |    |
+| pass environment variables from a file to virtual environment                             | ✓ |    |
 | use user-built virtual environment                                                        | ✓ |    |
 | virtual environment can be placed in project folder                                       | ✓ | ✓ |
 | custom virtual environment location                                                       | ✓ | ✓ |
@@ -48,7 +48,7 @@ In terms of dependency management, there are two core features, Poetry offers in
 | list installed packages and sub-dependencies                                              | ✓ | ✓ |
 | remove packages                                                                           | ✓ | ✓ |
 | export to requirements.txt                                                                | ✓ | ✓ |
-| exprot to requirements.txt with hashes                                                    | ✓ | ✓ |
+| export to requirements.txt with hashes                                                    | ✓ | ✓ |
 | importing from requirements.txt                                                           | ✓ | ✗ |
 | multiple constraints dependencies                                                         | ✓ | ✓ |
 | specify versions of packages                                                              | ✓ | ✓ |
