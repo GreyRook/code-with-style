@@ -3,16 +3,12 @@
 ## Overview
 
 While Pipenv is used for dependency management only, Poetry also offers building `sdlist`s and `wheel`s and publishing them on PyPI or other repositories.
-In terms of dependency management, there are two core features, Poetry offers in contrast to pipenv.
-
-1. Pipenv uses `Pipfile` and `Pipfile.lock` for configuring dependency.
-   However, if you create a python module, you still need to specify the requirements in `setup.py`.
-   So you have to deal with two dependency lists.
-
-   Poetry just uses `pyproject.toml` and `poetry.lock`.
-   There is no need for `setup.py`.
-2. Poetry lets you use multiple virtual environments per project.
-   You can use them to run your project with different python versions.
+In terms of dependency management, there is one core feature, Poetry offers in contrast to pipenv.
+Pipenv uses `Pipfile` and `Pipfile.lock` for configuring dependency.
+However, if you create a python module, you still need to specify the requirements in `setup.py`.
+So you have to deal with two dependency lists.
+Poetry just uses `pyproject.toml` and `poetry.lock`.
+There is no need for `setup.py`.
 
 ## Pipenv vs. Poetry Feature Comparison
 
@@ -66,9 +62,9 @@ In terms of dependency management, there are two core features, Poetry offers in
 | Pipenv/Poetry configuration via environment variables (e.g. for CI usage)                 | ✓ | ✓ |
 | plugins                                                                                   | ✓ | ✓ |
 | abort installation/warn if lock file is out-of-date                                       | ✓ | ✓ |
-| [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | ✓      |
-| expand environment variables in configuration file                                        | ✓      |
-| Install dependencies from configuration file into parent system                           | ✓      |
+| [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | ✓ |    |
+| expand environment variables in configuration file                                        | ✓ |    |
+| Install dependencies from configuration file into parent system                           | ✓ |    |
 | scan dependencies for known security vulnerabilities                                      | ✓ | 4  |
 | shortcut for opening a module in editor                                                   | ✓ |    |
 | search for configuration file in parent directories                                       | ✓ | ✓ |
@@ -84,9 +80,6 @@ In terms of dependency management, there are two core features, Poetry offers in
 * [2] see bug report: <https://github.com/python-poetry/poetry/issues/2422>
 * [3] poetry automatically installs deepest dependencies first
 * [4] pipenv uses safety package for this purpuse. Although it is not directly integrated, it can be used with poetry too.
-
-### notes
-* in pipenv, `Pipfile` and `install_requires` section in `setup.py` may be used alongside
 
 ## Pipenv vs. Poetry Tests
 
