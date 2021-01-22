@@ -16,68 +16,68 @@ In terms of dependency management, there are two core features, Poetry offers in
 
 ## Pipenv vs. Poetry Feature Comparison
 
-| feature                                                                                   | pipenv             | poetry             |
-| ----------------------------------------------------------------------------------------- | :----------------: | :----------------: |
-| **Project setup**                                                                         |                    |                    |
-| dependency configuration a in single file                                                 | :x:                | :white_check_mark: |
-| automatic project setup                                                                   | :white_check_mark: | :white_check_mark: |
-| interactive project setup                                                                 | :x:                | :white_check_mark: |
-| define scripts in config file                                                             | :white_check_mark: | :white_check_mark: |
-| project specific configuration of Pipenv/Poetry                                           |  1                 | :white_check_mark: |
-| other python distributions (Anaconda etc.)                                                | :white_check_mark: |                    |
-| automatic installation of required python version                                         | :white_check_mark: |                    |
-| **Virtual environment**                                                                   |                    |                    |
-| multiple virtual environments per project (e.g. for using with multiple python versions)  | :white_check_mark: | :white_check_mark: |
-| pass environmentvariables from a file to virtual environment                              | :white_check_mark: |                    |
-| use user-built virtual environment                                                        | :white_check_mark: |                    |
-| virtual environment can be placed in project folder                                       | :white_check_mark: | :white_check_mark: |
-| custom virtual environment location                                                       | :white_check_mark: | :white_check_mark: |
-| **Project build**                                                                         |                    |                    |
-| build project (wheel and sdlist)                                                          | :x:                | :white_check_mark: |
-| publish project on PyPI etc.                                                              | :x:                | :white_check_mark: |
-| **Dependencies**                                                                          |                    |                    |
-| automatic version pinning in configuration file when manually installing dependency       | `"*"`              | `"^2.0.3"` etc.    |
-| lock dependencies (with hashes)                                                           | :white_check_mark: | :white_check_mark: |
-| hashes are verified whith lock file during dependency installation                        | :white_check_mark: | :x:, 2             |
-| dev-packages                                                                              | :white_check_mark: | :white_check_mark: |
-| extra-packages (packages that are not required bud enhance project)                       | :x:                | :white_check_mark: |
-| update dependencies within range specified in config file                                 | :white_check_mark: | :white_check_mark: |
-| install from url/path                                                                     | :white_check_mark: | :white_check_mark: |
-| install packages from custom repos (git with https, ssh), install editable                | :white_check_mark: | :white_check_mark: |
-| install packages from other VC software than git                                          | :white_check_mark: | :x:                |
-| list installed packages and sub-dependencies                                              | :white_check_mark: | :white_check_mark: |
-| remove packages                                                                           | :white_check_mark: | :white_check_mark: |
-| export to requirements.txt                                                                | :white_check_mark: | :white_check_mark: |
-| exprot to requirements.txt with hashes                                                    | :white_check_mark: | :white_check_mark: |
-| importing from requirements.txt                                                           | :white_check_mark: | :x:                |
-| multiple constraints dependencies                                                         | :white_check_mark: | :white_check_mark: |
-| specify versions of packages                                                              | :white_check_mark: | :white_check_mark: |
-| specify versions of python                                                                | :white_check_mark: | :white_check_mark: |
-| sequential installation to be as deterministic as possible                                | :white_check_mark: | 3                  |
-| use site-packages                                                                         | :white_check_mark: |                    |
-| install packages automatically discovered from import statements in code                  | :white_check_mark: |                    |
-| allow pre-releases                                                                        | :white_check_mark: | :white_check_mark: |
-| **Interface**                                                                             |                    |                    |
-| run command                                                                               | :white_check_mark: | :white_check_mark: |
-| spawn interactive shell                                                                   | :white_check_mark: | :white_check_mark: |
-| dry-run on some commands                                                                  | :white_check_mark: | :white_check_mark: |
-| check project structure                                                                   | :x:                | :white_check_mark: |
-| search modules available on PyPI etc.                                                     | :x:                | :white_check_mark: |
-| Pipenv/Poetry configuration via environment variables (e.g. for CI usage)                 | :white_check_mark: | :white_check_mark: |
-| plugins                                                                                   | :white_check_mark: | :white_check_mark: |
-| abort installation/warn if lock file is out-of-date                                       | :white_check_mark: | :white_check_mark: |
-| [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | :white_check_mark: |                    |
-| expand environment variables in configuration file                                        | :white_check_mark: |                    |
-| Install dependencies from configuration file into parent system                           | :white_check_mark: |                    |
-| scan dependencies for known security vulnerabilities                                      | :white_check_mark: | 4                  |
-| shortcut for opening a module in editor                                                   | :white_check_mark: |                    |
-| search for configuration file in parent directories                                       | :white_check_mark: | :white_check_mark: |
-| override PyPI mirror url / set alternative repository                                     | :white_check_mark: | :white_check_mark: |
-| tox                                                                                       | :white_check_mark: | :white_check_mark: |
-| shell completion                                                                          | :white_check_mark: | :white_check_mark: |
-| show dependencies potentially unused in code                                              | :white_check_mark: |                    |
-| show dependency graph                                                                     | :white_check_mark: | :white_check_mark: |
-| list outdated dependencies                                                                | :white_check_mark: | :white_check_mark: |
+| feature                                                                              | pipenv | poetry |
+| ------------------------------------------------------------------------------------ | :----: | :----: |
+| **Project setup**                                                                         |    |    |
+| dependency configuration a in single file                                                 | ✗ | ✓ |
+| automatic project setup                                                                   | ✓ | ✓ |
+| interactive project setup                                                                 | ✗ | ✓ |
+| define scripts in config file                                                             | ✓ | ✓ |
+| project specific configuration of Pipenv/Poetry                                           |  1 | ✓ |
+| other python distributions (Anaconda etc.)                                                | ✓ |    |
+| automatic installation of required python version                                         | ✓ |    |
+| **Virtual environment**                                                                   |    |    |
+| multiple virtual environments per project (e.g. for using with multiple python versions)  | ✓ | ✓ |
+| pass environmentvariables from a file to virtual environment                              | ✓ |    |
+| use user-built virtual environment                                                        | ✓ |    |
+| virtual environment can be placed in project folder                                       | ✓ | ✓ |
+| custom virtual environment location                                                       | ✓ | ✓ |
+| **Project build**                                                                         |    |    |
+| build project (wheel and sdlist)                                                          | ✗ | ✓ |
+| publish project on PyPI etc.                                                              | ✗ | ✓ |
+| **Dependencies**                                                                          |    |    |
+| automatic version pinning in configuration file when manually installing dependency       | `"*"` | `"^2.0.3"` etc. |
+| lock dependencies (with hashes)                                                           | ✓ | ✓ |
+| hashes are verified whith lock file during dependency installation                        | ✓ | ✗, 2 |
+| dev-packages                                                                              | ✓ | ✓ |
+| extra-packages (packages that are not required bud enhance project)                       | ✗ | ✓ |
+| update dependencies within range specified in config file                                 | ✓ | ✓ |
+| install from url/path                                                                     | ✓ | ✓ |
+| install packages from custom repos (git with https, ssh), install editable                | ✓ | ✓ |
+| install packages from other VC software than git                                          | ✓ | ✗ |
+| list installed packages and sub-dependencies                                              | ✓ | ✓ |
+| remove packages                                                                           | ✓ | ✓ |
+| export to requirements.txt                                                                | ✓ | ✓ |
+| exprot to requirements.txt with hashes                                                    | ✓ | ✓ |
+| importing from requirements.txt                                                           | ✓ | ✗ |
+| multiple constraints dependencies                                                         | ✓ | ✓ |
+| specify versions of packages                                                              | ✓ | ✓ |
+| specify versions of python                                                                | ✓ | ✓ |
+| sequential installation to be as deterministic as possible                                | ✓ | 3  |
+| use site-packages                                                                         | ✓ |    |
+| install packages automatically discovered from import statements in code                  | ✓ |    |
+| allow pre-releases                                                                        | ✓ | ✓ |
+| **Interface**                                                                             |    |    |
+| run command                                                                               | ✓ | ✓ |
+| spawn interactive shell                                                                   | ✓ | ✓ |
+| dry-run on some commands                                                                  | ✓ | ✓ |
+| check project structure                                                                   | ✗ | ✓ |
+| search modules available on PyPI etc.                                                     | ✗ | ✓ |
+| Pipenv/Poetry configuration via environment variables (e.g. for CI usage)                 | ✓ | ✓ |
+| plugins                                                                                   | ✓ | ✓ |
+| abort installation/warn if lock file is out-of-date                                       | ✓ | ✓ |
+| [fancy shell mode](https://pipenv.pypa.io/en/latest/basics/#about-shell-configuration)    | ✓      |
+| expand environment variables in configuration file                                        | ✓      |
+| Install dependencies from configuration file into parent system                           | ✓      |
+| scan dependencies for known security vulnerabilities                                      | ✓ | 4  |
+| shortcut for opening a module in editor                                                   | ✓ |    |
+| search for configuration file in parent directories                                       | ✓ | ✓ |
+| override PyPI mirror url / set alternative repository                                     | ✓ | ✓ |
+| tox                                                                                       | ✓ | ✓ |
+| shell completion                                                                          | ✓ | ✓ |
+| show dependencies potentially unused in code                                              | ✓ |    |
+| show dependency graph                                                                     | ✓ | ✓ |
+| list outdated dependencies                                                                | ✓ | ✓ |
 
 * configuration file: pipfile/pyproject.toml
 * [1] possible when setting up per-project enviroment variables with direnv
