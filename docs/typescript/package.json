@@ -1,0 +1,15 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "Project description",
+  "private": true,
+  "scripts": {
+    "start": "TODO",
+    "build": "TODO",
+    "test": "TODO",
+    "test:once": "TODO",
+    "e2e": "TODO",
+    "e2e:once": "TODO",
+    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore",
+  }
+}

@@ -9,10 +9,28 @@
     - easy to scale
 Angular Guide: [angular/index.md](angular/index.md)
 
-### Yarn
-##### Reasons
-    - Our standard package manager
+### Yarn (v1)
+
+Our standard package manager.
+
+#### Reasons
     - faster due to better caching than npm
+    - interactive upgrade assistant (yarn upgrade-interactive --latest)
+    - more readable CLI output (e.g. better color highlighting)
+    - shorter commands
+        - yarn vs. npm install 
+        - yarn lint vs. npm run lint
+
+#### Default scripts (see [package.json](package.json))
+    - "start": starts the local dev server
+    - "build": creates a production build
+    - "test": runs the tests in watch mode for local testing
+    - "test:once": runs the tests once e.g. for use in CI
+    - "e2e": runs the E2E tests
+    - "e2e:once": runs the E2E tests once e.g. for use in CI
+    - "lint": check the code for lint errors and warnings
+
+The scripts can be executed via `yarn <script-name>` e.g. `yarn start`.
 
 ### TypeScript
 ##### Reasons
