@@ -3,7 +3,7 @@
 ## Coding Stack Description
 
 ### Angular
-##### Reasons
+#### Reasons
     - easy to keep updated
     - easy to structure
     - easy to scale
@@ -33,7 +33,7 @@ Our standard package manager.
 The scripts can be executed via `yarn <script-name>` e.g. `yarn start`.
 
 ### TypeScript
-##### Reasons
+#### Reasons
     - default with Angular CLI
     - we want types
     - future proof
@@ -41,7 +41,7 @@ The scripts can be executed via `yarn <script-name>` e.g. `yarn start`.
     - high typedef availability for packages
 
 ### Sass with SCSS syntax
-##### Reasons
+#### Reasons
     - Our standard CSS Extension Language
 See [SCSS Guide](./../scss/index.md)
 
@@ -56,9 +56,9 @@ Our standard linter.
 Our default lint config can be found in [.eslintrc.js](.eslintrc.js).
 
 ### Prettier
-##### Reasons
+#### Reasons
     - Our personal standard for coding style
-##### Best Practices
+#### Best Practices
 Config: [.prettierrc](.prettierrc)
 
 ### Jasmine (unit testing)
@@ -66,18 +66,18 @@ Config: [.prettierrc](.prettierrc)
     - default with Angular CLI
 
 ### Protractor (E2E testing)
-##### Reasons
+#### Reasons
     - default with Angular CLI
 Example: [gr-admin/e2e/](https://git.r0k.de/s.blaettgen/gr-admin/tree/master/e2e)
 
 ### Sentry
-##### Reasons
+#### Reasons
     - Automatic error tracking
 Frontend documentation: [docs.sentry.io/platforms/javascript/react/](https://docs.sentry.io/platforms/javascript/react/)
 Self-hosting documentation: [docs.sentry.io/server/](https://docs.sentry.io/server/)
 
 ### Compodoc (documentation)
-##### Reasons
+#### Reasons
     - Angular support (modules, components, routing...)
     - interactive visualizations
     - documentation coverage report
