@@ -120,7 +120,7 @@ with $DISALLOWED_LICENSES being a semicolon-separated list of forbidden licenses
 ### Prettier
 With a command like e.g.
 ```bash
-npx prettier --config ./example/.prettierrc.js --list-different './example/src/**/{*.ts,*.tsx}'
+npx prettier --config .prettierrc --list-different './example/src/**/{*.ts,*.tsx}'
 ```
 The CI can check, against the fulfillment of code style guidelines.
 
