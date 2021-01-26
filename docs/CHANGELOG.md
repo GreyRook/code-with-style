@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Added working contract process description
 - Use LFS for binaries and big files ([git/index.md](git/index.md))
 - Added REST API guideline ([api/rest.md](api/rest.md))
+- Added default Yarn scripts
+
+### Changed
+- Changed the default TypeScript linter from TSLint to ESLint
 
 ### Fixed
 - Small spelling and grammar fixes all around.
