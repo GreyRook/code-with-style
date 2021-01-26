@@ -45,9 +45,15 @@ The scripts can be executed via `yarn <script-name>` e.g. `yarn start`.
     - Our standard CSS Extension Language
 See [SCSS Guide](./../scss/index.md)
 
-### TSLint (linter)
-##### Reasons
-    - default with Angular CLI
+### ESLint
+
+Our standard linter.
+
+#### Reasons
+    - many rules and plugins
+    - large community
+
+Our default lint config can be found in [.eslintrc.js](.eslintrc.js).
 
 ### Prettier
 ##### Reasons
