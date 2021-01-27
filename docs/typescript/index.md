@@ -26,7 +26,7 @@ Our standard package manager.
     - "build": creates a production build
     - "test": runs the tests in watch mode for local testing
     - "test:once": runs the tests once e.g. for use in CI
-    - "e2e": runs the E2E tests
+    - "e2e": runs the E2E tests in watch mode for local testing
     - "e2e:once": runs the E2E tests once e.g. for use in CI
     - "lint": check the code for lint errors and warnings
 
