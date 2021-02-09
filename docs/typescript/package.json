@@ -4,12 +4,12 @@
   "description": "Project description",
   "private": true,
   "scripts": {
-    "start": "TODO",
-    "build": "TODO",
-    "test": "TODO",
-    "test:once": "TODO",
-    "e2e": "TODO",
-    "e2e:once": "TODO",
-    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore",
+    "start": "<project specific script>",
+    "build": "<project specific script>",
+    "test": "<project specific script>",
+    "test:once": "<project specific script>",
+    "e2e": "<project specific script>",
+    "e2e:once": "<project specific script>",
+    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore"
   }
 }
