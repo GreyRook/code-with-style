@@ -15,7 +15,7 @@ Our standard package manager.
 
 #### Reasons
     - faster due to better caching than npm
-    - interactive upgrade assistant (yarn upgrade-interactive --latest)
+    - interactive upgrade assistant (`yarn upgrade-interactive --latest`)
     - more readable CLI output (e.g. better color highlighting)
     - shorter commands
         - yarn vs. npm install 
