@@ -72,8 +72,10 @@ This requires to replace the `/` in `repo-path`.
 ## Naming of image tags
 
  * Use git hash as tag
- * Avoid providing a tag called `latest`
- * Version tags (`v$X.$Y.$Z`) MUST never be re-uploaded / overwritten
+ * Tags called `latest` are not allowed
+ * Version tags (`v$X.$Y.$Z`) MUST
+     * never be re-uploaded / overwritten
+     * match the version of the deployed application
 
 
 ## Terminology
