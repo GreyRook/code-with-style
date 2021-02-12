@@ -11,12 +11,63 @@ The base of every service running on Kubernetes is an OCI / docker image.
 
 ## Naming of images
 
- * The image name is based on the git repository. Given a repo `$git-server/group/subgroup/project`, naming is as follows:
-    * `$image-repo/group/subgroup/project` — if there is only one image build for the project
-    * `$image-repo/group/subgroup/project/$subproject` — if the repository is a mono-repo and contains multiple subprojects. The `$subproject` part of the image name MUST match the name of the project folder inside the mono-repo.
-    * `$image-repo/group/subgroup/project-$image_type` or `$image-repo/group/subgroup/project/$subproject-$image_type` — if a project or subproject produces more than one image the must separated by a `-`
-    * `$image-repo/group/subgroup/project-static` — If the image contains only static files (for k8ssco) the `$image_type` part of the name must be `-static`
+The image name is based on:
 
+  * The applications git repository location on our git server (`${git-server}/${repo-path}`)
+  * In case of a repository containing multiple projects, the path within the git repository (`${project-path}`)
+  * Type of image
+
+The name is to be constructed following the following pattern: `${basename}/${project-path}/${image-type}`
+
+ * `${basename}` shall be `${repo-path}` with all `/` replaced with `--`
+ * If `$project-path` is empty two following slashes MUST NOT be produces
+ * `${image-type}` MUST NOT be empty
+
+
+### Image Types
+
+Applications may produce multiple images.
+There are a few predefined `image-type`s which SHOULD be used.
+The predefined types MUST only be unsed for designated purpose: 
+
+* `run`: final application image for deployment in Kubernetes. Typically small and without dev-dependencies 
+* `dev`: larger application image with installed dev-dependencies and dev-tools. Usefull for CI pipelines and local development/testing.
+* `statics`: contains only static files and are not actually runnable
+
+
+### Examples
+
+ * Mono Repo
+     * `repo-path`: `gr-clients/mrx/plan`
+     * `project-path`: `/frontend/angular`
+     * `image-type`: `dev`
+     * `image-name`: `gr-clients--mrx--plan/frontend/angular/dev`
+
+ * Simple project with only a single software package inside repo
+     * `repo-path`: `gr/somegroup/project-awesome`
+     * `project-path`: `/`
+     * `image-type`: `run-http`
+     * `image-name`: `gr--somegroup--project-awesome/run-http`
+
+
+### Reasoning
+
+#### Easy tracing the origin of image's origin
+
+The source code location allows for identifying corresponding code, configurations, and CI pipelines.
+
+#### Name uniquness
+
+Usage of packages names (e.g. as definied in pyproject.toml or package.json) might lead to clashes in image names as packages across languages might use the same name for a package.
+E.g. a HTML/CSS/JS-based frontend and the corresponding python backend implementations.
+
+
+#### Permissions
+
+Slaches `/` denote groups in image repositories and permissions are bound on those.
+Therefore having the `repo-path` as the first part of the image name ensures that permissions in the image repository map to the git server structure.
+This requires to replace the `/` in `repo-path`.
+`--` was choosen to make it easier to read for names already including `-`.
 
 ## Naming of image tags
 
