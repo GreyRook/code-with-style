@@ -103,6 +103,6 @@ These different interfaces to the software should adhere to different
     * All endpoints MUST start with `/internal/`
  * Monitoring interface
     * MUST use port: `8001`
-    * Prometheus MUST use `/metrics`
-    * Readiness probe SHOULD use `:8001/readyz`
-    * Liveness probe SHOULD use `:8001/livez`
+    * Prometheus SHOULD be provided and if so MUST use path `/metrics`
+    * Liveness probe MUST be available and MUST use path `/livez`
+    * Readiness probe MUST be available and MUST use `/readyz`
