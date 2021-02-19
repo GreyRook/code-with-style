@@ -203,6 +203,22 @@ When choosing a ticket consider:
 To prevent spending development time on a problematic approach, it is always advisable to discuss the planned approach with other members of the development team, especially when the developer is not certain about how to approach a given problem.
 Consulting with other team members is **mandatory** for tickets with 5 or more Story Points.
 
+## Commenting out code
+It is generally not permitted to create a merge request containing code that is commented out.
+Exceptions to this rule can be found in the section [Adding "TODO" to the code](#adding-todo-to-the-code).
+
+## Adding "TODO" to the code
+While working on tickets, one might be tempted to add `TODO`s to the code.
+This is only allowed when
+- some commented out code cannot be used currently, e.g. when a unit test (or part of it) fails due to an unrelated bug
+- quick fixes that introduce technical debt are necessary because of a time critical bug
+
+When adding a `TODO` to the code, it is mandatory to create a ticket regarding the removal of said bug or technical debt.
+A link to that ticket must be added to the `TODO` comment.
+The ticket must either be resolved by the author of the ticket or actively delegated to another developer.
+
+The use of any similar comments (`FIXME`, etc.) is prohibited.
+
 # Definition of "Done"
 
 ## About the Definition of "Done"
