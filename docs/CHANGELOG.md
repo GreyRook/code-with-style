@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added default Yarn scripts
 - Added information about font hosting
 - Added part about how to work on tickets
+- Added information about commented out code and adding `TODO`s to code
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint
