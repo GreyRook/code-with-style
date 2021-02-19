@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added REST API guideline ([api/rest.md](api/rest.md))
 - Added default Yarn scripts
 - Added information about font hosting
+- Added part about how to work on tickets
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint
