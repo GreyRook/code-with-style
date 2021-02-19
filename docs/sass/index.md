@@ -62,3 +62,38 @@ If another developer creates an element at another position in the DOM which als
 #### Reasons
 - accessibility – layout can adjust to user font size settings
 - responsive web design – we can easily switch general website size based on media queries
+
+### Web font best practices
+#### Font file hosting
+To prevent unnecessary requests to third party servers, we generally do not want to use services like Google Fonts for embedding web fonts into websites and web apps.
+Instead, the respective font files should be downloaded and made part of the project's repository.
+
+This has the disadvantage that a website might download a used font file that is already in the browser cache because of a previous visit to another site that uses the same font.
+Still, to protect the user's privacy as best as we can, we prefer self hosted fonts.
+
+#### Font loading
+Use CSS `@font-face` to embed fonts into the website / web app:
+```SCSS
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('myfont.woff2') format('woff2'),
+        url('myfont.woff') format('woff');
+}
+```
+
+Usage:
+```SCSS
+some-element {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+}
+```
+
+#### Font file browser compatibility
+In most cases, we can get away with supplying only `WOFF` and `WOFF2` formats.
+This provides compatibility for all modern browsers and even IE 9+.
+
+When support of older browser is necessary, `TTF` might be added to the supplied formats.
+
+For deepest possible support, add `SVG` and `EOT`.
+
+Comprehensive compatibility tables for different sets of supplied fonts can be found at [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/).
