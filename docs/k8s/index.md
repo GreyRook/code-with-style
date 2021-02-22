@@ -20,7 +20,7 @@ The image name is based on:
 The name is to be constructed following the following pattern: `${basename}/${project-path}/${image-type}`
 
  * `${basename}` shall be `${repo-path}` with all `/` replaced with `--`
- * If `$project-path` is empty two following slashes MUST NOT be produces
+ * If `$project-path` is empty two following slashes MUST NOT be produced
  * `${image-type}` MUST NOT be empty
 
 
