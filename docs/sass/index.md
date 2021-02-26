@@ -63,6 +63,8 @@ If another developer creates an element at another position in the DOM which als
 - responsive web design – we can easily switch general website size based on media queries
 
 ## Web font best practices
+While it is of course preferable to use system fonts in a project due to the fact that those do not have to be downloaded and they thus save bandwidth and lead to shorter loading times, most of the time the design specifications require the use of web fonts.
+
 ### Font file hosting
 To prevent unnecessary requests to third party servers, we generally do not want to use services like Google Fonts for embedding web fonts into websites and web apps.
 Instead, the respective font files should be downloaded and made part of the project's repository.
