@@ -67,7 +67,7 @@ While it is of course preferable to use system fonts in a project due to the fac
 
 ### Font file hosting
 To prevent unnecessary requests to third party servers, we generally do not want to use services like Google Fonts for embedding web fonts into websites and web apps.
-Instead, the respective font files should be downloaded and made part of the project's repository.
+Instead, the respective font files should be downloaded, made part of the project's repository and later hosted as static content.
 
 This has the disadvantage that a website might download a used font file that is already in the browser cache because of a previous visit to another site that uses the same font.
 Still, to protect the user's privacy as best as we can, we prefer self hosted fonts.
