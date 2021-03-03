@@ -41,3 +41,5 @@ nav:
     - Python:
       - Python: "python/index.md"
       - Django: "python/django.md"
+    - Hosting Platform:
+      - Introduction: "k8s/index.md"
