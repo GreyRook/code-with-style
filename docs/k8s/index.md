@@ -50,16 +50,16 @@ The predefined types MUST only be unsed for designated purpose:
      * `image-name`: `gr--somegroup--project-awesome/run-http`
 
 
-### Reasoning
+??? Reasoning
 
-#### Easy tracing the origin of image's origin
+      **Easy tracing the origin of image's origin**
 
-The source code location allows for identifying corresponding code, configurations, and CI pipelines.
+      The source code location allows for identifying corresponding code, configurations, and CI pipelines.
 
-#### Name uniquness
+      **Name uniquness**
 
-Usage of packages names (e.g. as definied in pyproject.toml or package.json) might lead to clashes in image names as packages across languages might use the same name for a package.
-E.g. a HTML/CSS/JS-based frontend and the corresponding python backend implementations.
+      Usage of packages names (e.g. as definied in pyproject.toml or package.json) might lead to clashes in image names as packages across languages might use the same name for a package.
+      E.g. a HTML/CSS/JS-based frontend and the corresponding python backend implementations.
 
 
 #### Permissions
@@ -106,3 +106,11 @@ These different interfaces to the software should adhere to different
     * Prometheus SHOULD be provided and if so MUST use path `/metrics`
 
 
+??? Reasoning
+    
+      Having two seperated ports brings several advatages:
+
+      * In some cases monitoring might be provided by a secondary process.
+      * Having monitoring on a seperate port makes 
+
+      Prefixing all internal interface path with `internal` makes it possible to filter incoming requests.
