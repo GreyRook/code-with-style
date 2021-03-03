@@ -108,9 +108,11 @@ These different interfaces to the software should adhere to different
 
 ??? Reasoning
     
-      Having two seperated ports brings several advatages:
+      **Having two seperated ports** brings several advatages:
 
       * In some cases monitoring might be provided by a secondary process.
       * Having monitoring on a seperate port makes 
 
       Prefixing all internal interface path with `internal` makes it possible to filter incoming requests.
+
+      `/metrics` is the [default path for prometheus](https://prometheus.io/docs/prometheus/latest/configuration/configuration/).
