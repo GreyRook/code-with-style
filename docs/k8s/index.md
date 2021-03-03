@@ -104,5 +104,5 @@ These different interfaces to the software should adhere to different
  * Monitoring interface
     * MUST use port: `8001`
     * Prometheus SHOULD be provided and if so MUST use path `/metrics`
-    * Liveness probe MUST be available and MUST use path `/livez`
-    * Readiness probe MUST be available and MUST use `/readyz`
+
+
