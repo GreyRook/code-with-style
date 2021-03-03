@@ -79,8 +79,11 @@ Use CSS `@font-face` to embed fonts into the website / web app:
   font-family: 'MyWebFont';
   src:  url('myfont.woff2') format('woff2'),
         url('myfont.woff') format('woff');
+  font-display: swap; 
 }
 ```
+
+More information on `font-display`: [Avoid invisible text during font loading](https://web.dev/avoid-invisible-text/)
 
 Usage:
 ```SCSS
