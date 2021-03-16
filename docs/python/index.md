@@ -20,24 +20,37 @@
 
 ## linting
 
+Preferred linters:
+
 | Linter        | Use Case        | Configuration | Reasoning |
 | ------------- | --------------- | ------------- | --------- |
-| black --check | pep8 compliance | default       |           |
+| black --check | code formatting | default       |           |
 | pylint        |                 |               |           |
 | mypy          | Type checking   |               |           |
 |               |                 |               |           |
 
-## formatting
+## black: Formatting
 
-Black for code-formatting
-<https://github.com/python/black>
+[Black](https://github.com/python/black) is for code-formatting exclusively.
+Other linters should disable any style checks to avoid disagreement between linters.
 
-```sh
-pip install black
-black [folder]
-```
+Line-length: 88 ([blacks default](https://black.readthedocs.io/en/stable/the_black_code_style.html#line-length))
 
-To ignore blocks of code for formatting mark them with
+
+### Reasoning
+
+Why not allow longer lines?
+
+a) It reminds everyone that long lines are hard to read and splitting up code into multiple steps with temp variables makes them more readable in like 99.9% of cases.
+
+b) If the length is needed because of indentation, the problem is not the line limit but the code. As the Linux developer manual puts it:
+
+    The answer to that is that if you need more than 3 levels of indentation, you’re screwed anyway, and should fix your program.
+
+c) Florian likes to be able to code on his laptop with two files open next to each other while having all the UI overhead of `$ide`.
+
+
+### To ignore blocks of code for formatting mark them with
 
 ```python
 # fmt: off
@@ -45,7 +58,16 @@ To ignore blocks of code for formatting mark them with
 # fmt: on
 ```
 
-NOTE: not necessary all linting errors are fixed by black, so check your linter before committing.
+
+## imports
+
+Based on [Google's python style guide](http://google.github.io/styleguide/pyguide.html#31912-imports-for-typing):
+
+Use `import` statements for packages and modules only, not for individual
+classes or functions. Note that there is an explicit exemption for imports from
+the [typing module](#typing-imports).
+
+### import order
 
 `isort` to sort imports
 
@@ -55,13 +77,7 @@ isort -c -rc [folder]  # to check for wrong import order
 isort -rc [folder]  # to fix wring import order
 ```
 
-## imports
-
-Based on [Google's python style guide](http://google.github.io/styleguide/pyguide.html#31912-imports-for-typing):
-
-Use `import` statements for packages and modules only, not for individual
-classes or functions. Note that there is an explicit exemption for imports from
-the [typing module](#typing-imports).
+### from imports
 
 Bad:
 
