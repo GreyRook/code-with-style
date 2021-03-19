@@ -12,6 +12,13 @@ theme:
   features:
     - navigation.tabs
 
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences  # for nesting code and content blocks in admonitions
+  - pymdownx.details  # for collapsable admonitions
+
+
 nav:
   - Home:
     - "Intro": index.md
