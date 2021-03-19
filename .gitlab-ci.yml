@@ -4,33 +4,28 @@ stages:
   - build
   - dist
 
+image: greyrook/cde-dev-py3:7c2968a015888e51ec3a5c1b5e14802e31f93eaf
+
 docs:
   stage: build
-  image: greyrook/cde-texlive:32ea33a8b61ae09318f80e6648b131fcb0c82a6c
   script:
-    - pipenv --python 3
-    - pipenv install --dev
-    - pipenv run mkdocs build
-    # - pipenv run make latexpdf
+    - poetry install
+    - poetry run mkdocs build
   artifacts:
     name: docs
     # only available in newer gitlab versions
-    # expose_as: docs
+    expose_as: docs
     paths:
       - site/
-      # - docs/_build/html
-      # - docs/_build/latex/*.pdf
+
 
 pages:
   stage: dist
-  image: greyrook/cde-texlive:32ea33a8b61ae09318f80e6648b131fcb0c82a6c
   script:
     - mkdir public
     - mv site/* public/
-    # - mv docs/_build/html/* public/
-    # - mv docs/_build/latex/*.pdf public/
   artifacts:
     paths:
     - public
-    # only:
-  #   - master
+  only:
+    - master
