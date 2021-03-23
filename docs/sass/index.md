@@ -94,10 +94,5 @@ some-element {
 
 ### Font file browser compatibility
 In most cases, we can get away with supplying only `WOFF` and `WOFF2` formats.
-This provides compatibility for all modern browsers and even IE 9+.
-
-When support of older browser is necessary, `TTF` might be added to the supplied formats.
-
-For deepest possible support, add `SVG` and `EOT`.
 
 Comprehensive compatibility tables for different sets of supplied fonts can be found at [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/).
