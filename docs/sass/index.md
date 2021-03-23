@@ -66,7 +66,7 @@ If another developer creates an element at another position in the DOM which als
 While it is of course preferable to use system fonts in a project due to the fact that those do not have to be downloaded and they thus save bandwidth and lead to shorter loading times, most of the time the design specifications require the use of web fonts, as the font face specified in the design is not available on most machines.
 
 ### Font file hosting
-To prevent unnecessary requests to third party servers, we generally do not want to use services like Google Fonts for embedding web fonts into websites and web apps.
+To prevent unnecessary requests to third party servers, we generally don't use services like Google Fonts.
 Instead, the respective font files should be downloaded, made part of the project's repository and later hosted as static content.
 
 This has the disadvantage that a website might download a used font file that is already in the browser cache because of a previous visit to another site that uses the same font.
