@@ -15,6 +15,7 @@
  * One ticket can (and sometimes should) have multiple merge requests.
  * But one merge request should only have one ticket. There might be cases where one MR solves multiple related issues that share a root cause.
 
+See [Code Review Developer Guide](../review/index.md) on best practices for merge requests and reviews
 
 ## Examples & Best Practices
 

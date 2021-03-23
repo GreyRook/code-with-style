@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added when to review MRs
 - Added MRs labels
 - Added general communcation guidelines for working with notifications ([communcation/index.md](communication/index.md)) 
+- Added details on merge request reviewers and assignments
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint
