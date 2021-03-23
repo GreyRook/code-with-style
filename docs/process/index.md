@@ -217,7 +217,7 @@ When adding a `TODO` to the code, it is mandatory to create a ticket regarding t
 A link to that ticket must be added to the `TODO` comment.
 The ticket must either be resolved by the author of the ticket or actively delegated to another developer.
 
-The use of any similar comments (`FIXME`, etc.) is prohibited.
+The use of any similar comments (`FIXME`, `XXX`, etc.) is prohibited.
 
 # Definition of "Done"
 
