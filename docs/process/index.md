@@ -212,6 +212,7 @@ While working on tickets, one might be tempted to add `TODO`s to the code.
 This is only allowed when
 - some commented out code cannot be used currently, e.g. when a unit test (or part of it) fails due to an unrelated bug
 - quick fixes that introduce technical debt are necessary because of a time critical bug
+- there is a bug in a dependency. In this case the TODO must describe the workaround taken and link to the upstream issue tracker for said bug.
 
 When adding a `TODO` to the code, it is mandatory to create a ticket regarding the removal of said bug or technical debt.
 A link to that ticket must be added to the `TODO` comment.
