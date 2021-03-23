@@ -41,7 +41,7 @@ Line-length: 88 ([blacks default](https://black.readthedocs.io/en/stable/the_bla
 
 Why not allow longer lines?
 
-a) It reminds everyone that long lines are hard to read and splitting up code into multiple steps with temp variables makes them more readable in like 99.9% of cases.
+a) It reminds everyone that long lines are hard to read and splitting up code into multiple steps with temp variables makes them more readable in most cases.
 
 b) If the length is needed because of indentation, the problem is not the line limit but the code. As the Linux developer manual puts it:
 
