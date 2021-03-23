@@ -93,6 +93,7 @@ some-element {
 ```
 
 ### Font file browser compatibility
-In most cases, we can get away with supplying only `WOFF` and `WOFF2` formats.
+[Browser support](https://caniuse.com/?search=woff) for `WOFF` and `WOFF2` is sufficient to not provide other file formats.
+This provides compatibility for all modern browsers and even IE 9+.
 
 Comprehensive compatibility tables for different sets of supplied fonts can be found at [CSS Tricks](https://css-tricks.com/snippets/css/using-font-face/).
