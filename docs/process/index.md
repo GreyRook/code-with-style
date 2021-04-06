@@ -186,6 +186,7 @@ Tickets need to have a detailed description explaining the following aspects:
 If a ticket has no description or is missing information, the developer tackling the ticket has to either fix the description or contact the person who can fix it, e.g. the ticket author, before starting to work on it.
 
 # Working on Tickets
+## Choosing what to work on
 The Development Team is a self-organized entity as per the Scrum rules, therefore it is up to the members of this team how to best complete the set of tickets in a Sprint.
 
 This means the team as a whole decides which tickets to work on in which order and who will work on which ticket.
@@ -193,6 +194,7 @@ That decision has to take into account dependencies between the tickets, so prog
 
 Most of the time, based on this decision, the individual team member can just grab a ticket that fits their capabilities from the stack of a Sprint's tickets and start working.
 
+## Consulting others
 To prevent spending development time on a problematic approach, it is always advisable to discuss the planned approach with other members of the development team, especially when the developer is not certain about how to approach a given problem.
 Consulting with other devs is **mandatory** for tickets with 5 or more Story Points.
 
