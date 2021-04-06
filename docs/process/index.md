@@ -196,7 +196,7 @@ Most of the time, based on this decision, the individual team member can just gr
 
 ## Consulting others
 To prevent spending development time on a problematic approach, it is always advisable to discuss the planned approach with other members of the development team, especially when the developer is not certain about how to approach a given problem.
-Consulting with other devs is **mandatory** for tickets with 5 or more Story Points.
+Consulting with other team members is **mandatory** for tickets with 5 or more Story Points.
 
 # Definition of "Done"
 
