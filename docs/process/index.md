@@ -192,7 +192,12 @@ The Development Team is a self-organized entity as per the Scrum rules, therefor
 This means the team as a whole decides which tickets to work on in which order and who will work on which ticket.
 That decision has to take into account dependencies between the tickets, so progress on one ticket does not hinder progress on other ones.
 
-Most of the time, based on this decision, the individual team member can just grab a ticket that fits their capabilities from the stack of a Sprint's tickets and start working.
+Most of the time, based on this decision, the individual team member can autonomously choose a ticket for him to work on next.
+When choosing a ticket consider:
+
+ * If a ticket blocks other tickets
+ * The goal of the current Sprint
+ * How the Product Owner ordered the Product Backlog (and therefore the Sprint Backlog). Tickets higher in that order deliver more value
 
 ## Consulting others
 To prevent spending development time on a problematic approach, it is always advisable to discuss the planned approach with other members of the development team, especially when the developer is not certain about how to approach a given problem.
