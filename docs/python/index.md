@@ -47,7 +47,7 @@ b) If the length is needed because of indentation, the problem is not the line l
 
     The answer to that is that if you need more than 3 levels of indentation, you’re screwed anyway, and should fix your program.
 
-c) Florian likes to be able to code on his laptop with two files open next to each other while having all the UI overhead of `$ide`.
+c) Some people like to open two files next to each other while having all the UI overhead of `$ide`.
 
 
 ### To ignore blocks of code for formatting mark them with
