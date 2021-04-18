@@ -76,6 +76,14 @@ developer of the change speaks only when spoken to.
 *Adjustment Grey Rook:*
 *The developer presents the reviewer his piece of code.* 
 
+### When to do Code Reviews?
+
+It’s encouraged to do code reviews every day, and it’s up to the developer when to do so.
+
+However, you have take a look at the available MRs and review some (if applicable) at least once before starting a new ticket.
+
+This way we reduce the number of tasks that are almost finished by merging them, or pass them back to the developer to work on the review comments.
+
 ## See Also {#seealso}
 
 -   [How To Do A Code Review](reviewer/): A detailed guide for code reviewers.
