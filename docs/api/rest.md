@@ -49,5 +49,10 @@ If the service also provides/is linked to static resources, e.g. HTML/CSS/JS fro
      * `domain-dedicated-to-serving-static.resource.only/{service_name}/{resource}`
    * The url path from the outside and on the service itself must be exactly the same.
  * Static resource should get build such that their names or a parent directory contains a hash, e.g. `./admin/css/base.css` becomes `./admin/css/base.27e20196a850.css` or `./70de0fa16470/admin/css/base.css`.
-   * This allows for not having to version static resource by the above pattern, improve caching, and to use services like k8ssco (statics operator).
- 
+
+
+??? Reasoning
+    
+      * k8ssco (statics operator) for reusing existing functionality and providing transition periods for hashed static resources out-of-the-box
+      * Consistent URL pattern for reducing required sync regarding location of static resources between BE/FE-Devs and DevOps/Ops
+
