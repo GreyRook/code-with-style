@@ -32,6 +32,15 @@ Our standard package manager.
 
 The scripts can be executed via `yarn <script-name>` e.g. `yarn start`.
 
+??? note "Yarn usage with NativeScript"
+    When working with NativeScript we should [set the package manager](https://v6.docs.nativescript.org/angular/tooling/docs-cli/general/package-manager-set) to default to Yarn:
+
+    ```
+    tns package-manager set yarn
+    ``` 
+
+    Please add the information on setting this enviroment option into a newly setup NativeScript project's README.md too.
+
 ### TypeScript
 #### Reasons
     - default with Angular CLI
