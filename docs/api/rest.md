@@ -40,6 +40,30 @@ And follow these conventions:
  * Every REST API should have it's openapi v3 definition
 
 
+## JSON Payloads
+
+The preferred payload serialization is JSON.
+
+### Key name restrictions
+
+ * Key names SHOULD be `camelCase`, key names MAY be `snake_case` but MUST NOT be `kebab-case` or `PascalCase`
+ * Key names MUST contain only ASCII alphanumeric characters (`a-zA-Z0-9`)
+ * Key names MUST NOT start with a number. Exception: In non-root-level objects where all keys are numbers (i.e. `{"someThing": {"0": ..., "1": ...}}`).
+
+??? info "Reasoning"
+
+    The decision between **camelCase** and snake_case is a tough one.
+    Both are used in common APIs and style guides.
+    Our most used languages styles are incompatible: python and c use snake_case, while JavaScript/TypeScript uses camelCase.
+
+    Deciding reasons for camelCase:
+
+      * JSON-API, which we lean towards to, does recommend camelCase
+      * It is easier to map in python (with pydantic alias) than on the TypeScript side
+
+    **Names starting with a number** are an issue when generating code.
+    Variable, class members and function names must start with a character.
+
 ## Static resource endpoint naming
 
 If the service also provides/is linked to static resources, e.g. HTML/CSS/JS front-ends for using the API as human user, then the static resource endpoint must follow these conventions:
