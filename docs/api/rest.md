@@ -43,6 +43,7 @@ And follow these conventions:
 ## JSON Payloads
 
 The preferred payload serialization is JSON.
+If JSON is used in REST APIs the [JSON:API spec](https://jsonapi.org/) SHOULD be followed. 
 
 ### Key name restrictions
 
