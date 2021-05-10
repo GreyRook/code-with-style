@@ -186,6 +186,8 @@ Tickets need to have a detailed description explaining the following aspects:
 If a ticket has no description or is missing information, the developer tackling the ticket has to either fix the description or contact the person who can fix it, e.g. the ticket author, before starting to work on it.
 
 # Working on Tickets
+An extensive checklist for processes like creating feature branches, creating merge requests and reviewing can be found [here](./process-checklist.md).
+
 ## Choosing what to work on
 The Development Team is a self-organized entity as per the Scrum rules, therefore it is up to the members of this team how to best complete the set of tickets in a Sprint.
 
