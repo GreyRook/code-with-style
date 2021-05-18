@@ -19,6 +19,9 @@
 ## Examples & Best Practices
 
  * Automated changes to files that do not change the meaning (e.g. reformatting) MUST be a separate commit with the tools used clearly stated in the commit message
+ * To avoid done work being lost (due to technical failure) or being inaccessible (due to employee illness) code changes should be pushed at least once throughout the day and always at the end of your work day. If the code is not quite ready yet, mark the commit as WIP in the message. Your WIP commits must later be rebased to remove them from the permanent history, they must never be merged to master as WIP. See also: [HOWTO git rebase](./git-rebase.md)
+
+ The only exception to pushing your WIP code is if it contains secrets or other sensitive data that MUST not be added to the repository. Only ever commit and push non sensitive data as plain text to the repository.
  * Often before doing the change you actually want to do, there is some refactoring involved
 
    Move refactoring into its own commit.
