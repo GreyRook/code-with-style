@@ -39,6 +39,23 @@ And follow these conventions:
  * API base urls for private (between services) MUST start with`/internal/`. Internal APIs therefore should follow: `/internal/api/{service_name}/v{version}/{resource}`
  * Every REST API should have it's openapi v3 definition
 
+## Idempotency
+
+All network APIs MUST be idempotent.
+
+??? note "Idempotency"
+
+    Requesting the same thing multiple times does have the same result has requesting it a single time.
+    The underlaying challenge is, that if a client receives an network error it is impossible to know if the request was processed or not, so doing an automated retry is dangerous as it might result in doing the same thing again (e.g. a two bank transfers instead of one).
+
+    There is also a related [Tom Scott video](https://www.youtube.com/watch?v=IP-rGJKSZ3s) about the "two generals problem" (networks are unreliable) and the solution (idempotency).
+    
+
+### Consequences
+
+ * APIs SHOULD avoid providing semantically non-idempotent calls, like "toggle". For example instead of providing a "toogle light" function, "turn on" and "turn off" should be provided. The "toggle" functionality has then to be implemented client-side.
+ * Functions which are not possible to implement semantically idempotent MUST contain a transaction-id. This way the backend can recognize a retry and check if the request has already been processed.
+
 
 ## JSON Payloads
 
