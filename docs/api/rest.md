@@ -47,7 +47,7 @@ If JSON is used in REST APIs the [JSON:API spec](https://jsonapi.org/) SHOULD be
 
 ### Key name restrictions
 
- * Key names SHOULD be `camelCase`, key names MAY be `snake_case` but MUST NOT be `kebab-case` or `PascalCase`
+ * Key names SHOULD be `camelCase`, key names MAY be `snake_case` but MUST NOT be `kebab-case` or `PascalCase`. The naming scheme MUST be cosistent within an API version.
  * Key names MUST contain only ASCII alphanumeric characters (`a-zA-Z0-9_`)
  * Key names MUST NOT start with a number. Exception: In non-root-level objects where all keys are numbers (i.e. `{"someThing": {"0": ..., "1": ...}}`).
 
