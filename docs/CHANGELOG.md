@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added information about commented out code and adding `TODO`s to code
 - Added best practice for pushing WIP changes as code backups
 - Added when to review MRs
+- Added MRs labels
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint

@@ -84,6 +84,10 @@ However, you have take a look at the available MRs and review some (if applicabl
 
 This way we reduce the number of tasks that are almost finished by merging them, or pass them back to the developer to work on the review comments.
 
+### MR labels
+
+For every MR the developer who opened it should add the appropriate label to it whether it's a Backend (BE) or Frontend (FE), so it's easier for reviewers to have an overview of which MRs that are suitable for them to review.
+
 ## See Also {#seealso}
 
 -   [How To Do A Code Review](reviewer/): A detailed guide for code reviewers.
