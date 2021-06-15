@@ -69,9 +69,8 @@ There are two different responsibilities when working with assignments:
 - **Assignee**: The person which is currently expected to work on, or review the merge request
 - **Reviewer**: The person best suited and responsible to review the merge request
 
-Other than that, merge requests can be in one of the following states:
-- *Reviewer* not assigned: The creator of the merge request is unsure who is the best fit for a review, reviewers can assign themselves to claim the responsibility
-- *Assignee* not assigned: Someone forgot to assign the *Assignee*, the *Assignee* must **always** be set
+Merge requests can be in one of the following valid states:
+- *Reviewer* and *Assignee* not set: The creator of the merge request is unsure who is the best fit for a review, reviewers can assign themselves to claim the responsibility
 - *Reviewer* assigned, but *Assignee* is not the reviewer: The merge request needs work from the assigned person before the next review
 - *Assignee* is **Bot-Marge**: Merge request was reviewed, approved and is ready for automatic merge
 
