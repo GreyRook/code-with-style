@@ -6,6 +6,7 @@ An opinionated guide on how [we](https://www.greyrook.com) like our code and how
 ## General Topics
  
  * [Project Structure](projects/index.md)
+ * [Communication Guidelines](communication/index.md)
  * [Code Review Guide](review/index.md)
 
 ## Language Specific
