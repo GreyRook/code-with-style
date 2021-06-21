@@ -71,3 +71,49 @@ Every page or larger functionality of the application should have its own module
     - use reactive forms over template-driven forms
     - use pipes over formatting functions
     - use lazy loading of modules to improve the load performance
+
+### Asset hashing
+
+Angular by default does not create hashes for static assets in the `assets` folder, like images or videos,
+only for scripts, styles and in some other cases.
+
+To add static asset hashing to a project 
+and also be able to adjust the deploy url of assets,
+a gulp script, see [gulpfile.js](./gulpfile.js), needs to be added to the Angular project 
+and be executed as a postprocessing step after the Angular build.
+
+For the script to work you need to add some dependencies:  
+`yarn add -D gulp gulp-rev-all gulp-rev-delete-original`
+
+In the script itself you need to replace `projectName` with the actual name of the Angular project.
+
+As we now take care of the asset hashing ourselves, they need to be disabled for the Angular build script in `package.json`:  
+`"build": "ng build --prod --output-hashing none",`
+
+To execute the script automatically after the build, the following `package.json` script can be added:  
+`"postbuild": "gulp",`
+
+To change the deploy url of assets, the environment variable `ASSET_PATH` can be set, e.g. to `https://mydomain.com/static`.
+This will replace an asset path of `/assets/path/to/logo.png` with `https://mydomain.com/static/path/to/logo.hash.png`.
+
+Note: For the gulp script to work, assets need to be referenced correctly, see [Asset referencing](#Asset referencing).
+
+### Asset referencing
+
+Asset paths in Angular need to be always referenced with a leading `/assets`.
+This applies to asset references in templates, styles and code.
+
+Example:
+
+Correct path:
+- `/assets/path/to/logo.png`
+
+Wrong path:
+- `assets/path/to/logo.png`
+- `./assets/path/to/logo.png`
+- `../../assets/path/to/logo.png`
+
+#####  Reasons
+- required for the postprocessing script to add hashes and the deploy url correctly, see [Asset hashing](#Asset hashing)
+- shorter paths in comparison to multiple levels of nesting in relative paths, e.g. `./../../../assets`
+- consistency
