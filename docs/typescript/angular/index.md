@@ -79,7 +79,7 @@ only for scripts, styles and in some other cases.
 
 To add static asset hashing to a project 
 and also be able to adjust the deploy url of assets,
-a gulp script, see [gulpfile.js](./gulpfile.js), needs to be added to the Angular project 
+a [Gulp](https://gulpjs.com/) script, see [gulpfile.js](./gulpfile.js), needs to be added to the Angular project 
 and be executed as a postprocessing step after the Angular build.
 
 For the script to work you need to add some dependencies:  
