@@ -20,17 +20,17 @@ The docs are generated with [mkdocs](https://www.mkdocs.org/).
 Install the dependencies:
 
 ```bash
-pipenv install --dev
+poetry install
 ```
 
 Run a local development server with watch and autoreload:
 
 ```bash
-pipenv run mkdocs serve
+poetry run mkdocs serve
 ```
 
 Build docs as html:
 
 ```bash
-pipenv run mkdocs build
+poetry run mkdocs build
 ```
