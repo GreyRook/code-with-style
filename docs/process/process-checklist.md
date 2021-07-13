@@ -30,6 +30,8 @@ A list of what to do and some best practices when executing certain processes.
 ## Reviewing and re-reviewing a MR
 This is applicable to the initial review of a MR and also to re-reviewing a MR after the author made additional changes after a previous review.
 
+When reviewing, follow the [Code Review Dev Guide](../review/index.md) and the [Code review reviewer guide](../review/reviewer/index.md).
+
 - <input type="checkbox"> Check the code in the 'Changes' tab on the MR's GitLab page for problems.  
 If the changes in the MR are too complex to easily understand by just checking the changes, check out the branch locally and run the code to check the functionality of the implemented feature (or fixed bug) to find other problems.  
 With complex MR's it also helps to check the 'Commits' tab on the MR's GitLab page and to go through the commits one by one.
