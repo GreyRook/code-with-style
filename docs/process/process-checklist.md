@@ -30,7 +30,9 @@ A list of what to do and some best practices when executing certain processes.
 ## Reviewing and re-reviewing a MR
 This is applicable to the initial review of a MR and also to re-reviewing a MR after the author made additional changes after a previous review.
 
-- <input type="checkbox"> Check the code in the 'Changes' tab on the MR's GitLab page for problems. If the changes in the MR are too complex to easily understand by just checking the changes, check out the branch locally and run the code to check the functionality of the implemented feature (or fixed bug) to find other problems.
+- <input type="checkbox"> Check the code in the 'Changes' tab on the MR's GitLab page for problems.  
+If the changes in the MR are too complex to easily understand by just checking the changes, check out the branch locally and run the code to check the functionality of the implemented feature (or fixed bug) to find other problems.  
+With complex MR's it also helps to check the 'Commits' tab on the MR's GitLab page and to go through the commits one by one.
 - You found problems?
     - For every problem found, do the following:
         - <input type="checkbox"> If the problem is assignable to a specific part of the code, use the 'Changes' tab to add comments and (if applicable) suggestions to the respective line in the diff. Usage of the 'Start a review' button (and subsequent usage of the 'Submit review' button) is encouraged, as it combines your comments into one review, preventing your team members from being flooded by emails.
