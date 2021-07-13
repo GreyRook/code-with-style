@@ -35,8 +35,11 @@ If the changes in the MR are too complex to easily understand by just checking t
 With complex MR's it also helps to check the 'Commits' tab on the MR's GitLab page and to go through the commits one by one.
 - You found problems?
     - For every problem found, do the following:
-        - <input type="checkbox"> If the problem is assignable to a specific part of the code, use the 'Changes' tab to add comments and (if applicable) suggestions to the respective line in the diff. Usage of the 'Start a review' button (and subsequent usage of the 'Submit review' button) is encouraged, as it combines your comments into one review, preventing your team members from being flooded by emails.
-        - <input type="checkbox"> If it's a general problem or something you can't assign to a specific part of the code, add a thread in the 'Overview' tab. While doing so, make sure to start a thread and not just add a comment, because the latter will not show up as an 'unresolved thread'. If you used 'Start a review' before, your thread in 'Overview' can also be added to the review and will be combined with other threads into one email (don't forget to 'Submit review' when you're done).
+        - <input type="checkbox"> If the problem is assignable to a specific part of the code, use the 'Changes' tab to add comments and (if applicable) suggestions to the respective line in the diff.
+        Usage of the 'Start a review' button (and subsequent usage of the 'Submit review' button) is encouraged, as it combines your comments into one review, preventing your team members from being flooded by emails.
+        - <input type="checkbox"> If it's a general problem or something you can't assign to a specific part of the code, add a thread in the 'Overview' tab.
+        While doing so, make sure to start a thread and not just add a comment, because the latter will not show up as an 'unresolved thread'.
+        If you used 'Start a review' before, your thread in 'Overview' can also be added to the review and will be combined with other threads into one email (don't forget to 'Submit review' when you're done).
     - <input type="checkbox"> Add the `needs-work` label to the MR
     - <input type="checkbox"> Change the Assignee to the MR author
     - <input type="checkbox"> If substantial changes are necessary, put the ticket back to 'In Progress' in the project's Kanban board (Jira / GitLab board)
