@@ -53,7 +53,7 @@ With complex MR's it also helps to check the 'Commits' tab on the MR's GitLab pa
             - <input type="checkbox"> Make sure you are on the respective branch (`git branch`) and if not, check it out (`git checkout {BRANCH-NAME}`)
             - <input type="checkbox"> `git fetch`
             - <input type="checkbox"> `git rebase origin/master` (or `git rebase {TARGET-BRANCH}`, if the MR is supposed to be merged to some other branch)
-                - Resolve conflicts, if applicable:
+                - Resolve conflicts:
                     - <input type="checkbox"> Resolve conflicts in files while making sure we don't lose or break needed code, save the files
                     - <input type="checkbox"> Stage the files (`git add {PATH-TO-CHANGED-FILE}`) or click 'Stage Changes' button for the respective file in your IDE)
                     - <input type="checkbox"> `git rebase --continue`
