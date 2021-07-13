@@ -106,3 +106,4 @@ For every MR the developer who opened it should add the appropriate label to it 
 -   [How To Do A Code Review](reviewer/): A detailed guide for code reviewers.
 -   [The CL Author's Guide](developer/): A detailed guide for developers whose
     CLs are going through review.
+-   [Process checklist's Reviewing part](../process/process-checklist.md#reviewing-and-re-reviewing-a-mr): A checklist of stuff to remember when doing code reviews.
