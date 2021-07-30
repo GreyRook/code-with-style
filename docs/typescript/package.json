@@ -10,6 +10,10 @@
     "test:once": "<project specific script>",
     "e2e": "<project specific script>",
     "e2e:once": "<project specific script>",
-    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore"
+    "lint": "eslint . --ext .js,.ts --ignore-path .eslintignore",
+    "lint:fix": "yarn lint --fix",
+    "lint:prettier": "npx --no-install prettier --config .prettierrc.js --list-different \"**/*.{html,scss,json,yml,js,ts}\"",
+    "lint:prettier:fix": "npx --no-install prettier --config .prettierrc.js \"**/*.{html,scss,json,yml,js,ts}\" --write",
+    "fix": "yarn lint:prettier:fix && yarn lint:fix"
   }
 }
