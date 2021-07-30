@@ -74,10 +74,12 @@ Config: [.prettierrc](.prettierrc)
 ##### Reasons
     - default with Angular CLI
 
-### Protractor (E2E testing)
+### Nightwatch + Gauge (E2E testing)
 #### Reasons
-    - default with Angular CLI
-Example: [gr-admin/e2e/](https://git.r0k.de/s.blaettgen/gr-admin/tree/master/e2e)
+    - runs in all browsers
+    - specifications readable by non-developers
+    - generates an interactive report
+Example: [A4 Editor](https://git.r0k.de/gr-clients/vc/a4/-/tree/master/e2e/components)
 
 ### Sentry
 #### Reasons

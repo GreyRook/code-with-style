@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint
+- Changed the default E2E test framework from Protractor to Nightwatch + Gauge
 
 ### Fixed
 - Small spelling and grammar fixes all around.
