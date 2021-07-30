@@ -64,6 +64,14 @@ Our standard linter.
 
 Our default lint config can be found in [.eslintrc.js](.eslintrc.js).
 
+#### Setup
+
+Install dependencies with:
+```
+yarn add -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-prettier prettier
+```
+Add the `.eslintrc.js` config to the project root and if needed an `.eslintignore` to exclude files and folders from linting.
+
 ### Prettier
 #### Reasons
     - Our personal standard for coding style

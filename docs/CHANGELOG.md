@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added general communication guidelines for working with notifications ([communcation/index.md](communication/index.md)) 
 - Added details on merge request reviewers and assignments
 - Added Angular asset hashing and asset referencing best practices
+- Added ESLint setup steps
 
 ### Changed
 - Changed the default TypeScript linter from TSLint to ESLint
